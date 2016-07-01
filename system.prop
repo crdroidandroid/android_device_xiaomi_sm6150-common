@@ -1,3 +1,7 @@
+# Audio
+ro.config.vc_call_vol_default=6
+ro.config.vc_call_vol_steps=7
+
 # Bluetooth
 persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.bt.a2dp.hal.implementation=true
