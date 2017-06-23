@@ -537,4 +537,9 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
     </string-array>
+
+    <!-- Safe headphone volume index. When music stream volume is below this index
+    the SPL on headphone output is compliant to EN 60950 requirements for portable music
+    players. -->
+    <integer name="config_safe_media_volume_index">15</integer>
 </resources>
