@@ -355,7 +355,7 @@
 
     <!-- Whether device has turbo power charging support -->
     <bool name="config_hasTurboPowerCharger">true</bool>
-    
+
     <!-- Flag indicating whether the surface flinger has limited
          alpha compositing functionality in hardware.  If set, the window
          manager will disable alpha trasformation in animations where not
@@ -406,4 +406,7 @@
 
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 </resources>
