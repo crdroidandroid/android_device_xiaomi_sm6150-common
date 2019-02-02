@@ -104,7 +104,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     public void onSwitchChanged(Switch switchView, boolean isChecked) {
         mSwitchBar.setChecked(isChecked);
 
-        DiracUtils.setMusic(isChecked);
+        DiracUtils.setEnabled(isChecked);
         mHifi.setEnabled(isChecked);
         mHeadsetType.setEnabled(isChecked);
         mPreset.setEnabled(isChecked);
