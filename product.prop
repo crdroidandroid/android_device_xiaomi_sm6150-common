@@ -11,6 +11,9 @@ persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineag
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
