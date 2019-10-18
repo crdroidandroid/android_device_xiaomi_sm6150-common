@@ -66,6 +66,9 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 # Netflix
 ro.netflix.bsp_rev=Q6150-17263-1
 
+# Perfetto
+iorapd.perfetto.enable=true
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
