@@ -28,6 +28,9 @@ persist.vendor.dpm.feature=11
 # Gboard
 ro.com.google.ime.kb_pad_port_b=1
 
+# IORap
+iorapd.perfetto.enable=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
