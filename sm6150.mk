@@ -5,7 +5,7 @@
 #
 
 # Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sm6150-common/sm6150-common-vendor.mk)
