@@ -119,7 +119,9 @@ debug.sf.early_phase_offset_ns=500000
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
+persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -135,6 +137,7 @@ vendor.display.enable_default_color_mode=1
 vendor.display.enable_force_split=0
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
+vendor.display.qdcm.mode_combine=1
 vendor.gralloc.disable_ubwc=0
 
 # Keystore
