@@ -1,6 +1,9 @@
 # Displayfeature
 vendor_public_prop(vendor_displayfeature_prop);
 
+# Dolby
+type vendor_dolby_loglevel_prop, property_type;
+
 # Fingerprint
 vendor_public_prop(vendor_fp_prop);
 

@@ -1,6 +1,9 @@
 # Audio
 ro.config.media_vol_default=10
 
+# Audio (Dolby)
+debug.stagefright.omx_default_rank.sw-audio=16
+
 # Bluetooth
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500

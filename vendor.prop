@@ -20,7 +20,7 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
 vendor.audio.adm.buffering.ms=6
-vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.enabled=true
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
@@ -78,6 +78,11 @@ vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+
+# Audio (Dolby)
+persist.vendor.audio_fx.current=dolby
+ro.audio.monitorRotation=true
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.disabled=false
