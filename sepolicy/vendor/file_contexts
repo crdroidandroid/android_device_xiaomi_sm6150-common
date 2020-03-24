@@ -16,6 +16,9 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status           u:object_r:sysfs_doze:s0
 
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service u:object_r:hal_dms_default_exec:s0
+
 # Fingerprint
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
 /data/vendor/fpc(/.*)?                                               u:object_r:fingerprint_data_file:s0
