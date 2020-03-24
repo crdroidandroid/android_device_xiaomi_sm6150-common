@@ -2,6 +2,9 @@
 vendor.camera.                     u:object_r:vendor_camera_prop:s0
 persist.camera.                    u:object_r:vendor_camera_prop:s0
 
+# Dolby
+persist.vendor.dolby.loglevel                   u:object_r:vendor_dolby_loglevel_prop:s0
+
 # Fingerprint
 persist.vendor.sys.fp.             u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor                   u:object_r:vendor_fp_prop:s0
