@@ -738,26 +738,6 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Snapdragon Computer Vision Engine - from LA.UM.8.9.r1-04400-SM6xx.0
-vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|637e3c05ff05fb62ff9eede4ba394cd8f1874e18
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|b1c232b8fe7a11754a2f2148d4d2f12496a1dbe1
-vendor/lib64/libfastcvdsp_stub.so|acb42c1e615c25428740bfcc98173e9c2bb50578
-vendor/lib64/libfastcvopt.so|8c8ffef560b7eae88824b13ef05af3a6a5e2ee39
-vendor/lib64/libscveBlobDescriptor.so|269ff8fc2a5a576dab62b4e69d2d5ceca1dd3264
-vendor/lib64/libscveBlobDescriptor_stub.so|b8fe6a37a7de62739b015351cb0fac86330af654
-vendor/lib64/libscveCommon.so|edafe544e687224832ab0067168fc5a24a3e07b9
-vendor/lib64/libscveCommon_stub.so|7f5aa0b1fca2e9c56457c1b332e4bea3d5f03a8f
-vendor/lib64/libscveFaceLandmarks.so|a82249aeca4e16a9ae266891c1f383ac28ef3206
-vendor/lib64/libscveFaceRecognition.so|bc056a7d839c0883c3d50f6bfaf46a3bedd13115
-vendor/lib64/libscveObjectSegmentation.so|c16f50e3c6226691b0479ff0c6c811e1fd7d129d
-vendor/lib64/libscveObjectSegmentation_stub.so|8e6a7170164f5cc7b1756d50506e31bd072e6b9c
-vendor/lib64/libscveObjectTracker.so|525a20595e13ab5937e4ac3f7156a66b68aa5ab5
-vendor/lib64/libscveObjectTracker_stub.so|b4ab0472e565a69f3c4dce0d1061fad9e990e42b
-vendor/lib64/libscvePanorama.so|62cb5a9e8f00a856c6834a95cee4970dd007f63f
-vendor/lib64/libscvePanorama_lite.so|ef7dbeff0c7fbfd5b2faa78dc3521ccbc90d4044
-
 # Sensors
 vendor/bin/sensors.qti
 vendor/etc/sensors/hals.conf
@@ -770,6 +750,56 @@ vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/libssccalapi.so
 vendor/lib64/sensors.ssc.so
+
+# Snapdragon Computer Vision Engine
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
+vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service
+vendor/etc/init/vendor.qti.hardware.scve.objecttracker@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.scve.panorama@1.0-service.rc
+vendor/etc/scve/facereco/gModel.dat
+vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libfastcvopt.so
+vendor/lib64/libscveBlobDescriptor_stub.so
+vendor/lib64/libscveBlobDescriptor.so
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveFaceLandmarks.so
+vendor/lib64/libscveFaceRecognition.so
+vendor/lib64/libscveObjectSegmentation_stub.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectTracker_stub.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscvePanorama_lite.so
+vendor/lib64/libscvePanorama.so
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
+vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
+vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libscveBlobDescriptor_stub.so
+vendor/lib/libscveBlobDescriptor.so
+vendor/lib/libscveCommon.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveFaceLandmarks.so
+vendor/lib/libscveFaceRecognition.so
+vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveObjectSegmentation.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscvePanorama_lite.so
+vendor/lib/libscvePanorama.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Soter
 -app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
