@@ -403,7 +403,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
-vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.8.9.r1-04400-SM6xx.0
@@ -505,7 +504,7 @@ vendor/bin/hw/vendor.display.color@1.0-service|8646c74c5b19e6d5086d7a4f83e075761
 # Qualcomm removed android.hidl.base@1.0 dependency on this one
 
 # Power-off charging daemon - from 
--sbin/charger:bin/chargeonlymode|5665db380f55cad069f64d4ebd84e4dc41766f2a
+-bin/charger:bin/chargeonlymode|5665db380f55cad069f64d4ebd84e4dc41766f2a
 
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
@@ -736,7 +735,7 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc_default_listener.so
 
 # Soter
--vendor/app/SoterService/SoterService.apk
+-app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
