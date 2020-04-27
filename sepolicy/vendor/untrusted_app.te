@@ -1,0 +1,5 @@
+dontaudit untrusted_app proc:file r_file_perms;
+dontaudit untrusted_app proc_qtaguid_stat:file r_file_perms;
+dontaudit untrusted_app proc_tty_drivers:file r_file_perms;
+dontaudit untrusted_app proc_zoneinfo:file r_file_perms;
+dontaudit untrusted_app theme_prop:file r_file_perms;
