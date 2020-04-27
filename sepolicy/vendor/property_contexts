@@ -6,6 +6,7 @@ ro.audio.recording.hd             u:object_r:vendor_audio_prop:s0
 camera. u:object_r:vendor_camera_prop:s0
 persist.camera. u:object_r:vendor_camera_prop:s0
 vendor.camera.  u:object_r:vendor_camera_prop:s0
+vendor.debug.rs.           u:object_r:public_vendor_default_prop:s0
 
 # Display feature
 ro.vendor.eyecare.threshold                  u:object_r:vendor_displayfeature_prop:s0
@@ -70,7 +71,8 @@ persist.vendor.sys.pay     u:object_r:vendor_tee_listener_prop:s0
 ro.vendor.se.type          u:object_r:exported_default_prop:s0
 
 # RIL
-ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
+ril.ecclist.               u:object_r:vendor_radio_prop:s0
+ro.build.flavor            u:object_r:vendor_radio_prop:s0
 
 # Sensor
 persist.sensor.sardisable u:object_r:sensors_prop:s0
