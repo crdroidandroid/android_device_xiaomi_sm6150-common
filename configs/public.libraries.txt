@@ -8,9 +8,21 @@ libOpenCL.so
 libnpu.so
 libhta_hexagon_runtime.so
 unnhal-acc-hta.so
+libmpbase.so 64
+libmialgoengine.so 64
 libHalSuperSensorServer.so
 libSuperSensor.so
 libSuperSensorCPU.so
+libarcsoft_beautyshot.so 64
+libarcsoft_dualcam_refocus.so 64
+libarcsoft_dualcam_refocus_rear_t.so 64
+libarcsoft_dualcam_refocus_rear_w.so 64
+libarcsoft_dualcam_refocus_front.so 64
+libarcsoft_portrait_lighting.so 64
+libarcsoft_portrait_lighting_c.so 64
+libmibokeh_712.so 64
+libarcsoft_distortion_correction.so 64
+libarcsoft_bodyslim.so 64
 libalCFR.so
 libcvp.so
 libcvp_stub.so
@@ -19,3 +31,8 @@ libalhLDC.so
 libalAILDC.so
 libVDClearShot.so
 libVDSuperPhotoAPI.so
+libsdk_sr.so
+libst_sr_models.so
+libhvx_interface.so 64
+lib_denoiser3.so 64
+libxml2_vendor.so 64
