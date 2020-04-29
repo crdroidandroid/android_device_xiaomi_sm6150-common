@@ -14,8 +14,9 @@
 /vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
 
 # Elliptic
-/dev/elliptic0		u:object_r:sensors_device:s0
-/dev/elliptic1		u:object_r:sensors_device:s0
+
+# Audio devices
+/dev/elliptic(.*)?     u:object_r:sound_device:s0
 /dev/mius(.*)?		u:object_r:sound_device:s0
 
 # Fingerprint devices
@@ -63,3 +64,6 @@
 
 # Touchfeature
 /dev/xiaomi-touch          u:object_r:touchfeature_device:s0
+
+# Sockets
+/dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0
