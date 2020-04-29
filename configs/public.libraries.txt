@@ -46,3 +46,5 @@ libarcsoft_high_dynamic_range.so
 libhvx_interface.so
 lib_denoiser3.so
 libxml2_vendor.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
