@@ -98,6 +98,7 @@ function fix_product_path () {
 }
 
 fix_product_path product/etc/permissions/vendor.qti.hardware.factory.xml
+fix_product_path product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 
 #
 # Fix xml version
