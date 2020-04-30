@@ -188,6 +188,9 @@ on fs
     chmod 644 /mnt/vendor/persist/audio/us_manual_cal
 
 on post-fs
+    chmod 0644 /dev/elliptic0
+    chmod 0644 /dev/elliptic1
+
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
     chmod 0755 /sys/kernel/debug/tracing
@@ -234,6 +237,12 @@ on early-boot
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
 
 on boot
+    chown system system /sys/kernel/hbtp/display_pwr
+    chown system system /proc/tp_selftest
+    chown system system /sys/class/touch/touch_dev/palm_sensor
+    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
+    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
+
     start rmt_storage
     start rfs_access
     chown system system /sys/class/thermal/thermal_message/sconfig
