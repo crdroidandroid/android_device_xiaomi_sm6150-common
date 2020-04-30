@@ -715,6 +715,14 @@ vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc_default_listener.so
 
+# Sensors Calibrate
+product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+
 # Snapdragon Computer Vision Engine
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
 product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
