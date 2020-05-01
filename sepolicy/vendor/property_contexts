@@ -54,6 +54,7 @@ ro.boot.flavor                      u:object_r:public_vendor_default_prop:s0
 ro.boot.hwversion                   u:object_r:public_vendor_default_prop:s0
 ro.carrier.name                     u:object_r:public_vendor_default_prop:s0
 ro.miui.cust_variant                u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.                    u:object_r:public_vendor_default_prop:s0
 
 # Init
 vendor.all.devices.ready        u:object_r:vendor_device_prop:s0
@@ -72,7 +73,8 @@ persist.vendor.sys.pay     u:object_r:vendor_tee_listener_prop:s0
 ro.vendor.se.type          u:object_r:exported_default_prop:s0
 
 # RIL
-ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
+ril.ecclist.               u:object_r:vendor_radio_prop:s0
+ro.build.flavor            u:object_r:vendor_radio_prop:s0
 
 # Sensor
 persist.sensor.sardisable u:object_r:sensors_prop:s0
