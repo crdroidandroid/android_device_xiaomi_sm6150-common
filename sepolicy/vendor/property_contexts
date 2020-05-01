@@ -36,6 +36,7 @@ ro.vendor.display.default_fps                u:object_r:vendor_displayfeature_pr
 ro.vendor.cabc.enable                        u:object_r:vendor_displayfeature_prop:s0
 ro.vendor.bcbc.enable                        u:object_r:vendor_displayfeature_prop:s0
 ro.vendor.dfps.enable                        u:object_r:vendor_displayfeature_prop:s0
+vendor.panel.display                         u:object_r:vendor_displayfeature_prop:s0
 
 # Fingerprint
 gf.debug.                  u:object_r:vendor_fp_prop:s0
