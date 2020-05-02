@@ -22,7 +22,6 @@
 # Fingerprint devices
 /dev/fpc1020                    u:object_r:fingerprint_device:s0
 /dev/goodix_fp                  u:object_r:fingerprint_device:s0
-/sys/bus/platform/devices/soc:fingerprint_fpc(/.*?) u:object_r:sysfs_fps_attr:s0
 
 # Graphics nodes
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dim_alpha         u:object_r:sysfs_graphics:s0
