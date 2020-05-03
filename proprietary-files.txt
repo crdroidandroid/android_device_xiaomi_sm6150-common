@@ -515,6 +515,20 @@ vendor/lib/vendor.qti.hardware.vpp@1.1.so|f2250d7039c13423b33d519de7ba405729cbe1
 vendor/lib/vendor.qti.hardware.vpp@1.2.so|5cd497ead8cdeb3a245b5898b6a6131dce68d9f7
 vendor/lib/vendor.qti.hardware.vpp@1.3.so|e2953631885c8956489549d16b3077ee9cfedc96
 
+# Misys
+etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
+framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
+framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
+vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
+vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
+
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
