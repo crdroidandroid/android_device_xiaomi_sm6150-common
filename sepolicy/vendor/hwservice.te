@@ -2,6 +2,8 @@ type hal_citsensorservice_hwservice, hwservice_manager_type;
 
 type hal_displayfeature_hwservice, hwservice_manager_type;
 
+type hal_misys_hwservice, hwservice_manager_type;
+
 type hal_mlipay_hwservice, hwservice_manager_type;
 
 type hal_motor_hwservice, hwservice_manager_type;
