@@ -33,6 +33,37 @@
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.xiaomi_sm6150                                 u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service                                              u:object_r:hal_motor_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                                      u:object_r:hal_touchfeature_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                                             u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service                                             u:object_r:hal_misys_default_exec:s0
+
+/vendor/lib(64)?/libalCFR\.so                                                                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmpbase\.so                                                                          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libalhLDC\.so                                                                          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libsdk_sr\.so                                                                          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libalAILDC\.so                                                                         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/st_sr_models\.bin                                                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/lib_denoiser3\.so                                                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libVDClearShot\.so                                                                     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmibokeh_712\.so                                                                     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libxml2_vendor\.so		                                                                u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmialgoengine\.so                                                                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libst_sr_models\.so                                                                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libhvx_interface\.so                                                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libVDSuperPhotoAPI\.so                                                                 u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_bodyslim\.so                                                                u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_beautyshot\.so                                                              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libVDDualCameraClearShot\.so                                                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_low_light_hdr\.so                                                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libxmi_high_dynamic_range\.so                                                          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_dualcam_refocus\.so                                                         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_portrait_lighting\.so                                                       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_high_dynamic_range\.so                                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_portrait_lighting_c\.so                                                     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_dualcam_refocus_front\.so                                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_distortion_correction\.so                                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_dualcam_refocus_rear_w\.so                                                  u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_dualcam_refocus_rear_t\.so                                                  u:object_r:same_process_hal_file:s0
 
 # Health
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?                              u:object_r:sysfs_battery_supply:s0
