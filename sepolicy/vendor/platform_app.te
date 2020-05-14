@@ -4,3 +4,6 @@ get_prop(platform_app, vendor_audio_prop);
 get_prop(platform_app, vendor_displayfeature_prop);
 allow platform_app hal_displayfeature_hwservice:hwservice_manager find;
 binder_call(platform_app, hal_displayfeature_default)
+
+# Allow MIUI camera app to read no. of cpus
+allow platform_app cgroup:file r_file_perms;

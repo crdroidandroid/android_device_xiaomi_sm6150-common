@@ -1,6 +1,8 @@
 # For interfacing with PowerHAL
 hal_client_domain(hal_camera_default, hal_power)
 
+hal_client_domain(hal_camera_default, hal_configstore)
+
 # Allow hal_camera_default to read to sysfs_kgsl
 r_dir_file(hal_camera_default, sysfs_kgsl)
 
