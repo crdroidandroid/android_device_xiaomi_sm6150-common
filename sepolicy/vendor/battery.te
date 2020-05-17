@@ -1,0 +1,55 @@
+define(`battery_daemons', `{ batteryd batterysecret }')
+
+type batteryd, domain;
+type batteryd_exec, exec_type, vendor_file_type, file_type;
+type batterysecret, domain;
+type batterysecret_exec, exec_type, vendor_file_type, file_type;
+type persist_subsys_file, vendor_persist_type, file_type;
+
+init_daemon_domain(batteryd)
+init_daemon_domain(batterysecret)
+
+allow battery_daemons self:capability { chown fsetid sys_boot sys_tty_config };
+allow battery_daemons self:capability2 block_suspend;
+allow battery_daemons self:cap2_userns block_suspend;
+allow battery_daemons self:global_capability_class_set { sys_boot sys_tty_config };
+
+allow battery_daemons kmsg_device:chr_file rw_file_perms;
+
+allow battery_daemons self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+r_dir_file(battery_daemons, cgroup)
+r_dir_file(battery_daemons, mnt_vendor_file)
+r_dir_file(battery_daemons, persist_file)
+r_dir_file(battery_daemons, sysfs)
+r_dir_file(battery_daemons, sysfs_battery_supply)
+r_dir_file(battery_daemons, sysfs_batteryinfo)
+r_dir_file(battery_daemons, sysfs_type)
+r_dir_file(battery_daemons, sysfs_usb_supply)
+r_dir_file(battery_daemons, sysfs_usbpd_device)
+
+allow battery_daemons persist_subsys_file:dir rw_dir_perms;
+allow battery_daemons persist_subsys_file:file create_file_perms;
+
+# Allow battery_daemons to read and write to sysfs_*
+allow battery_daemons {
+  cgroup
+  sysfs
+  sysfs_battery_supply
+  sysfs_usb
+  sysfs_usb_supply
+  sysfs_wake_lock
+  sysfs_usbpd_device
+}:file rw_file_perms;
+
+allow battery_daemons {
+  cgroup
+  sysfs_battery_supply
+  sysfs_usb_supply
+}:lnk_file rw_file_perms;
+
+allow battery_daemons property_socket:sock_file write;
+
+set_prop(battery_daemons, vendor_system_prop)
+
+wakelock_use(battery_daemons)
