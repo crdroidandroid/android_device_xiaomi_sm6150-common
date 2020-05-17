@@ -78,6 +78,12 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libmisoundfx.so
 
+# Battery
+vendor/bin/batteryd
+vendor/bin/batterysecret
+system/init.batteryd.rc:vendor/etc/init/init.batteryd.rc
+system/init.batterysecret.rc:vendor/etc/init/init.batterysecret.rc
+
 # Bluetooth
 vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
