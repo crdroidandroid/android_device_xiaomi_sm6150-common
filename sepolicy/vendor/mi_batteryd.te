@@ -1,0 +1,41 @@
+type mi_batteryd, domain;
+type mi_batteryd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(mi_batteryd)
+
+allow mi_batteryd self:capability sys_tty_config;
+allow mi_batteryd self:capability sys_boot;
+allow mi_batteryd self:capability chown;
+allow mi_batteryd self:capability fsetid;
+
+allow mi_batteryd self:capability2 block_suspend;
+allow mi_batteryd self:cap2_userns block_suspend;
+
+allow mi_batteryd kmsg_device:chr_file rw_file_perms;
+
+allow mi_batteryd self:netlink_kobject_uevent_socket { read create bind setopt };
+
+r_dir_file(mi_batteryd, sysfs)
+r_dir_file(mi_batteryd, sysfs_battery_supply)
+r_dir_file(mi_batteryd, sysfs_usb_supply)
+
+allow mi_batteryd mnt_vendor_file:dir rw_dir_perms;
+allow mi_batteryd mnt_vendor_file:file create_file_perms;
+
+# Allow mi_batteryd to read and write to sysfs_*
+allow mi_batteryd {
+  cgroup
+  sysfs_battery_supply 
+  sysfs_usb_supply
+  sysfs_wake_lock
+}:file rw_file_perms;
+
+allow mi_batteryd {
+  cgroup
+  sysfs_battery_supply
+  sysfs_usb_supply
+}:lnk_file rw_file_perms;
+
+allow mi_batteryd property_socket:sock_file write;
+
+set_prop(mi_batteryd, vendor_system_prop)
