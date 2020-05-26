@@ -14,3 +14,6 @@ ro.ril.miui.imei        u:object_r:exported3_radio_prop:s0
 ro.miui.                u:object_r:exported_system_prop:s0
 ro.cust.test            u:object_r:exported_system_prop:s0
 vendor.sys.camerainfo   u:object_r:exported_system_prop:s0
+
+# WFD
+persist.vendor.setWFDInfo.R2             u:object_r:wfd_sys_debug_prop:s0
