@@ -9,17 +9,17 @@ vendor/lib/libacdb-fts.so|b549ea744dcc0b81b44215d449a01efdcee277d3
 vendor/lib/libacdbloader.so|c75c65fc580d94241e08f5127e98719547f22c63
 vendor/lib/libacdbrtac.so|8d0b3d98fd4f0d47496bb12aaca8f46ceb6016ae
 
-# ADSP - from LA.UM.8.9.r1-04400-SM6xx.0
-vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|13d8a911642844bde32d533948a35730e17d41ad
-vendor/lib/libadsp_default_listener.so|7da1a1cfef2f04e3577d0e1cda81ce12204598fa
-vendor/lib/libadsprpc.so|28a1d664aba2bda20e62d04c09c117eea136d3c7
-vendor/lib/libmdsprpc.so|07e492c35dc205391d8d7e2d4684801ed870d329
-vendor/lib/libsdsprpc.so|f4d860f07a9e44a04eb9578771f079528c770109
-vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
-vendor/lib64/libadsprpc.so|aea62273ca4355ceb76dfeec2cd11d39614a854e
-vendor/lib64/libmdsprpc.so|df135d5ca3e0ac4ccc670a4133f781d77315f089
-vendor/lib64/libsdsprpc.so|65f23710d4895b738c9eb827b513b1d9d9480aad
+# ADSP
+vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
 
 # ADSP Modules
 vendor/lib/rfsa/adsp/dirac_resource.dar
