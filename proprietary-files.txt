@@ -1,13 +1,13 @@
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# ACDB loader - from LA.UM.8.9.r1-04400-SM6xx.0
-vendor/lib64/libacdb-fts.so|a21df6bcbe606c4452fcbb54c83eb9e51c2be0ee
-vendor/lib64/libacdbloader.so|c4eabb0d9ab20b658f2019e3aa2685bba7500056
-vendor/lib64/libacdbrtac.so|a32bfa7e06f10ba8d482550ddf20f41b815de3ac
-vendor/lib/libacdb-fts.so|b549ea744dcc0b81b44215d449a01efdcee277d3
-vendor/lib/libacdbloader.so|c75c65fc580d94241e08f5127e98719547f22c63
-vendor/lib/libacdbrtac.so|8d0b3d98fd4f0d47496bb12aaca8f46ceb6016ae
+# ACDB loader - from LA.UM.8.9.r1-07100-SM6xx.0
+vendor/lib64/libacdb-fts.so|5f23e070d965a771247721221e6b6d650578ad63
+vendor/lib64/libacdbloader.so|de939c16b5f5c11fd82d4f7d15ebdb4bf0183c0c
+vendor/lib64/libacdbrtac.so|d8684de05c37d2c96aa2954de1c6ff7b376f2c3b
+vendor/lib/libacdb-fts.so|dbcdd097aae1f7db1bc8edbaba0007329d16f5f1
+vendor/lib/libacdbloader.so|18ab2b87b67b713956966aab43cab82ad3655c9e
+vendor/lib/libacdbrtac.so|5fb739cef8b93d0726b123212bece6b152a5f602
 
 # ADSP
 vendor/bin/adsprpcd
@@ -304,13 +304,12 @@ vendor/firmware/ipa_fws.mdt
 # Firmware - from LA.UM.8.9.r1-07100-SM6xx.0
 vendor/firmware/a618_gmu.bin|cb773d4b34f610d53a4a2766e0fec5d7dd2c5982
 
-# FM - from LA.UM.8.9.r1-04400-SM6xx.0
-lib64/fm_helium.so|b796c4d16f4706277cffca32212fb7d9f342f9f8
-lib64/libfm-hci.so|7354307ceeafb05d6a8ae1f2cf59c215eea324cc
--product/lib64/vendor.qti.hardware.fm@1.0.so|b7358cd2a52e6e0798efa01f9595f8b8e8f7b152
-vendor/bin/fm_qsoc_patches|12dba44844e32507d8638aa697e7be76bc227935
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|750fe55d93426408d1770d753a624923ac656d6e
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|20b23ee5efbd2e41faad2592be8d0d588a41eb17
+# FM - from LA.UM.8.9.r1-07100-SM6xx.0
+lib64/fm_helium.so|10bf2489995d3717ebb0f91c73ffec3504fd0159
+lib64/libfm-hci.so|704fe24726873234c07e082b35e1138fbb6a2b07
+product/lib64/vendor.qti.hardware.fm@1.0.so|c190ec6ecb995b556c30a214a8a7cf4894e72e5f
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|942c4a88be55eb62fab614a08b64676972de2d89
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|9eb88f44f2231ca4f39bee678e3f71de8ef6ebb4
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
