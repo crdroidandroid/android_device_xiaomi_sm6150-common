@@ -781,11 +781,6 @@ on property:sys.boot_completed=1
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
-service check_features /vendor/bin/check_features.sh
-    class core
-    user root
-    oneshot
-
 service vendor.charger /system/bin/chargeonlymode
     class charger
     user system

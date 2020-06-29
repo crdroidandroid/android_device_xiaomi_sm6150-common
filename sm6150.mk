@@ -313,7 +313,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    check_features.sh \
     fstab.qcom \
     init.insmod.sh \
     init.msm.usb.configfs.rc \
