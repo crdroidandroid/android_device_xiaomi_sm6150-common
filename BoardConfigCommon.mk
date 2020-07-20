@@ -132,8 +132,6 @@ ODM_MANIFEST_SKUS += \
 ODM_MANIFEST_365_FILES := $(COMMON_PATH)/manifest_sdmmagpie.xml
 ODM_MANIFEST_366_FILES := $(COMMON_PATH)/manifest_sdmmagpie.xml
 
-ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest-qva.xml
-
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
