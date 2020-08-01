@@ -30,8 +30,5 @@
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
-
-    <!-- Device supports internal audio recording -->
-    <bool name="config_recorderInternalAudio">false</bool>
 </resources>
 
