@@ -275,7 +275,8 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr \
+    libqti-perfd-client
 
 # QTI
 PRODUCT_PACKAGES += \
