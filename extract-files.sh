@@ -61,8 +61,7 @@ function blob_fixup() {
     lib64/libwfdnative.so | lib64/libfm-hci.so | lib/libfm-hci.so |  vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so | \
             vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so | vendor/lib64/libgoodixhwfingerprint.so | \
             vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so | vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0-halimpl.so | \
-            vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service | vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service | \
-            lib64/libbtconfigstore.so | lib/libbtconfigstore.so)
+            vendor/bin/hw/vendor.qti.hardware.scve.panorama@1.0-service | vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service )
         patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
     ;;
     vendor/etc/camera/camxoverridesettings.txt )
