@@ -123,6 +123,10 @@ on property:sys.boot_completed=1
     write /dev/stune/top-app/schedtune.boost 5
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
+    # Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
     # Colocation v3 settings
     write /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz 740000
 
