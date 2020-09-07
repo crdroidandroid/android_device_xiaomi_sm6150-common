@@ -267,16 +267,45 @@ vendor/lib/liboemcrypto.so|b349d1d049709bbdff15a133698264dc8c01db14
 vendor/lib/libwvhidl.so|dd599b1055d1faf025d60bc4f702f9ae11123c30
 
 # Firmware
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
+vendor/firmware/a540_gpmu.fw2
+vendor/firmware/a612_rgmu.bin
+vendor/firmware/a612_zap.b00
+vendor/firmware/a612_zap.b01
+vendor/firmware/a612_zap.b02
+vendor/firmware/a612_zap.elf
+vendor/firmware/a612_zap.mdt
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
 vendor/firmware/a615_zap.b02
 vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
+vendor/firmware/a640_gmu.bin
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
 vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
 
 # Firmware - from LA.UM.8.9.r1-07100-SM6xx.0
 vendor/firmware/a618_gmu.bin|cb773d4b34f610d53a4a2766e0fec5d7dd2c5982
