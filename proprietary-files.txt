@@ -73,7 +73,10 @@ vendor/lib/libsurround_3mic_proc.so
 etc/permissions/audiosphere.xml
 framework/audiosphere.jar
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libdirac.so
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdirac.so
+vendor/lib/soundfx/libmisoundfx.so
 
 # Bluetooth
 vendor/lib64/libbtnv.so
