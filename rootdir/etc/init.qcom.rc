@@ -735,7 +735,7 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     socket pps stream 0660 system system
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.power-hal-1-2 /vendor/bin/hw/android.hardware.power@1.2-service-qti
+service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
     override
     class hal
     user system
