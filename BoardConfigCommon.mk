@@ -122,12 +122,6 @@ TARGET_USES_ION := true
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-ODM_MANIFEST_SKUS += \
-	365 \
-	366
-
-ODM_MANIFEST_365_FILES := $(COMMON_PATH)/manifest_sdmmagpie.xml
-ODM_MANIFEST_366_FILES := $(COMMON_PATH)/manifest_sdmmagpie.xml
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
