@@ -235,3 +235,6 @@ persist.dbg.wfc_avail_ovr=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Zygote
+zygote.critical_window.minute=10
