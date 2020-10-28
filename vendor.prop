@@ -193,3 +193,6 @@ suspend.max_sleep_time_millis=40000
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Zygote
+zygote.critical_window.minute=10
