@@ -1,0 +1,2 @@
+allow vendor_qti_init_shell sysfs_io_sched_tuneable:file rw_file_perms;
+allow vendor_qti_init_shell sysfs_wakeup:file setattr;
