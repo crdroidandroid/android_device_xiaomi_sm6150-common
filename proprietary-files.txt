@@ -77,6 +77,10 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libmisoundfx.so
 
+# AV Enhancements
+lib64/libavenhancements.so
+lib/libavenhancements.so
+
 # Bluetooth
 vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
