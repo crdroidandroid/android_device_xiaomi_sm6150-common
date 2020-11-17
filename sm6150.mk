@@ -317,11 +317,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.sm6150-libperfmgr \
-    powerhint.json
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+    android.hardware.power@1.2-service-qti
 
 # QTI
 PRODUCT_COPY_FILES += \
@@ -334,6 +330,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.insmod.sh \
     init.msm.usb.configfs.rc \
+    init.qcom.post_boot.sh \
     init.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \

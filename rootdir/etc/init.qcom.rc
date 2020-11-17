@@ -520,6 +520,8 @@ on charger
     write /sys/devices/system/cpu/cpu6/online 0
     write /sys/devices/system/cpu/cpu7/online 0
 
+    start qcom-post-boot
+
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
     mount cgroup none /dev/blkio blkio
@@ -710,12 +712,20 @@ service loc_launcher /vendor/bin/loc_launcher
     user gps
     group gps
 
+service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
 on property:sys.boot_completed=1
     # Let kernel know our image version/variant/crm_version
     write /sys/devices/soc0/select_image 10
     write /sys/devices/soc0/image_version "10:${ro.build.id}:${ro.build.version.incremental}"
     write /sys/devices/soc0/image_variant "${ro.product.name}-${ro.build.type}"
     write /sys/devices/soc0/image_crm_version "REL"
+    start qcom-post-boot
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1

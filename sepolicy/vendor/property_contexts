@@ -40,6 +40,7 @@ ro.vendor.bcbc.enable                        u:object_r:vendor_displayfeature_pr
 ro.vendor.dfps.enable                        u:object_r:vendor_displayfeature_prop:s0
 ro.vendor.smart_dfps.enable                  u:object_r:vendor_displayfeature_prop:s0
 vendor.panel.display                         u:object_r:vendor_displayfeature_prop:s0
+vendor.debug.rs                              u:object_r:vendor_displayfeature_prop:s0
 
 # Fingerprint
 gf.debug.                  u:object_r:vendor_fp_prop:s0
@@ -67,6 +68,9 @@ vendor.powerhal.rendering  u:object_r:power_prop:s0
 
 # Mlipay
 persist.vendor.sys.pay     u:object_r:vendor_tee_listener_prop:s0
+
+# QTI
+persist.console.silent.config       u:object_r:vendor_system_prop:s0
 
 # Recovery
 ro.build.expect.           u:object_r:exported_default_prop:s0
