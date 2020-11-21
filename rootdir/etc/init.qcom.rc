@@ -803,6 +803,12 @@ service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@
     socket pps stream 0660 system system
     writepid /dev/cpuset/system-background/tasks
 
+service vendor.power-hal-1-2 /vendor/bin/hw/android.hardware.power@1.2-service-qti
+    override
+    class hal
+    user system
+    group system input
+
 service nv_mac /vendor/bin/nv_mac
     class late_start
     user system
