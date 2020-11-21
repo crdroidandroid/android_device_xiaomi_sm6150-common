@@ -59,6 +59,9 @@ system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libshoebox.so
+-vendor/lib/soundfx/libmisoundfx.so
+-vendor/lib/soundfx/libdirac.so
+-vendor/lib64/soundfx/libdirac.so
 
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
