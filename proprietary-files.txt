@@ -754,8 +754,8 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so|db112176d6e928770afde7369
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|6dad847af6827e3111532d107fa4d308bf152a3f
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|f257c2277e58533bb47b2f5df6e3b75a1e1afef8
 
-# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8b29
+# Telephony (qti-telephony-common)
+system_ext/framework/qti-telephony-common.jar|7a3f1fa141520e83e58d4afc6eebfc4f38dc9f27
 
 # Radio - IMS
 etc/permissions/com.qualcomm.qti.imscmservice.xml
