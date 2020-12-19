@@ -451,12 +451,13 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Keystore
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|12777e1f7f44222c7afa1aa5ad9514a774175928
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+vendor/lib64/libkeymasterdeviceutils.so|342fec39fae05ad5c0946dfbe2ad39343ea556cb
+vendor/lib64/libkeymasterprovision.so|1efcae9b8a312632ce2fb71558e4fa75a89a6be0
+vendor/lib64/libkeymasterutils.so|b9c888d579c9cf7a1c8f463be4048eb9d935daf8
+vendor/lib64/libqcbor.so|67acd94f3c7110c9419f0fd064b6eb69c09a0738
+vendor/lib64/libqtikeymaster4.so|9c45da4b7daa40d44592d94061858813e35473d0
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.sm6150.so
