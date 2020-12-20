@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
     libc++demangle_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
+    libmedia_jni_shim \
     libxml2 \
     Snap \
     vendor.qti.hardware.camera.device@1.0.vendor

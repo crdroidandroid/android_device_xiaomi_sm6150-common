@@ -19,3 +19,11 @@ cc_library {
     proprietary: true,
     whole_static_libs: ["libc++demangle"]
 }
+
+cc_library {
+    name: "libmedia_jni_shim",
+    srcs: ["libmedia_jni.cpp"],
+    shared_libs: [
+        "libmedia",
+    ],
+}
