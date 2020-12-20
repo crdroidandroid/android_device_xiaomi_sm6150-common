@@ -406,13 +406,6 @@ vendor/lib/libsdedrm.so|18568c442b560f5999f9da0227f642af500f4233
 vendor/lib64/libhdr_tm.so|4f08d65045893e0ec2b351581d6378f2e187ca82
 vendor/lib/libhdr_tm.so|43329dcdd1f390b12fbab1094ea8af46548aeb36
 
-# Graphics (HW Composer)
-vendor/lib64/hw/hwcomposer.sm6150.so|4559bed81b3b24e25270bf5c41ffa91c10647474
-vendor/lib64/libsdmcore.so|e9cc09cc4ee486caa48419b58976c546c6652821
-vendor/lib/hw/hwcomposer.sm6150.so|3240a63dc4301f5e5e8562943d28c2ee5dc00036
-vendor/lib/libsdmcore.so|02624685005e01a402730cfaba7847a7336ed01c
-vendor/bin/hw/android.hardware.graphics.composer@2.3-service|14e738c22ea94d2d4b549a386321acdcff7f88c5
-
 # Graphics (Renderscript) - from LA.UM.8.9.r1-08400-SM6xx.0
 vendor/lib64/libRSDriver_adreno.so|76246cf21e9abfdf87e27e825cfe20047be30a16
 vendor/lib64/libbccQTI.so|42fdea81ea505ccadbf6d24af7ba37cf83760391
