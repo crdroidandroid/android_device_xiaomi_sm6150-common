@@ -264,6 +264,12 @@ vendor/lib64/mediadrm/libwvdrmengine.so|8e9f726c51650e4e80a06fbb7a16252d023c6b96
 vendor/lib64/liboemcrypto.so|2cee717b25559030a61709e826b4a5dae6043c20
 vendor/lib64/libwvhidl.so|2abdbc8966795ed903062ec1a8ba2e79bb5883f8
 
+# DSP
+vendor/bin/dspservice|225fc63f14387ea978341f9418b34900c1b10ce2
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|8119845f8e6a24e53bdf286e19f34e9906d64e78
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|b4fb4608e14ef4a74ceeec1ed6851cb139be57e9
+
 # Firmware
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
