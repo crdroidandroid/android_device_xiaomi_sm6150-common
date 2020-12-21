@@ -27,20 +27,21 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef ANDROID_HARDWARE_GNSS_V1_0_MeasurementCorrections_H
-#define ANDROID_HARDWARE_GNSS_V1_0_MeasurementCorrections_H
+#ifndef ANDROID_HARDWARE_GNSS_V1_0_GnssVisibilityControl_H
+#define ANDROID_HARDWARE_GNSS_V1_0_GnssVisibilityControl_H
 
-#include <android/hardware/gnss/measurement_corrections/1.0/IMeasurementCorrections.h>
-#include <android/hardware/gnss/measurement_corrections/1.0/IMeasurementCorrectionsCallback.h>
+#include <android/hardware/gnss/visibility_control/1.0/IGnssVisibilityControl.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 
+#include <gps_extended_c.h>
 #include <location_interface.h>
+#include "Gnss.h"
 
 namespace android {
 namespace hardware {
 namespace gnss {
-namespace measurement_corrections {
+namespace visibility_control {
 namespace V1_0 {
 namespace implementation {
 
@@ -51,26 +52,39 @@ using ::android::hardware::hidl_vec;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::sp;
-using ::android::hardware::gnss::V1_0::GnssLocation;
-using ::android::hardware::gnss::measurement_corrections::V1_0::IMeasurementCorrectionsCallback;
+using ::android::hardware::gnss::V2_1::implementation::Gnss;
 
-struct MeasurementCorrections : public IMeasurementCorrections {
-    MeasurementCorrections();
-    ~MeasurementCorrections();
+struct GnssVisibilityControl : public IGnssVisibilityControl {
+    GnssVisibilityControl(Gnss* gnss);
+    ~GnssVisibilityControl();
 
-// Methods from ::android::hardware::gnss::measurement_corrections::V1_0::IMeasurementCorrections follow.
-Return<bool> setCorrections(const ::android::hardware::gnss::measurement_corrections::V1_0::MeasurementCorrections& corrections) override;
+    // Methods from ::android::hardware::gnss::visibility_control::V1_0::IGnssVisibilityControl follow.
+    Return<bool> enableNfwLocationAccess(const hidl_vec<::android::hardware::hidl_string>& proxyApps) override;
+    /**
+     * Registers the callback for HAL implementation to use.
+     *
+     * @param callback Handle to IGnssVisibilityControlCallback interface.
+     */
+    Return<bool> setCallback(const ::android::sp<::android::hardware::gnss::visibility_control::V1_0::IGnssVisibilityControlCallback>& callback) override;
 
-Return<bool> setCallback(const sp<IMeasurementCorrectionsCallback>& callback) override;
+    void statusCb(GnssNfwNotification notification);
+    bool isE911Session();
 
+    /* Data call setup callback passed down to GNSS HAL implementation */
+    static void nfwStatusCb(GnssNfwNotification notification);
+    static bool isInEmergencySession();
+
+private:
+    Gnss* mGnss = nullptr;
+    sp<IGnssVisibilityControlCallback> mGnssVisibilityControlCbIface = nullptr;
 };
 
 
 }  // namespace implementation
 }  // namespace V1_0
-}  // namespace measurement_corrections
+}  // namespace visibility_control
 }  // namespace gnss
 }  // namespace hardware
 }  // namespace android
 
-#endif  // ANDROID_HARDWARE_GNSS_V1_0_MeasurementCorrections_H
+#endif  // ANDROID_HARDWARE_GNSS_V1_0_GnssVisibilityControl_H
