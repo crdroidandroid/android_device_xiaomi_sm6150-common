@@ -39,12 +39,12 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|5f8bf423e3c4b56b5f8278eb5bae141d816c791c
+vendor/bin/power_off_alarm|6040b06f9bc850ef69156bed4367f1f8371449d7
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|80fd75eb9a44a1e7e62593855c06e6f219a3c4b3
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|66d8dc137c36ac32d0f71ceb433167753ffa108f
 
 # ANT+
 -lib64/libantradio.so
@@ -820,32 +820,30 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc_default_listener.so
 
 # Soter
--app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+-vendor/app/SoterService/SoterService.apk|6a4eabf9ed7303da6a17eb9e3483758158b41842
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|80ae6dfcb151cd0813b2d20442e540edede24772
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|64e17127e63d9e7c811eab805e518a0c572f7089
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|f98b5eef4e9851ee4ff9546685e9c2fc2ba9e35a
 
 # Surfaceflinger
 lib64/libdolphin.so
 lib/libdolphin.so
 
 # Thermal
-vendor/lib64/libthermalclient.so
-
-# Thermal (init script) - from LA.UM.8.9.r1-07100-SM6xx.0
 vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
+vendor/lib64/libthermalclient.so|41274c82e1a472d12b2ebcb4156f7f77b109efa8
 
-# Time - from LA.UM.8.9.r1-08400-SM6xx.0
--vendor/app/TimeService/TimeService.apk|2a92ff670a09688bf2f56b63112a75c1f5e716b2
-vendor/bin/time_daemon|0212a141bf4ed8054986b0ca02987c05fb87cf36
+# Time
+-vendor/app/TimeService/TimeService.apk|7d176a69b270006a511a3c30f544db98a0ccaa37
+vendor/bin/time_daemon|0def9165831d91241cd011abafc0a106f69bd06e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|a3ff231b32d8878dff345b25027884dd8205c9a8
+vendor/lib64/libtime_genoff.so|c9070f25aa132707705523ddaab522b88c22923f
 
 # Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|b72fc6b3ef9c96dc41cf5acf198b464a3cd69a1c
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|b53b22c0be01b39eead6490f706e3db660150828
 
 # WiFi
 vendor/bin/cnss-daemon|d9c7e416771c02f67457ad812fac8e9609712373

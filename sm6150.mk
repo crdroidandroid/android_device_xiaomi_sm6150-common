@@ -394,6 +394,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Soter
+PRODUCT_PACKAGES += \
+    libhwbinder.vendor
+
 # Telephony
 PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
