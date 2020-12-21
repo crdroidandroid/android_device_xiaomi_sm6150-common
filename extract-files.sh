@@ -62,15 +62,9 @@ function blob_fixup() {
     vendor/bin/mlipayd@1.1 | vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so )
         patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
     ;;
-    lib64/libwfdnative.so | lib64/libfm-hci.so | lib/libfm-hci.so | vendor/lib64/libgoodixhwfingerprint.so )
-        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
-    ;;
     vendor/etc/camera/camxoverridesettings.txt )
         sed -i "s|0x10080|0|g" "${2}"
         sed -i "s|0x1F|0x0|g" "${2}"
-    ;;
-    product/lib64/libdpmframework.so)
-        sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
     ;;
     vendor/lib64/hw/camera.qcom.so)
         patchelf --add-needed "libc++demangle.so" "${2}"
