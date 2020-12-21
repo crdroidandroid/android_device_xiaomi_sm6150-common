@@ -57,25 +57,29 @@ vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libqtigef.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libdrc.so
-vendor/lib/libqtigef.so
-vendor/lib/libsurround_3mic_proc.so
+vendor/lib64/libadiertac.so|bd6fce5fb11680f0e3585e5a1adc7a8a5638e99c
+vendor/lib64/libaudcal.so|47111a752c8fc4ea0533a631b908edc2846d825e
+vendor/lib64/libaudioparsers.so|326954ecd50e2b0a25ff0f076def93271a9bd554
+vendor/lib64/libqtigef.so|fdd1580c4dee20cd2863f432903dce5567ff6100
+vendor/lib64/libssrec.so|c3a93dc819be0f3e9b154fa65cb660a2fb4c7def
+vendor/lib/libadiertac.so|8b496ac77040bd7a044c7e40407cdeb8c76e45d8
+vendor/lib/libaudcal.so|836a6baba0a36124d0c29f8398967df5723600e9
+vendor/lib/libaudioparsers.so|b786d5a2a8f94edb11b5334bbe981dbd2633325f
+vendor/lib/libdrc.so|e27974e53efe0456cba96f6910ad977c6351d0b7
+vendor/lib/libqtigef.so|5274b67a13e3211cc581385189560fd1e2572d44
+vendor/lib/libssrec.so|5a3a4844e7b1050bf015e09f435251807fc2bfed
+vendor/lib/libsurround_3mic_proc.so|1d425b4b0d89f68e0f0112e8f2f73b1cd5b6dea2
 
 # Audio FX modules
-etc/permissions/audiosphere.xml
-framework/audiosphere.jar
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libdirac.so
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libdirac.so
-vendor/lib/soundfx/libmisoundfx.so
+system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
+system_ext/framework/audiosphere.jar|db76dab5f44013265df54ae41073184d9a0423e9
+vendor/lib64/soundfx/libasphere.so|7d01becf38d808b232aef88025e4dd69839b788f
+vendor/lib64/soundfx/libdirac.so|f4cddbc356239dac776f58c693e5ae3337b9ed5a
+vendor/lib64/soundfx/libshoebox.so|81b3312b54e147c8b5375c712a004661fb78e8bf
+vendor/lib/soundfx/libasphere.so|44cd20e13920888b29d3b2e4bb0b2559a746bf8f
+vendor/lib/soundfx/libdirac.so|9c65dfc2e346e48461f384782717efb66f2216ee
+vendor/lib/soundfx/libmisoundfx.so|fafddcfe9de1a3d0e25801bc1523ddd1da7e1ce8
+vendor/lib/soundfx/libshoebox.so|8c25f9bd479540f1b43c6827020376a40a667270
 
 # AV Enhancements
 lib64/libavenhancements.so
