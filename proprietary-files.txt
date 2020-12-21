@@ -403,18 +403,16 @@ vendor/lib64/libsdm-disp-vndapis.so|42f536763a2f91dcbae5b4b7214e652283c389d6
 vendor/lib64/libtinyxml2_1.so|621dbc8e3d0529b9ee35393698de82ea006ca7fa
 
 # IO Prefetcher
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/libqti-iopd.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|df327ba58f5de3291c8cbfce55a22b07e34a2b52
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
+vendor/lib64/libqti-iopd-client.so|3a7d9bb5089d577ae612fa9273ace97da287b381
+vendor/lib64/libqti-iopd.so|9c1358b0021fb8d32cd609e0692792c712708736
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|14a207f6656fc3f1097b3ca21002f7c3a910081a
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|256dfd9f15720ff6899b622fc6d3d4e3d089e69a
+vendor/lib/libqti-iopd-client.so|9bc81e0197d756153ae21592f11dd4ca1b61ab47
+vendor/lib/libqti-iopd.so|8b06283edee1e4a6ee335fdcf077e07645afaba7
+vendor/lib/vendor.qti.hardware.iop@1.0.so|6b3a62669e8938bbc79bad699b1580a3b97df944
+vendor/lib/vendor.qti.hardware.iop@2.0.so|198180ec814cc73bb3ec26b9a62dfd5ee95f551c
 
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|12777e1f7f44222c7afa1aa5ad9514a774175928
@@ -506,38 +504,34 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
 # Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/perf/thermalboost.conf
-vendor/etc/powerhint.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|88fea0e630507d28e0cf994b0a08d1284b544ae0
+vendor/bin/msm_irqbalance|bcc114819bd50bfbefe2dfcb9f815f9959cdad44
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/lm/AdaptLaunchFeature.xml|21c91f86ed80b4ca513d68b8fca6754ffd31395d
+vendor/etc/lm/AppClassifierFeature.xml|102e4291357dd384c0f474d4192370e25123c5e7
+vendor/etc/lm/GameOptimizationFeature.xml|d323f46761d5d4f70858b39792be01ccade7a50a
+vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
+vendor/etc/perf/perfboostsconfig.xml|da879b3b161630be1d41366e3695c9200320b5f6
+vendor/etc/perf/perfconfigstore.xml|b3678bcf21764bead23ace868e8052c674d960cb
+vendor/etc/perf/targetconfig.xml|53d6e2936c1cdc67edf86a2ccf04084adbff4a68
+vendor/etc/perf/targetresourceconfigs.xml|49b63c04a7b471a6bb957b378ec7a68ae1e2e521
+vendor/etc/perf/thermalboost.conf|38bc434b5329b8a143650861b8c09affff9f4176
+vendor/etc/powerhint.xml|72ee6d4e7af476889a1b6801af792ac085791811
+vendor/lib64/libadaptlaunch.so|399209a9e1a05476b5a227ac7673a95c23009447
+vendor/lib64/liblearningmodule.so|1d72665404b4f21c54b09be354388872bf9e362b
+vendor/lib64/libmeters-ns.so|7386080719be05a1cb92d9554d2d20d593b57ae0
+vendor/lib64/libmeters.so|0501f7afc9629f9e1f39f40714b5292cfdaa82e4
+vendor/lib64/libperfconfig.so|a6417bae7c270aa55746c21fa553f8638e2646e7
+vendor/lib64/libperfgluelayer.so|ab07f0a6ded333726a9c5ae37a38dc91881fa11e
+vendor/lib64/libperfioctl.so|971d8108b9a6d5854be68792dc19a16c37734f59
+vendor/lib64/libqti-perfd-client.so|b6881ca5b77335490bd91c6803feb5d31cbf8e92
+vendor/lib64/libqti-perfd.so|310449cdbdef18a35cf0ef8c99efcd3da092ae51
+vendor/lib64/libqti-util.so|e7e1db6dbd6cfe955a849e758faea6433e3491a1
+vendor/lib64/libqti-utils.so|f647fa6ca9a11bc1a7b62eb514aa7548d1d77677
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|3aff8833686924a414212b2a4db331168933c324
+vendor/lib64/vendor.qti.hardware.perf@2.1.so|87a9b4afb79214ded443cab768d02fb4e84beb77
+vendor/lib64/vendor.qti.hardware.perf@2.2.so|0efbeca0a490a4f103a6baabb7d1cb50039d675f
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|7f44562f4bef9e33f95d94ec770e6786867c0caf
 
 # Peripheral
 vendor/bin/pm-proxy|73caf1b46a861e623ec7538cc254783b301a4dfd
