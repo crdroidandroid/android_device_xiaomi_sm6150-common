@@ -1,42 +1,38 @@
 # ACDB
-vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
 
-# ACDB loader - from LA.UM.8.9.r1-08400-SM6xx.0
-vendor/lib64/libacdb-fts.so|3011859de4c2ca5f91a3b23f6e8e7b9bca76921a
-vendor/lib64/libacdbloader.so|f5440dad46f76c494cc054d52f42f161cd1f43a4
-vendor/lib64/libacdbrtac.so|97e84dbb4bc0c8f669e316a1965b4128142fa178
-vendor/lib/libacdb-fts.so|0d6caa1cb6afd5e7125fea8aa35fcb4daf12fd59
-vendor/lib/libacdbloader.so|951a4f458b419cbd17e10163d430bb6e088346a7
-vendor/lib/libacdbrtac.so|49de6627ac56d27051b3268acd6d292b10506bb7
+# ACDB loader
+vendor/lib/libacdb-fts.so|dc1ebeb31cf3a54c87b9e32d7d9e04d0f7d25a17
+vendor/lib/libacdbloader.so|6e0fa9e1784727b8728d0d1870c0d7ef410380c2
+vendor/lib/libacdbrtac.so|735995bbecc451dd90cc74c7631a28d20a85a6b7
 
-# ADSP - from LA.UM.8.9.r1-08400-SM6xx.0
-vendor/bin/adsprpcd|5b803e679ddbce4e59c2a67433ffefa6396d61f3
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|564490ec94e70e87dc13796dd72520cfea699e83
-vendor/lib/libadsp_default_listener.so|9d368444c806d344f4ea78ad4ec2b499d67f53d6
-vendor/lib/libadsprpc.so|52ac1909338614d803e4297a38ed344cf7a73412
-vendor/lib/libmdsprpc.so|7ea4371331eeb590b0ecfa27453c07ed030d7a3a
-vendor/lib/libsdsprpc.so|add6adc49845d3e1c761b762838313dcfd7aa8f9
-vendor/lib64/libadsp_default_listener.so|ec9a452e318db1ddc5d826dd7cc2b14dd5fb2a14
-vendor/lib64/libadsprpc.so|8a3ae7d000ff37253e227a28673f047ab271a839
-vendor/lib64/libmdsprpc.so|0d052d2f99f7c886eb8ddc2b3ab34245f4359c9e
-vendor/lib64/libsdsprpc.so|2fc1293089f834b8a594ae44465363556950b2cf
+# ADSP
+vendor/bin/adsprpcd|c1b9fe936ffbcd5a875baa785f4b9629366083ec
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|96b08f4e97ef20e20a8d7f89212a5549abe66666
+vendor/lib64/libadsp_default_listener.so|84ffb0536efd42fb0ebc67c194f88da3da6ca9de
+vendor/lib64/libadsprpc.so|5e677d9e7ecc56d8c9bf7bcc49f1e717b5669aad
+vendor/lib64/libmdsprpc.so|523f6501e39101a9d61baffccd20a0d2848e3524
+vendor/lib64/libsdsprpc.so|96ed968d5d79c3fe8c37f331082c16cf5212dc52
+vendor/lib/libadsp_default_listener.so|92ca2faf693eb488394440b94b6deb73fe9504e2
+vendor/lib/libadsprpc.so|437f6ab24e5a08de250529bf0adf5ecaed88817d
+vendor/lib/libmdsprpc.so|f9cabbd95f91e9fa90e21c48349adbdd825a05ff
+vendor/lib/libsdsprpc.so|091682459f41566a3909da301a06be2008efb493
 
 # ADSP Modules
-vendor/lib/rfsa/adsp/dirac_resource.dar
-vendor/lib/rfsa/adsp/libdirac-capiv2.so
-vendor/lib/rfsa/adsp/libVC1Dec.so
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/dirac_resource.dar|8697ff9e77a872b849cd2ce95afa45dac97cb01e
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|1cdac354c585c0d236d77b0888ebd5894b333326
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so|58cbb97212073cf7e4780c6d77a7628c3ee845bd
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|c1432e70a935bc34b3787a4973fce4bab1faf4e2
+vendor/lib/rfsa/adsp/libdspCV_skel.so|c6034c389845a94a4054dd0fe9a0381adbf086e5
+vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so|481cdec174e77e5cb555d715057170568892a18f
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libdsp_streamer_skel.so|aee67209556f075cabdb55ddc70d7a76ffc74b3b
+vendor/lib/rfsa/adsp/libfastcvadsp.so|5c86de2533d60534ce5b07e6be13bcf988e4b03b
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d16a
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
+vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
@@ -101,12 +97,13 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|837979d5ede013c5f4
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|302eca87415711253e0d47c3c12b031d4fa36714
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|d239076c76d1e33b4a7160a3049b0e35e4886ae0
 
-# CDSP - from LA.UM.8.9.r1-08400-SM6xx.0
-vendor/bin/cdsprpcd|6fb2700151a6e6dd57a5d9a388cf3a95d3e8262b
-vendor/lib/libcdsp_default_listener.so|a92281e3c69e4498c25daa103cbffd129ac7fa3d
-vendor/lib/libcdsprpc.so|1383e3a8f313cc29e8732bb5aa3fe51839190ee9
-vendor/lib64/libcdsp_default_listener.so|886ba3921f81439cb1b4e520ad622e1089291fa7
-vendor/lib64/libcdsprpc.so|2268b924e33592542156db2a6f713867e044bf91
+# CDSP
+vendor/bin/cdsprpcd|63f7be350d30b9d4181ded5b9cba956bff04439c
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib64/libcdsp_default_listener.so|74d24246b94fe48212f93e0693000489792dfb43
+vendor/lib64/libcdsprpc.so|5723a2985d7c85197952df08da1fc6e90d1d2b5d
+vendor/lib/libcdsp_default_listener.so|7949a156e2fced7a60cb4099cc4ab274c3504d7e
+vendor/lib/libcdsprpc.so|de676387b859280b4fe8004e999419a6bc8ddeab
 
 # Charger
 vendor/bin/hvdcp_opti|c29dc9035322d0734a616b55c5e35c4bcea2c3d5
