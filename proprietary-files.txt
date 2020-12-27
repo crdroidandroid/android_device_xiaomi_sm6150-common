@@ -479,26 +479,38 @@ vendor/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so|43ad92a5fdd5a2f9abd631924c8
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|55d2c71535acdcbbdd7b0a3fe475249c8d99eb08
     
 # Misys
-etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
-etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
-framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
-framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
-vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
-vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
-vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
+etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml|b0e963547c0e5f133f3505a8100a1a07ca9cbc13
+etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml|db27e4291ce101c2f4cc34e5d58f8a74f7df5003
+etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml|9fe4c93229d3a6d2fbec313159ba3c0d0b8b69be
+framework/vendor.xiaomi.hardware.misys-V1.0-java.jar|be42034349e4e871830837627e9cae8ee337c766
+framework/vendor.xiaomi.hardware.misys-V2.0-java.jar|d996844daddbd7d944ff182abab084c72439c3b6
+framework/vendor.xiaomi.hardware.misys.V3_0.jar|45643f13a0cfd645ee88106f02092757e22be16c
+vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service|c9680cd54412b3789d9918a272d0f442cce3e485
+vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service|5f163e338f9f898af135ab6a7ef26700776bb413
+vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service|411768876f1d1c6cb65817dda740e19b4d21465e
+vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc|99d376dd6f9af62f9c065e68f6873989c680aa3f
+vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc|e234eba5115da4fda9e82d39634a95ddacf0c0f2
+vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc|b2097e5ba297fb88d7133e4a33ba7ced416d70c0
+-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml|07adcadc52bd130b65b20803c26c6e59c4b9d49b
+-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml|beb350e77a9b9fe032cce12d93d293a24d02e256
+-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml|2071a39b08a28a1038b34df9dca171271cbd968c
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so|ededb66dc504eb982fe09cc40e9760c563689003
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so|2768e9091ca0a5862ae99d730393489f24f61614
+vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so|6daf03533bf09db87e978c3b549fc5c25b82376f
+vendor/lib64/libcheckpid.so|ddee4fea5364751a358d1fcee6c7149d195a151d
+vendor/lib64/liblogwrap_vendor.so|be7efdf2ab5f2ea17b540ffd445afff3e6591ba6
+vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so|171666203fbcf249f834b9307d54609bf9f65805
+vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so|50f40608ef612373270740fe0054a38d9eaa19bd
+vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so|82b7da249d256255b1a072c7f27f2c6336df6cea
 
 # Mlipay
-vendor/bin/mlipayd@1.1
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-vendor/lib64/libmlipay@1.1.so
-vendor/lib64/libmlipay.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+vendor/bin/mlipayd@1.1|3780d27f358f38108cbf6b66850a275096f08c8b
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml|27aaea2ab58ace6555a634dc60ea062736342eb4
+vendor/lib64/libmlipay@1.1.so|f26803dd5fbbcf79b51e5c6fc8bd995ea372fc7b
+vendor/lib64/libmlipay.so|6d6d95159d7d7808108376d2aaf44f5aa0463b8f
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|8d7c388d98168d00b7bf52490a5d4b3567d227b7
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|1bc3e6e873b76b1a04536bca664fd00d651d163f
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|88fea0e630507d28e0cf994b0a08d1284b544ae0
