@@ -417,14 +417,14 @@ vendor/lib64/libqcbor.so|67acd94f3c7110c9419f0fd064b6eb69c09a0738
 vendor/lib64/libqtikeymaster4.so|9c45da4b7daa40d44592d94061858813e35473d0
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.sm6150.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libsmwrapper.so
+vendor/lib/hw/sound_trigger.primary.sm6150.so|9f93fdaa5bd971bd554052241e3f5a2a9c25fbff
+vendor/lib/libadpcmdec.so|5232c32b93a8653612cd8fcdde161a9d7fe39c7f
+vendor/lib/libgcs-calwrapper.so|8c6fa1927abfb1eaac99fd7fa3999c213e7b94d4
+vendor/lib/libgcs-ipc.so|05860a022c8e8d58d7d0513bd3de6371213a719d
+vendor/lib/libgcs-osal.so|c8055991809da427b5fdf0b18b67cefc7b17a399
+vendor/lib/libgcs.so|28f8425f7d160b5d30c0c75a11878ed8f0f5a0ac
+vendor/lib/liblistensoundmodel2.so|00dd3b7348229fb273216bf720d1ad512d358343
+vendor/lib/libsmwrapper.so|4c9ba6f36b87aa32464f79b0e2168c59f46172cb
 
 # Media (VPP)
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
