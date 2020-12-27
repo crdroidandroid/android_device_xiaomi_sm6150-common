@@ -188,7 +188,7 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sib16_support=1
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
+ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
 # USB
