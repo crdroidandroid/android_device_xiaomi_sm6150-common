@@ -70,10 +70,6 @@ vendor/lib/soundfx/libdirac.so|9c65dfc2e346e48461f384782717efb66f2216ee
 vendor/lib/soundfx/libmisoundfx.so|fafddcfe9de1a3d0e25801bc1523ddd1da7e1ce8
 vendor/lib/soundfx/libshoebox.so|8c25f9bd479540f1b43c6827020376a40a667270
 
-# AV Enhancements
-lib64/libavenhancements.so
-lib/libavenhancements.so
-
 # Bluetooth
 vendor/lib64/libbt-hidlclient.so|4e528c3c6bef6b7c6900d0343cbed115709ef742
 vendor/lib64/libbtnv.so|b72a66ef2d0f7ce315e19f162db60db8891f3e61
@@ -810,10 +806,6 @@ vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|80ae6dfcb151cd0813b2d20442e5
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|64e17127e63d9e7c811eab805e518a0c572f7089
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|f98b5eef4e9851ee4ff9546685e9c2fc2ba9e35a
-
-# Surfaceflinger
-lib64/libdolphin.so
-lib/libdolphin.so
 
 # Thermal
 vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
