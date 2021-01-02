@@ -16,3 +16,5 @@ allow hal_camera_default remosaic_daemon_service:service_manager find;
 set_prop(hal_camera_default, vendor_camera_prop)
 
 allow hal_camera_default socket_device:sock_file write;
+
+binder_call(hal_camera_default, system_server)
