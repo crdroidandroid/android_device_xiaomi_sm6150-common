@@ -344,8 +344,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Dependencies 
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
     libavservices_minijail.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libminijail
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -408,7 +410,11 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    vendor.display.config@2.0
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
