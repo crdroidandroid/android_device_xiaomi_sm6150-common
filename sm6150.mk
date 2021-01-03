@@ -197,7 +197,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan \
     memtrack.sm6150 \
-    vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator-service
 
 # Display interfaces
@@ -370,7 +369,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.1 \
     android.hardware.radio@1.4 \
     android.hardware.secure_element@1.0 \
-    libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
     librmnetctl \
@@ -449,11 +447,19 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libdisplayconfig.qti \
     libdisplayconfig.vendor \
+    libminijail \
     libnl \
     libqdMetaData \
     libqdMetaData.system \
-    libqdMetaData.vendor
+    libqdMetaData.vendor \
+    vendor.display.config@2.0
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
