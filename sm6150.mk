@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -342,8 +342,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Dependencies 
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
     libavservices_minijail.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libminijail
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -406,7 +408,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    vendor.display.config@2.0
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
