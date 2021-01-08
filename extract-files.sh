@@ -76,9 +76,6 @@ function blob_fixup() {
     system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml | system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml )
         sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
     ;;
-    lib/libcameraservice.so )
-        "${PATCHELF}" --add-needed "libmedia_jni_shim.so" "${2}"
-    ;;
     esac
 }
 

@@ -163,10 +163,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libc++demangle_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libmedia_jni_shim \
     libxml2 \
     Snap \
     vendor.qti.hardware.camera.device@1.0.vendor
