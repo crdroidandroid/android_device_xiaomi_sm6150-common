@@ -70,4 +70,12 @@
     <string name="thermal_dialer">Dialer</string>
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_streaming">Streaming</string>
+
+    <!-- Refresh Rates -->
+    <string name="fps_title">Refresh Rate</string>
+    <string name="fps_summary">Adjust per-app refresh rate</string>
+    <string name="fps_120">120 Hz</string>
+    <string name="fps_90">90 Hz</string>
+    <string name="fps_60">60 Hz</string>
+    <string name="fps_30">30 Hz</string>
 </resources>
