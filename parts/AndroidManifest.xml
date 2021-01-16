@@ -108,6 +108,7 @@
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
+            android:icon="@drawable/ic_thermal_settings"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -121,6 +122,9 @@
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="-253" />
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_thermal_settings" />
         </activity>
 
     </application>
