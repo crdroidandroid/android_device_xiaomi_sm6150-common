@@ -42,26 +42,6 @@ public final class DozeUtils {
     private static final boolean DEBUG = false;
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
-    public static void startService(Context context) {
-        if (DEBUG) Log.d(TAG, "Starting service");
-        context.startServiceAsUser(new Intent(context, DozeService.class),
-                UserHandle.CURRENT);
-    }
-
-    protected static void stopService(Context context) {
-        if (DEBUG) Log.d(TAG, "Stopping service");
-        context.stopServiceAsUser(new Intent(context, DozeService.class),
-                UserHandle.CURRENT);
-    }
-
-    public static void checkDozeService(Context context) {
-        if (isDozeEnabled(context) && !isAlwaysOnEnabled(context) && sensorsEnabled(context)) {
-            startService(context);
-        } else {
-            stopService(context);
-        }
-    }
-
     protected static boolean getProxCheckBeforePulse(Context context) {
         try {
             Context con = context.createPackageContext("com.android.systemui", 0);
@@ -73,11 +53,6 @@ public final class DozeUtils {
         }
     }
 
-    protected static boolean enableDoze(Context context, boolean enable) {
-        return Settings.Secure.putInt(context.getContentResolver(),
-                DOZE_ENABLED, enable ? 1 : 0);
-    }
-
     public static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
                 DOZE_ENABLED, 1) != 0;
@@ -87,11 +62,6 @@ public final class DozeUtils {
         if (DEBUG) Log.d(TAG, "Launch doze pulse");
         context.sendBroadcastAsUser(new Intent(DOZE_INTENT),
                 new UserHandle(UserHandle.USER_CURRENT));
-    }
-
-    protected static boolean enableAlwaysOn(Context context, boolean enable) {
-        return Settings.Secure.putIntForUser(context.getContentResolver(),
-                DOZE_ALWAYS_ON, enable ? 1 : 0, UserHandle.USER_CURRENT);
     }
 
     protected static boolean isAlwaysOnEnabled(Context context) {
