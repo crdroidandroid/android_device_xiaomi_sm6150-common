@@ -24,6 +24,7 @@
 
 #define NOTIFICATION_LED_LEFT(x) "/sys/class/leds/left/" + x
 #define NOTIFICATION_LED_WHITE(x) "/sys/class/leds/white/" + x
+#define NOTIFICATION_LED_RED(x) "/sys/class/leds/red/" + x
 
 #define BREATH              "breath"
 #define BRIGHTNESS          "brightness"
@@ -35,7 +36,9 @@ namespace {
  */
 static std::string getLedPath(std::string path) {
     std::ifstream left_path(NOTIFICATION_LED_LEFT(path));
-    return left_path.good() ? NOTIFICATION_LED_LEFT(path) : NOTIFICATION_LED_WHITE(path);
+    std::ifstream white_path(NOTIFICATION_LED_WHITE(path));
+    return left_path.good() ? NOTIFICATION_LED_LEFT(path) : (white_path.good() ?
+                NOTIFICATION_LED_WHITE(path) : NOTIFICATION_LED_RED(path));
 }
 
 /*
