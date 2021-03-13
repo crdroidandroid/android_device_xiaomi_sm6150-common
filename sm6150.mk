@@ -319,7 +319,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service.sm6150-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -336,7 +339,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.insmod.sh \
     init.msm.usb.configfs.rc \
-    init.qcom.post_boot.sh \
     init.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
@@ -373,6 +375,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/xiaomi
 
 # Soter

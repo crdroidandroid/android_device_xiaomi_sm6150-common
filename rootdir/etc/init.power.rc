@@ -17,6 +17,10 @@
 
 on property:vendor.setup.power=1
     # Enable EAS
+    write /proc/sys/kernel/sched_downmigrate_boosted 25
+    write /proc/sys/kernel/sched_upmigrate_boosted 25
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate 85
     write /proc/sys/kernel/sched_energy_aware 1
 
     # Enable suspend clock reporting
@@ -113,6 +117,9 @@ on property:vendor.setup.power=1
     write /sys/class/drm/card0/device/idle_timeout_ms 100
 
     chown system system /sys/class/devfreq/soc:qcom,l3-cdsp/userspace/set_freq
+
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
 
 on boot
     # Disable console_suspend to get better logging for kernel crashes
