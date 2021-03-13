@@ -29,9 +29,6 @@ import /vendor/etc/init/hw/init.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 
 on early-init
-    # Disable EAS
-    write /proc/sys/kernel/sched_energy_aware 0
-
     # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
