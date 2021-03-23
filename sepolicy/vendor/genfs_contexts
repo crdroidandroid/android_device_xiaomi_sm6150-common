@@ -1,4 +1,5 @@
 # Battery
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-006[0-9]/power_supply/bq2597x-standalone u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify u:object_r:vendor_sysfs_battery_supply:s0
 
 # LED
