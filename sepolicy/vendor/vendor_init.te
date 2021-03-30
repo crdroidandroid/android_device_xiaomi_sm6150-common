@@ -1,2 +1,5 @@
 set_prop(vendor_init, vendor_fp_prop)
+set_prop(vendor_init, vendor_ims_prop)
+set_prop(vendor_init, vendor_cnd_prop)
+
 allow vendor_init proc_sched:file write;
