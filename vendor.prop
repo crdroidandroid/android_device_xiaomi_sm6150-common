@@ -156,7 +156,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.log_stats=true
 
 # IMS
 persist.dbg.volte_avail_ovr=1
