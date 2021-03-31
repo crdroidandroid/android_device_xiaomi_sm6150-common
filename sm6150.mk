@@ -78,7 +78,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio@2.0-service \
     android.hardware.audio@6.0-impl:32 \
-    android.hardware.soundtrigger@2.2-impl:32 \
     audio.a2dp.default \
     audio.primary.sm6150:32 \
     audio.r_submix.default \
@@ -420,4 +419,5 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Get non-open-source specific aspects
+$(call inherit-product, vendor/xiaomi/google/google.mk)
 $(call inherit-product, vendor/xiaomi/sm6150-common/sm6150-common-vendor.mk)
