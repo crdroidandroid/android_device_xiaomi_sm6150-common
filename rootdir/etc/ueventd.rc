@@ -109,6 +109,12 @@ firmware_directories /vendor/firmware_mnt/image/
 # SSR devices
 /dev/subsys_*             0640   system     system
 
+# TFA
+/dev/tfa_reg              0660   system       system
+/dev/tfa_rw               0660   system       system
+/dev/tfa_rpc              0660   system       system
+/dev/tfa_control          0660   system       system
+
 # Ultrasound device
 /dev/usf1                 0660   system     system
 
