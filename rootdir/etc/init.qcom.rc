@@ -194,7 +194,7 @@ on init && property:vendor.skip.init=0
     write /proc/sys/kernel/sched_lib_mask_force 255
 
 on fs
-    mount_all --early
+    mount_all --early /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/alarm 0770 system system
@@ -229,7 +229,7 @@ on late-fs
 
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
-    mount_all --late
+    mount_all --late /vendor/etc/fstab.qcom
 
     # turn off vblank irq immediately after turning off
     write /sys/module/drm/parameters/vblankoffdelay -1
@@ -614,7 +614,7 @@ on property:sys.boot_completed=1
 
     # Enable ZRAM on boot_complete
     rm /data/unencrypted/zram_swap
-    swapon_all
+    swapon_all /vendor/etc/fstab.zram
 
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
