@@ -340,6 +340,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.zram \
     init.insmod.sh \
     init.mi.usb.sh \
     init.nfc.rc \
