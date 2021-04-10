@@ -190,7 +190,6 @@ on charger
     wait /dev/block/platform/soc/1da4000.ufshc/by-name/persist
     mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev barrier=1
 
-    start vendor.hvdcp_opti
     start vendor.thermal-engine
     start vendor.qcom-post-boot
     start vendor.power_off_alarm
@@ -203,12 +202,6 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
     socket thermal-recv-passive-client stream 0666 system system
     socket thermal-send-rule stream 0660 system system
     group root
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.remosaic_daemon /vendor/bin/remosaic_daemon
