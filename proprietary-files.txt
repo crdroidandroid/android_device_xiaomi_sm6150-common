@@ -526,6 +526,9 @@ vendor/lib64/libGPTEE_vendor.so|d12dd2768dfbbf10a73a81ffc5dea69bd664e13b
 vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|aa77cf6a6fdf019df4c54daacd5a8e622346ca08
 
+# QTI Telephony - from LA.QSSI.11.0.r1-10400-qssi.0
+system_ext/framework/qti-telephony-common.jar|1fd37129f961e58f9d1189736e2cb46290666b97
+
 # Radio - from LA.UM.9.1.r1-09100-SMxxx0.0
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
