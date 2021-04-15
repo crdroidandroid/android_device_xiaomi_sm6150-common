@@ -116,12 +116,17 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_boost 0
     write /proc/sys/kernel/sched_conservative_pl 1
 
-    # Setup default schedTune value for foreground/top-app
+    # Setup default schedtune values for foreground/top-app
     write /dev/stune/schedtune.boost 0
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 5
+    write /dev/stune/top-app/schedtune.boost 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
+
+    # Setup dynamic schedtune boost
+    write /sys/module/cpu_boost/parameters/dynamic_stune_boost 10
+    write /sys/module/cpu_boost/parameters/dynamic_stune_boost_ms 1000
+    write /dev/stune/top-app/schedtune.sched_boost 10
 
     # Report max frequency to unity tasks
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
