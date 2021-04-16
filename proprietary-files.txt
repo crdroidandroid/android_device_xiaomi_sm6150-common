@@ -252,12 +252,16 @@ vendor/lib/mediadrm/libwvdrmengine.so
 
 # DRM - Widevine -L1 - from PHOENIXIN
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/liboemcrypto.so|2cee717b25559030a61709e826b4a5dae6043c20
+vendor/lib64/liboemcrypto.so|6b8c5ab8cb16b7f42071ddc59ac868fa684cff4e
+vendor/lib64/libminksocket.so
 vendor/lib64/libwvhidl.so
-vendor/lib64/libwvkeybox.so|0b0cffef5783ba6b7476eeb8a0d82476cd19b1b4
-vendor/lib/liboemcrypto.so|b349d1d049709bbdff15a133698264dc8c01db14
-vendor/lib/libwvhidl.so|d7845bd68bad33e2e59f2684c4e98ccf9f23e907
-vendor/lib/libwvkeybox.so|7f1e74800021d6f885ee9162da57cbeee7612add
+vendor/lib64/libmt@1.2.so|3307ac219fe41e0b2d896c8803c7da1bdf881110
+vendor/lib64/libtrustedapploader.so
+vendor/lib64/libwvkeybox.so|446c716329a20ff6afac8cadb0fcd7045afe17c4
+vendor/lib/libminksocket.so
+vendor/lib/liboemcrypto.so|e7d8f6ef312cc5a3ef750ca46a26f68d6f5c593e
+vendor/lib/libtrustedapploader.so
+vendor/lib/libwvkeybox.so|0ddf5e4309a8ca41e3b0776deed41a6cbcd3f995
 
 # DSP
 vendor/bin/dspservice
