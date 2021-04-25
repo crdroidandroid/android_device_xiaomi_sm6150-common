@@ -171,8 +171,8 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 -vendor/lib64/libsdmextension.so
 -vendor/lib64/libtinyxml2_1.so
 
-# Display - from NX627J 20201029.204053
--vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+# Display - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
+-vendor/lib64/libsdedrm.so|351f4f9a64566097bd19601f18951ac8131a92b5
 
 # Dolby - from sofiap_ao_eea-user-11-RPR31.Q4U-20-26-2-a10bb-release-keys
 -system_ext/app/MotoDolbyV3/MotoDolbyV3.apk|f6c483f79d9b8713ff03f475dad7bcf2c3e63ba5
