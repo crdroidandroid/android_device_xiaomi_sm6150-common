@@ -25,6 +25,9 @@ persist.vendor.cne.feature=1
 # DPM
 persist.vendor.dpm.feature=11
 
+# Gboard
+ro.com.google.ime.kb_pad_port_b=1
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
