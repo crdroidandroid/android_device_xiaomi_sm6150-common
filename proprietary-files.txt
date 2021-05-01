@@ -361,6 +361,7 @@ vendor/lib64/libqtikeymaster4.so
 # Listen
 vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/libadpcmdec.so
+vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.9.1.r1-09100-SMxxx0.0
