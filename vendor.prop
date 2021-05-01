@@ -111,7 +111,6 @@ persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.egl.hw=0
-debug.hwui.renderer=skiavk
 debug.mdpcomp.logs=0
 debug.sf.disable_backpressure=1
 debug.sf.use_phase_offsets_as_durations=1
