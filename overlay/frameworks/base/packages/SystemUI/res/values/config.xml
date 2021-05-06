@@ -33,4 +33,10 @@
 
     <!-- Show 5G toggle in internet dialog when available -->
     <bool name="config_supportsVONR">false</bool>
+
+    <!-- Whether to show a warning notification when device's skin temperature is high. -->
+    <integer name="config_showTemperatureWarning">1</integer>
+
+    <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
+    <integer name="config_showUsbPortAlarm">1</integer>
 </resources>
