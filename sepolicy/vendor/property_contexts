@@ -36,3 +36,6 @@ ro.vendor.ril                              u:object_r:vendor_public_vendor_defau
 
 # Thermal
 vendor.sys.thermal.                        u:object_r:vendor_thermal_normal_prop:s0
+
+# WiFi Display
+persist.vendor.setWFDInfo.                 u:object_r:vendor_wfd_vendor_debug_prop:s0
