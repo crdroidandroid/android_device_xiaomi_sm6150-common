@@ -319,7 +319,6 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.mi.usb.sh \
     init.qcom.post_boot.sh \
-    init.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
