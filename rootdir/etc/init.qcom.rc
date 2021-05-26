@@ -705,12 +705,6 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     socket pps stream 0660 system system
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
-    override
-    class hal
-    user system
-    group system input
-
 service nv_mac /vendor/bin/nv_mac
     class late_start
     user system
