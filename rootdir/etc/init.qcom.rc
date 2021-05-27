@@ -200,8 +200,6 @@ on early-boot
     # Wait for devices
     wait_for_prop vendor.all.devices.ready 1
 
-    setprop ro.vendor.alarm_boot false
-
     # SSR Setup
     write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
     write /sys/bus/msm_subsys/devices/subsys1/restart_level RELATED
@@ -212,6 +210,8 @@ on early-boot
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
+
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
 on boot
     start rfs_access
