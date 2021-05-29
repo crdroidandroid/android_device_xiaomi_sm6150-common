@@ -697,7 +697,7 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 system_ext/framework/qti-telephony-common.jar|7a3f1fa141520e83e58d4afc6eebfc4f38dc9f27
 
 # Radio - IMS
--system_ext/app/imssettings/imssettings.apk
+-system_ext/app/imssettings/imssettings.apk|7eddaa57cbab2aed139a754be674ae1101a66680
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
@@ -909,8 +909,8 @@ vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 
 # WiFi Display - HDCP
-vendor/bin/wfdhdcphalservice
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
+vendor/bin/wfdhdcphalservice|047b81f6902ec29606dc72443dc74b58e83153b2
+vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc|c266f08783a17f6583e3f22c85e55b0c200442ea
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libhdcpsrm.so
