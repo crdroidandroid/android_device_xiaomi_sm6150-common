@@ -61,3 +61,6 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup                 
 
 # Haptic
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel u:object_r:sysfs_vibrator:s0
+
+# Touchpanel
+genfscon sysfs /devices/virtual/touch/touch_dev/        u:object_r:sysfs_touchpanel:s0
