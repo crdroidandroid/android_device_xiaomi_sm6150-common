@@ -467,6 +467,9 @@ vendor/bin/pm-proxy|dd13e8b611876af819065a9c3a2dfc1ed5b4fae7
 vendor/bin/pm-service|aff002ecdc8470b6e99df022e8eee54625620444
 vendor/lib64/libperipheral_client.so|0820ee76c595691935b7d8896471ea0b172b0f58
 
+# Power-off charging daemon
+bin/charger
+
 # QCV (SOC Helper) - from LA.UM.9.1.r1-09100-SMxxx0.0
 vendor/bin/init.qti.qcv.sh|6c333493697aaf33acf16e73c8d2500145404862
 vendor/etc/init/init.qti.qcv.rc|c0c97f5674e24307440da1e166dc405ac1694d55
