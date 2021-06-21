@@ -64,3 +64,6 @@ genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:
 
 # USB
 genfscon sysfs /devices/platform/soc/a600000.ssusb/usb_data_enabled                  u:object_r:sysfs_usb_data_enabled:s0
+
+# Haptic
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel u:object_r:sysfs_vibrator:s0
