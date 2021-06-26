@@ -348,6 +348,14 @@ vendor/lib64/libllvm-glnext.so|432902263ebf1ad7d2b4a0b463d54af84789a772
 vendor/lib64/libllvm-qcom.so|ce7227f3c6aacaecfb83113c6052318cb159eea0
 vendor/lib64/librs_adreno.so|d8bee70cc12ab5c6a979427e24fb7843fddae08b
 
+# Hotword enrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+product/etc/permissions/privapp-permissions-google-hotword.xml
+product/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
