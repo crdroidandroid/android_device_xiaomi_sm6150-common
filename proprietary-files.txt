@@ -818,9 +818,29 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Trusted Execution Environment connector
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/libGPQTEEC_vendor.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
 # Trusted User Interface
+vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib64/libTouchInputVM.so
+vendor/lib64/libTrustedInputTZ.so
+vendor/lib64/libTrustedInput.so
+vendor/lib64/libTrustedUI.so
+vendor/lib64/libTrustedUITZ.so
+vendor/lib64/libsi.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/vendor.qti.hardware.systemhelper@1.0.so
+vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # WiFi
