@@ -38,7 +38,7 @@
 
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,5505024,262144,524288,4194304</string>
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,8808040,262144,524288,6710886</string>
 
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
@@ -57,4 +57,22 @@
 
     <!-- Indicates that wifi link probing is supported on this device -->
     <bool name="config_wifi_link_probing_supported">true</bool>
+
+    <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
+    <bool translatable="false" name="config_wifiSoftapAcsIncludeDfs">true</bool>
+
+    <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
+    <bool translatable="false" name="config_wifi_softap_sae_supported">true</bool>
+
+    <!-- Integer indicating maximum hardware supported client number of soft ap -->
+    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+
+    <!-- Channel list for softap 2G band. Empty means all channels -->
+    <string translateble="false" name="config_wifiSoftap2gChannelList"></string>
+
+   <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
+    <integer translatable="false" name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
+
+    <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
+    <bool translatable="false" name="config_wifi_only_link_same_credential_configurations">false</bool>
 </resources>
