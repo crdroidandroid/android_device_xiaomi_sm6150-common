@@ -122,6 +122,10 @@ on boot
     # Create fingerprint related directory
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
+    # Smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100

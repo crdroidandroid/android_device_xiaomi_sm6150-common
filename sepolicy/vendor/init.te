@@ -3,3 +3,6 @@ dontaudit init firmware_file:filesystem getattr;
 
 allow init per_boot_file:file ioctl;
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
+
+# Allow init to wrtie to sysfs_battery_supply
+allow init sysfs_battery_supply:file { setattr };
