@@ -236,9 +236,11 @@ PRODUCT_PACKAGES += \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
+    libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
+    libOmxVidcCommon \
     libstagefrighthw
 
 PRODUCT_COPY_FILES += \
