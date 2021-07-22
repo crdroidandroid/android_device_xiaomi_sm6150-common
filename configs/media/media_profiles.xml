@@ -27,7 +27,7 @@
 <!ATTLIST EncoderProfile quality (high|low) #REQUIRED>
 <!ATTLIST EncoderProfile fileFormat (mp4|3gp) #REQUIRED>
 <!ATTLIST EncoderProfile duration (30|60) #REQUIRED>
-<!ATTLIST EncoderProfile cameraId (0|1|2|3|4|5) #REQUIRED>
+<!ATTLIST EncoderProfile cameraId (0|1|2|3) #REQUIRED>
 <!ELEMENT Video EMPTY>
 <!ATTLIST Video codec (h264|h263|m4v) #REQUIRED>
 <!ATTLIST Video bitRate CDATA #REQUIRED>
@@ -185,20 +185,6 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
-
-    <EncoderProfile quality="4kdci" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-            bitRate="42000000"
-            width="4096"
-            height="2160"
-            frameRate="24" />
-
-      <Audio codec="aac"
-            bitRate="156000"
-            sampleRate="48000"
-            channels="2" />
-    </EncoderProfile>
-
     <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
       <Video codec="h264"
             bitRate="42000000"
@@ -363,19 +349,6 @@
              bitRate="156000"
              sampleRate="48000"
              channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="timelapse4kdci" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-            bitRate="42000000"
-            width="4096"
-            height="2160"
-            frameRate="30" />
-
-      <Audio codec="aac"
-            bitRate="156000"
-            sampleRate="48000"
-            channels="2" />
     </EncoderProfile>
 
     <EncoderProfile quality="timelapse2160p" fileFormat="mp4" duration="30">
