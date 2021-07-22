@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2012-2020 The Linux Foundation. All rights reserved.
-
      Not a contribution.
-
      Copyright (C) 2012-2013 The Android Open Source Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -33,18 +28,13 @@
 <!ELEMENT Quirk EMPTY>
 <!ATTLIST Quirk name CDATA #REQUIRED>
 ]>
-
 There's a simple and a complex syntax to declare the availability of a
 media codec:
-
 A codec that properly follows the OpenMax spec and therefore doesn't have any
 quirks and that only supports a single content type can be declared like so:
-
     <MediaCodec name="OMX.foo.bar" type="something/interesting" />
-
 If a codec has quirks OR supports multiple content types, the following syntax
 can be used:
-
     <MediaCodec name="OMX.foo.bar" >
         <Type name="something/interesting" />
         <Type name="something/else" />
@@ -53,19 +43,15 @@ can be used:
         <Quirk name="requires-allocate-on-output-ports" />
         <Quirk name="output-buffers-are-unreadable" />
     </MediaCodec>
-
 Only the three quirks included above are recognized at this point:
-
 "requires-allocate-on-input-ports"
     must be advertised if the component does not properly support specification
     of input buffers using the OMX_UseBuffer(...) API but instead requires
     OMX_AllocateBuffer to be used.
-
 "requires-allocate-on-output-ports"
     must be advertised if the component does not properly support specification
     of output buffers using the OMX_UseBuffer(...) API but instead requires
     OMX_AllocateBuffer to be used.
-
 "output-buffers-are-unreadable"
     must be advertised if the emitted output buffers of a decoder component
     are not readable, i.e. use a custom format even though abusing one of
@@ -78,8 +64,6 @@ Only the three quirks included above are recognized at this point:
     corresponding color space converter for thumbnail extraction,
     matching surfaceflinger support that can render the custom format to
     a texture and possibly other code, so just DON'T USE THIS QUIRK.
-
-
 -->
 
 <!--
@@ -87,33 +71,30 @@ Only the three quirks included above are recognized at this point:
  _________________________________________________________
  | Codec       | W       H       fps     Mbps    MB/s    |
  |_____________|_________________________________________|
- | h264        | 4096    2160    30      100     1036800 |
- | hevc        | 4096    2160    30      100     1036800 |
+ | h264        | 3840    2160    30      100     972000  |
+ | hevc        | 3840    2160    30      100     972000  |
  | mpeg4-sw    | 1920    1088    30      40      244800  |
  | vp8         | 1920    1088    60      100     489600  |
- | vp9         | 4096    2160    30      100     1036800 |
- |             | (4096)  (2304)  (30)    (120)           |
+ | vp9         | 3840    2160    30      100     972000  |
  | vc1         | 1920    1088    30      20      244800  |
  | h263-sw     | 864     480     30      16       48600  |
  | mpeg2       | 1920    1088    30      40      244800  |
  |_____________|_________________________________________|
-
  sdmmagpie Secure decoder capabilities
  ______________________________________________________
  | Codec    | W       H       fps     Mbps    MB/s    |
  |__________|_________________________________________|
- | h264     | 4096    2160    30      40      1036800 |
- | vp9      | 4096    2160    30      40      1036800 |
- | hevc     | 4096    2160    30      40      1036800 |
+ | h264     | 3840    2160    30      40      972000  |
+ | vp9      | 3840    2160    30      40      972000  |
+ | hevc     | 3840    2160    30      40      972000  |
  | mpeg2    | 1920    1088    30      40      244800  |
  |__________|_________________________________________|
-
  sdmmagpie Non-Secure encoder capabilities (Secure not supported)
  ______________________________________________________
  | Codec    | W       H       fps     Mbps    MB/s    |
  |__________|_________________________________________|
- | h264     | 4096    2160    30      100     1036800 |
- | hevc     | 4096    2160    30      100     1036800 |
+ | h264     | 3840    2160    30      100     972000  |
+ | hevc     | 3840    2160    30      100     972000  |
  | mpeg4-sw | 1280     720    30      4       108000  |
  | vp8      | 1920    1088    60      40      489600  |
  | h263-sw  | 864     480     30      2       48600   |
