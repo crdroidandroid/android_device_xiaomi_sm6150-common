@@ -49,14 +49,8 @@ on init
     # Loading kernel modules in background
     start insmod_sh
 
-    # Disable powersaving
-    write /sys/module/lpm_levels/parameters/sleep_disabled 1
-
     # Enable poweronalarm
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
-    # Disable UFS powersaving
-    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
 
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
