@@ -5,8 +5,11 @@ on boot
     chmod 0644 /sys/class/backlight/panel0-backlight/brightness
     chmod 0644 /sys/class/backlight/panel0-backlight/max_brightness
 
+    start vendor.light
+
 service vendor.light /vendor/bin/hw/android.hardware.lights-service.xiaomi_sm6150
     class hal
     user system
     group system
     shutdown critical
+    disabled
