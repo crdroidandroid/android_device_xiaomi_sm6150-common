@@ -29,6 +29,8 @@ namespace {
 #define STRINGIFY_INNER(x) #x
 #define STRINGIFY(x) STRINGIFY_INNER(x)
 
+#define LCD(x) PPCAT(/sys/class/backlight, x)
+#define LCD_ATTR(x) STRINGIFY(PPCAT(LCD(panel0-backlight), x))
 #define LEDS(x) PPCAT(/sys/class/leds, x)
 #define BLUE_ATTR(x) STRINGIFY(PPCAT(LEDS(blue), x))
 #define GREEN_ATTR(x) STRINGIFY(PPCAT(LEDS(green), x))
@@ -41,6 +43,7 @@ using ::android::base::WriteStringToFile;
 
 // Default max brightness
 constexpr auto kDefaultMaxLedBrightness = 255;
+constexpr auto kDefaultMaxScreenBrightness = 4095;
 
 // Each step will stay on for 70ms by default.
 constexpr auto kRampStepDurationDefault = 70;
@@ -89,7 +92,7 @@ Lights::Lights() {
             {(int)LightType::NOTIFICATIONS,
              [this](auto&&... args) { setLightNotification(args...); }},
             {(int)LightType::BATTERY, [this](auto&&... args) { setLightNotification(args...); }},
-            {(int)LightType::BACKLIGHT, {}}};
+            {(int)LightType::BACKLIGHT, [this](auto&&... args) { setLightBacklight(args...); }}};
 
     std::vector<HwLight> availableLights;
     for (auto const& pair : lights_) {
@@ -102,6 +105,14 @@ Lights::Lights() {
     mLights = lights_;
 
     std::string buf;
+
+    if (ReadFileToString(LCD_ATTR(max_brightness), &buf)) {
+        max_screen_brightness_ = std::stoi(buf);
+    } else {
+        max_screen_brightness_ = kDefaultMaxScreenBrightness;
+        LOG(ERROR) << "Failed to read max screen brightness, fallback to "
+                   << kDefaultMaxScreenBrightness;
+    }
 
     if (ReadFileToString(BLUE_ATTR(max_brightness), &buf) ||
         ReadFileToString(RED_ATTR(max_brightness), &buf) ||
@@ -130,6 +141,11 @@ ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
         lights->push_back(*i);
     }
     return ndk::ScopedAStatus::ok();
+}
+
+void Lights::setLightBacklight(int /* id */, const HwLightState& state) {
+    uint32_t brightness = RgbaToBrightness(state.color, max_screen_brightness_);
+    WriteToFile(LCD_ATTR(brightness), brightness);
 }
 
 void Lights::setLightNotification(int id, const HwLightState& state) {
