@@ -35,10 +35,12 @@ class Lights : public BnLights {
     ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
 
   private:
+    void setLightBacklight(int id, const HwLightState& state);
     void setLightNotification(int id, const HwLightState& state);
     void applyNotificationState(const HwLightState& state);
 
     uint32_t max_led_brightness_;
+    uint32_t max_screen_brightness_;
 
     std::map<int, std::function<void(int id, const HwLightState&)>> mLights;
     std::vector<HwLight> mAvailableLights;
