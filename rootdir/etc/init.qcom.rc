@@ -49,7 +49,10 @@ on early-init
     #Disable UFS clock scaling
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 0
 
-on init
+on early-init && property:ro.boot.mode=charger
+    setprop vendor.skip.init 1
+
+on init && property:vendor.skip.init=0
     # Loading kernel modules in background
     start insmod_sh
 
@@ -515,7 +518,7 @@ on property:persist.vendor.sys.modem_auth_timeout=*
 on property:persist.vendor.sys.pil_proxy_timeout=*
     write /sys/module/peripheral_loader/parameters/proxy_timeout_ms ${persist.vendor.sys.pil_proxy_timeout}
 
-on property:persist.vendor.ssr.enable_ramdumps=1 && property:ro.boot.mode!=charger
+on property:persist.vendor.ssr.enable_ramdumps=1 && property:vendor.skip.init=0
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
     mkdir /data/vendor/ramdump_ssr 770 system system
 
