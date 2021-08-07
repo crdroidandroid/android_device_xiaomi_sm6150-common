@@ -384,8 +384,15 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
 /sys/class/leds/blue    max_brightness 0640    system    system
 /sys/class/leds/blue    pause_lo_count 0640    system    system
 /sys/class/leds/blue    step_ms      0640    system    system
-/sys/class/leds/white/   breath       0640    system    system
-/sys/class/leds/white/   brightness   0640    system    system
+/sys/class/leds/white    breath          0640    system    system
+/sys/class/leds/white    brightness      0640    system    system
+/sys/class/leds/white    delay_off       0640    system    system
+/sys/class/leds/white    delay_on        0640    system    system
+/sys/class/leds/white    lo_idx          0640    system    system
+/sys/class/leds/white    lut_pattern     0640    system    system
+/sys/class/leds/white    max_brightness  0640    system    system
+/sys/class/leds/white    pause_lo_count  0640    system    system
+/sys/class/leds/white    step_ms         0640    system    system
 
 # NPU device
 /dev/msm_npu             0644   system     system
