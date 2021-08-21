@@ -178,6 +178,10 @@ on charger
     start vendor.qcom-post-boot
     start vendor.power_off_alarm
 
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
+    setprop dalvik.vm.dex2oat-threads 6
+
 service vendor.thermal-engine /vendor/bin/thermal-engine
     class main
     user root
