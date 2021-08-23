@@ -11,6 +11,10 @@ cc_library_shared {
         "-Wall",
     ],
     shared_libs: [
+        "android.hardware.power-ndk_platform",
+        "libbinder",
+        "libbinder_ndk",
+        "liblog",
         "libutils",
     ],
 }
