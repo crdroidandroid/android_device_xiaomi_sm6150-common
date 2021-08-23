@@ -116,6 +116,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
+# Build Rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Partitions
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
