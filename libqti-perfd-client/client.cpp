@@ -44,7 +44,6 @@ class PowerAidl {
         }
 
         auto ret = power_hal_aidl_->setMode(hint, enabled);
-
         if (!ret.isOk()) {
             ALOGE("Set mode %s to %d failed!", toString(hint).c_str(), enabled);
         }
@@ -56,7 +55,6 @@ class PowerAidl {
         }
 
         auto ret = power_hal_aidl_->setBoost(hint, duration);
-
         if (!ret.isOk()) {
             ALOGE("Set boost %s for %dms failed!", toString(hint).c_str(), duration);
         }
@@ -106,11 +104,14 @@ extern "C" int perf_lock_acq(int handle, int duration_ms, int params[], int size
         case 10: /* CAMERA_CLOSE - release all handles */
             // Returning 0 makes chi cry but prevents refCount from growing indefinitely
             ret = 0;
-            handleNum = 0;
 
-            poweraidl.setMode(Mode::CAMERA_STREAMING_LOW, false);
-            poweraidl.setMode(Mode::CAMERA_STREAMING_MID, false);
-            poweraidl.setMode(Mode::CAMERA_STREAMING_HIGH, false);
+            if (handleNum != 0) {
+                handleNum = 0;
+
+                poweraidl.setMode(Mode::CAMERA_STREAMING_LOW, false);
+                poweraidl.setMode(Mode::CAMERA_STREAMING_MID, false);
+                poweraidl.setMode(Mode::CAMERA_STREAMING_HIGH, false);
+            }
 
             ALOGI("perf_lock_acq: CAMERA_CLOSE");
             goto out;
