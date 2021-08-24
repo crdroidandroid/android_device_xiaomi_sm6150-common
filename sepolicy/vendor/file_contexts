@@ -4,6 +4,9 @@
 /mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
 /vendor/bin/remosaic_daemon     u:object_r:remosaic_daemon_exec:s0
 
+# Charger
+/vendor/bin/batterysecret       u:object_r:batterysecret_exec:s0
+
 # Data files
 /data/gf_data(/.*)?             u:object_r:fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?       u:object_r:fingerprint_data_file:s0
@@ -82,6 +85,9 @@
 
 # Mac
 /vendor/bin/nv_mac       u:object_r:wcnss_service_exec:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
 
 # Sockets
 /dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0
