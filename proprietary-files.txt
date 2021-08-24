@@ -113,6 +113,11 @@ vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # Charger (MI)
+vendor/bin/batteryd
+vendor/bin/batterysecret
+vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
+vendor/etc/init/init.batteryd.rc
+vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
 vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so

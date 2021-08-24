@@ -25,6 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import /vendor/etc/init/init.batterysecret.rc
+import /vendor/etc/init/init.batteryd.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 
 on early-init
