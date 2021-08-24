@@ -35,7 +35,7 @@ void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("model", variant.model, true);
     set_ro_build_prop("product", variant.model, false);
     set_ro_build_prop("fingerprint", variant.build_fingerprint, false);
-    set_ro_build_prop("description", variant.build_description, false);
+    set_ro_build_prop("description", fingerprint_to_description(variant.build_fingerprint), false);
 
     property_override("ro.com.google.clientidbase", "android-xiaomi");
     property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
