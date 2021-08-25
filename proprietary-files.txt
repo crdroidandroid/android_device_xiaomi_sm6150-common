@@ -56,7 +56,7 @@ vendor/lib/soundfx/libshoebox.so
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
-# Bluetooth from LA.UM.9.1.r1-10200-SMxxx0.0
+# Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
