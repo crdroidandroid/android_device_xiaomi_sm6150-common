@@ -230,15 +230,6 @@
       "HoldFd": true
     },
     {
-      "Name": "EnergyAware",
-      "Path": "/proc/sys/kernel/sched_energy_aware",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -329,12 +320,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "EnergyAware",
-      "Duration": 5000,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
       "Value": "9999999"
@@ -416,12 +401,6 @@
       "Node": "L3BigClusterMinFreq",
       "Duration": 5000,
       "Value": "1459200000"
-    },
-    {
-      "PowerHint": "CAMERA_LAUNCH",
-      "Node": "EnergyAware",
-      "Duration": 1000,
-      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -613,12 +592,6 @@
       "PowerHint": "CAMERA_STREAMING_SECURE",
       "Node": "LLCCBWHystTriggerCount",
       "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "CAMERA_SHOT",
-      "Node": "EnergyAware",
-      "Duration": 1000,
       "Value": "0"
     },
     {
