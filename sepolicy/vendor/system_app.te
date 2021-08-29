@@ -1,3 +1,6 @@
 type sysfs_doze, sysfs_type, fs_type;
 
 allow system_app sysfs_doze:file rw_file_perms;
+
+allow system_app vendor_sysfs_battery_supply:dir r_dir_perms;
+allow system_app vendor_sysfs_battery_supply:file r_file_perms;
