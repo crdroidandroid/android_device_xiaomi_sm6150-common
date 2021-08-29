@@ -44,3 +44,6 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+#In the taper mode,low voltage charging
+persist.vendor.cp.taper_term_mv=6500
