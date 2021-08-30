@@ -47,3 +47,6 @@ wifi.interface=wlan0
 
 #In the taper mode,low voltage charging
 persist.vendor.cp.taper_term_mv=6500
+
+#set vfloat_offset_uv
+persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
