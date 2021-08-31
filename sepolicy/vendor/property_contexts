@@ -73,6 +73,7 @@ persist.vendor.sys.pay     u:object_r:vendor_tee_listener_prop:s0
 ro.build.expect.           u:object_r:exported_default_prop:s0
 
 # RIL
+ro.fota.oem                u:object_r:public_vendor_default_prop:s0
 ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
 
 # Sensor
