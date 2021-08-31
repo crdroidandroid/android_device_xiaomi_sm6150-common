@@ -1,4 +1,4 @@
-allow surfaceflinger vendor_firmware_file:dir { search };
+allow surfaceflinger vendor_firmware_file:dir { search read };
 dontaudit surfaceflinger vendor_file:file read;
 dontaudit surfaceflinger kernel:system module_request;
 dontaudit surfaceflinger firmware_file:dir search;
