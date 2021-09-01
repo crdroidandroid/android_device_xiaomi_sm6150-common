@@ -6,16 +6,11 @@ audio_hal.in_period_size                   u:object_r:vendor_audio_prop:s0
 camera.                                    u:object_r:vendor_camera_prop:s0
 persist.camera.                            u:object_r:vendor_camera_prop:s0
 persist.vendor.camera                      u:object_r:vendor_camera_prop:s0
-persist.vednor.camera.arcsoftlog           u:object_r:vendor_camera_prop:s0
-vendor.camera.boot_complete                u:object_r:vendor_camera_prop:s0
-vendor.camera.sensor.                      u:object_r:vendor_camera_prop:s0
+persist.vednor.camera.                     u:object_r:vendor_camera_prop:s0
+vendor.camera.                             u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.                          u:object_r:vendor_camera_prop:s0
-ro.vendor.camera.res.fmq.size              u:object_r:vendor_camera_prop:s0
-ro.vendor.camera.req.fmq.size              u:object_r:vendor_camera_prop:s0
-ro.camera.res.fmq.size                     u:object_r:vendor_camera_prop:s0
-ro.camera.req.fmq.size                     u:object_r:vendor_camera_prop:s0
-vendor.camera.watermark.en                 u:object_r:vendor_camera_prop:s0
-vendor.camera.boost.en                     u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.                         u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.                         u:object_r:vendor_camera_prop:s0
 
 # DFPS
 persist.vendor.dfps.level	           u:object_r:vendor_display_prop:s0
