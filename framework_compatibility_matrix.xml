@@ -472,6 +472,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.mlipay</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IMlipayService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.vibratorfeature</name>
         <version>1.0</version>
         <interface>
