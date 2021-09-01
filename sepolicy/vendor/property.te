@@ -9,3 +9,6 @@ type power_prop, property_type;
 
 # Thermal
 type thermal_normal_prop, property_type;
+
+# Ultrasound
+type vendor_ultrasound_prop, property_type;
