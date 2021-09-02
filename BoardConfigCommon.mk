@@ -126,9 +126,18 @@ TARGET_USES_ION := true
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
+ODM_MANIFEST_SKUS += nfc
+ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
+
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_sm6150
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_sm6150
 
 # Media
 TARGET_DISABLED_UBWC := true
+
+# NFC
+TARGET_USES_NQ_NFC := true
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4

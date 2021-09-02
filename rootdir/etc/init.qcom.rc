@@ -25,6 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import /vendor/etc/init/hw/init.nfc.rc
 import /vendor/etc/init/hw/init.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 
@@ -477,6 +478,9 @@ on post-fs-data
 
     # Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
+
+    # Create nfc directory
+    mkdir /data/vendor/nfc 0770 nfc nfc
 
 on charger
     start vendor.power_off_alarm
