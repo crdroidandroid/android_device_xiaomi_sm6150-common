@@ -35,7 +35,7 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
 
-# Alarm
+# Alarm from LA.UM.9.1.r1-10900-SMxxx0.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
@@ -43,7 +43,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# ANT+ from LA.UM.9.1.r1-10200-SMxxx0.0
+# ANT+ from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio FX modules
@@ -154,7 +154,7 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libsdedrm.so
 
-# Display postprocessing
+# Display postprocessing from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
@@ -167,7 +167,7 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# DPM from LA.UM.9.1.r1-10200-SMxxx0.0
+# DPM from LA.UM.9.1.r1-10900-SMxxx0.0
 framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
@@ -187,7 +187,7 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM from LA.UM.9.1.r1-10200-SMxxx0.0
+# DRM from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/qseecomd
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
@@ -214,20 +214,20 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# DSP
+# DSP from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# FM
+# FM from LA.UM.9.1.r1-10900-SMxxx0.0
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 -system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Graphics from LA.UM.9.1.r1-10200-SMxxx0.0
+# Graphics from LA.UM.9.1.r1-10900-SMxxx0.0
 -vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk:vendor/app/com.qualcomm.qti.gpudrivers.sm6150.api30/com.qualcomm.qti.gpudrivers.sm6150.api30.apk;PRESIGNED
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
@@ -265,7 +265,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GNSS from LA.UM.9.1.r1-10200-SMxxx0.0
+# GNSS from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -317,7 +317,7 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
-# GNSS configs from LA.UM.9.1.r1-10200-SMxxx0.0
+# GNSS configs from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/etc/apdr.conf
 vendor/etc/flp.conf
 vendor/etc/gps.conf
@@ -384,7 +384,7 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 # IPA
 vendor/etc/init/ipa_fws.rc
 
-# IRQ balance from LA.UM.9.1.r1-10200-SMxxx0.0
+# IRQ balance from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
@@ -462,7 +462,7 @@ vendor/lib/vendor.qti.hardware.vpp@1.3.so
 # Media configs
 vendor/etc/system_properties.xml
 
-# Neural Networks from LA.UM.9.1.r1-10200-SMxxx0.0
+# Neural Networks from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
@@ -480,7 +480,7 @@ vendor/etc/libnfc-nci.conf|c327a2939caa3d544c99e9fc49d74e67b150a5a2
 vendor/etc/libnfc-nxp.conf|8115120f8822e3868db486f50856a697af90b352
 vendor/lib/libpn553_fw.so|ec325ad8028c573638a6f6902c4aec73c4ec00fa
 
-# Peripheral Manager from LA.UM.9.1.r1-10200-SMxxx0.0
+# Peripheral Manager from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
@@ -597,22 +597,32 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
+# Snapdragon Computer Vision Engine - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/lib64/libfastcvdsp_stub.so|de764c199026839848cdc803ed5cb2d8a51ad9b9
+vendor/lib64/libfastcvopt.so|123859ab24627b5cf289e12db694a5d7c65f5558
+vendor/lib64/libscveCommon.so|cce405a28a4c45b5e8c4446de271533deca1cd21
+vendor/lib64/libscveCommon_stub.so|1549ed1252e64a9f1ae3c8d51927bff247a537d2
+vendor/lib64/libscveObjectSegmentation.so|6c4e6d4b5bfe458cbf1e3a6a325fbba6b933265a
+vendor/lib64/libscveObjectSegmentation_stub.so|0292cef1811ccca7f40b011fe502920f90ccacb1
+vendor/lib64/libscveObjectTracker.so|abcf8df3e5128bedf263749e3dea62497fffecbf
+vendor/lib64/libscveObjectTracker_stub.so|c92e4e11bdbca1313ba69646fca6782aa78df1fc
+
 # Thermal
 vendor/bin/mi_thermald
 
-# Thermal engine from LA.UM.9.1.r1-10200-SMxxx0.0
+# Thermal engine from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
-# Time from LA.UM.9.1.r1-10200-SMxxx0.0
+# Time from LA.UM.9.1.r1-10900-SMxxx0.0
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# WiFi Display from LA.UM.9.1.r1-10200-SMxxx0.0
+# WiFi Display from LA.UM.9.1.r1-10900-SMxxx0.0
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
