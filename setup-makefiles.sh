@@ -24,7 +24,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "davinci phoenix violet"
+write_headers "davinci phoenix sweet toco tucana"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
