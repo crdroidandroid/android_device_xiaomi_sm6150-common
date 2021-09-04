@@ -1,19 +1,16 @@
 # All unpinned blobs below are extracted from mojito-user 11 RKQ1.201022.002 V12.5.2.0.RKGMIXM
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsp_default_listener.so
+# ADSP - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
+vendor/lib/libadsp_default_listener.so|49d7644708419ea077ffd9d00901ebf6cdd4377c
+vendor/lib/libadsprpc.so|eae169c0fd03286d49419e521949b1f57fc2e38b
+vendor/lib/libmdsprpc.so|8693fccb16c50b26c27cb304d571596526995fed
+vendor/lib/libsdsprpc.so|bb87c1abe6d37b342e266d865267d68acba9a43c
+vendor/lib64/libadsp_default_listener.so|3ebcf635d6cdc447b8ecd40ea76bda39bf82c308
+vendor/lib64/libadsprpc.so|e031fbefb26612616a00fdbf31eb4a06a91e2b08
+vendor/lib64/libmdsprpc.so|a460ba732386b5ac2a2f2240a24fe8cc02c13f33
+vendor/lib64/libsdsprpc.so|b1d78f6d96d912957e99ecf49ff2da73ecd71432
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -79,6 +76,16 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
 system_ext/lib/vendor.qti.hardware.camera.device@2.0.so
 system_ext/lib/vendor.qti.hardware.camera.device@3.5.so
+
+# CDSP - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdsprpc.so|723e75558cf307eae1c3a0cda94da0944644a030
+vendor/lib/libcdsp_default_listener.so|6a3f97faf26da3d01f7895d37c09c8bc62030e0a
+vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
+vendor/lib64/libcdsprpc.so|9f1948f776cbd9a10762e8d6740982adbeb102ee
+vendor/lib64/libcdsp_default_listener.so|81e5f4737bfb7e2f0a906183b2a8357a5053ee5c
+vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -407,57 +414,70 @@ vendor/lib/libsmwrapper.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/liblistensoundmodel2.so
 
-# Media from LA.UM.9.1.r1-10200-SMxxx0.0
+# Media - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/vppservice
-vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/init/vppservice.rc
 vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
-vendor/lib64/libmmosal.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectSegmentation_stub.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-vendor/lib/libmmosal.so
-vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libvpphcp.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libqcodec2.so
-vendor/lib/libswvdec.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
+vendor/bin/vppservice|0f77fd06c6438ded5e5704769db6cb1154d96cbe
+vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
+vendor/etc/init/vppservice.rc|24c089e0e413cbb3fa6daaf0af4215870bdf1b8e
+vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
+vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
+vendor/lib/libFlacSwDec.so|01c7a51d93c2fe447e23c1210832b39b171393e3
+vendor/lib/libI420colorconvert.so|5c466dbb5fe334445bde46d15563ecba2e439581
+vendor/lib/libOmxAacDec.so|252aef7117fd026653b8a26d95ee41437fb64e3c
+vendor/lib/libOmxAlacDec.so|c61bfc85d12207c4cc88a676a608cf8aa93e4b01
+vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
+vendor/lib/libOmxAmrDec.so|7ad34510fd7cc5d0ccd3021072d328ea95ed6005
+vendor/lib/libOmxAmrwbplusDec.so|5c8c6ed35524c6ba2decfb845172dd48bf77f9e7
+vendor/lib/libOmxApeDec.so|3d63a08310457b3d06388ffb3339df5d8c43bbc3
+vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
+vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
+vendor/lib/libOmxEvrcDec.so|ad5886dfe926939436176fc536f3063a02030f38
+vendor/lib/libOmxQcelp13Dec.so|fd941876c153a669eb41395b869de57001a431d8
+vendor/lib/libOmxVpp.so|e4728f604f69a9fc4c07d12cf666839c77ec6555
+vendor/lib/libqcodec2.so|
+vendor/lib/libOmxWmaDec.so|9e30df0b706ef4420b0ac6052f98bec8e41ea412
+vendor/lib/libOmxVideoDSMode.so|be98151cc1b1b48cbd34a360cc5becc78c21cf7e
+vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
+vendor/lib/libmm-color-convertor.so|eaaa57735036791d53706187ebfd3902d6f85ae8
+vendor/lib/libmmosal.so|37febc914b2c706a5df0009cc134e9d80690aec0
+vendor/lib/libvppclient.so|cb2038656aadc542198b0932f13ebdb9c37e35a5
+vendor/lib/libvpphvx.so|e5b3bfc86080fb20efd5ad3b47417566eab8319d
+vendor/lib/libvppimmotion.so|0735d0dfb704f36463445521fe2c3d93c2cc225d
+vendor/lib/libvpplibrary.so|612c490abe2ade3caa0594756e1ed0cdfa07874b
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|e84787e0b689d10a30c4ec3ded8858f0b622323d
+vendor/lib/vendor.qti.hardware.vpp@1.2.so|fc3b81e25f5af4292d032138c46e31b98a7b622a
+vendor/lib/vendor.qti.hardware.vpp@1.3.so|535398187d8a935e7e0d152e8fbb3ef034ba6e6f
+vendor/lib64/libAlacSwDec.so|9fbfad65ffca33e1ac480e9cb056467ac75a6d5a
+vendor/lib64/libqcodec2.so|
+vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
+vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
+vendor/lib64/libI420colorconvert.so|829dacf78c4bf6700986d2d5d2013d055b342177
+vendor/lib64/libOmxAacDec.so|4cfa0cf21fc4194a5b95afb5a3bdb9745ff89311
+vendor/lib64/libOmxAlacDec.so|4310006162363b8c253818c1dbcd4426621abae7
+vendor/lib64/libOmxAlacDecSw.so|3ecf891368d0ad84903b792303ef841dc24f91c1
+vendor/lib64/libOmxAmrDec.so|4959734291a47da6c9d3c7b868057383593a86d6
+vendor/lib64/libOmxAmrwbplusDec.so|014d1a57a3a7c100f4fd6be825a38c5216d871a5
+vendor/lib64/libOmxApeDec.so|e7e3cad7cedac07687a9c5c00b807bf8c19ee701
+vendor/lib64/libOmxApeDecSw.so|6ec15cb9a251a35e7f7d427dcf0b0e945825518f
+vendor/lib64/libOmxEvrcDec.so|d4703cef37161fbf85cc9f9911cc0c22472c5268
+vendor/lib64/libOmxG711Dec.so|9fee00467b989819d39a78dc9b714709eedd11bd
+vendor/lib64/libOmxQcelp13Dec.so|4d00801312df3bd81aee020f8e91ca15d3ff5d38
+vendor/lib64/libOmxSwVdec.so|55a912fab21411cf006763d61cb11285d1f4eb59
+vendor/lib64/libOmxSwVencMpeg4.so|441291ad76c53f2d0ec0a29a1e80e0622b350793
+vendor/lib64/libOmxVpp.so|37bacdd66a5f3edfe9885c747b5ba7eae8141acc
+vendor/lib64/libOmxWmaDec.so|87eb288166853304ab252991c3f9c56ff558f863
+vendor/lib64/libmm-color-convertor.so|aa6e7e6b3dd182c191086e07c0ad9fb477cf4f20
+vendor/lib64/libmmosal.so|dc6b82fa8d1bd1e7ee0c9dba2ec45b6b032efff0
+vendor/lib64/libvppclient.so|901213457c854a48714a98d3c76adab9760a03e6
+vendor/lib64/libvpphvx.so|d92a352a9990c77b5724784e8c827637b850d53e
+vendor/lib64/libvppimmotion.so|bcc574b7e87a372436a667f333e42e884c944483
+vendor/lib64/libvpplibrary.so|5a90004fe6852db15dc8d38b8e3c361dc16f2bba
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|d47fd7845c02aec702ab96569b90eb6bff2cee5c
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so|13714cdc3a7a5aaa67e641034cb92e9fced28960
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so|aea8a28f53263b5001df295d0a6eab0e8405693b
 
 # Media configs
 vendor/etc/system_properties.xml
