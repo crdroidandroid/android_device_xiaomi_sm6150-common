@@ -210,7 +210,6 @@ ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_AB.qcom
 else
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
-BOARD_INCLUDE_RECOVERY_DTBO := true
 endif
 else
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_SAR.qcom
