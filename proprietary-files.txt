@@ -505,11 +505,6 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC - from sweet-user 11 RKQ1.200826.002 V12.5.4.0.RKFMIXM release-keys
-vendor/etc/libnfc-nci.conf|c327a2939caa3d544c99e9fc49d74e67b150a5a2
-vendor/etc/libnfc-nxp.conf|8115120f8822e3868db486f50856a697af90b352
-vendor/lib/libpn553_fw.so|ec325ad8028c573638a6f6902c4aec73c4ec00fa
-
 # Peripheral Manager from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/pm-proxy
 vendor/bin/pm-service
