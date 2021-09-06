@@ -190,8 +190,13 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+ifeq ($(TARGET_HAS_FOD),true)
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150-ext
+else
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150
+endif
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
