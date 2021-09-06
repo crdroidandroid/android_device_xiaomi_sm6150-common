@@ -205,11 +205,15 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # Recovery
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_AB.qcom
 else
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 BOARD_INCLUDE_RECOVERY_DTBO := true
+endif
+else
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_SAR.qcom
 endif
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
