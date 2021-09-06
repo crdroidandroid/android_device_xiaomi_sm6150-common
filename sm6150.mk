@@ -186,8 +186,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
 # fastbootd
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
 PRODUCT_PACKAGES += \
     fastbootd
+endif
 
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
