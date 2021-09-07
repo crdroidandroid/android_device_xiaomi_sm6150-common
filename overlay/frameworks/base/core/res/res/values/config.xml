@@ -340,4 +340,7 @@
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
+
+    <!-- Screen off delay -->
+    <integer name="config_screen_off_delay">0</integer>
 </resources>
