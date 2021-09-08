@@ -109,6 +109,9 @@ on boot
     # modules
     mkdir /dev/socket/qmux_radio 2770 radio radio
 
+    # USB state
+    chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
+
     # To prevent out of order acknowledgements from making
     # connection tracking to treat them as not belonging to
     # the connection they belong to.
@@ -306,6 +309,10 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
+
+on charger
+    setprop persist.sys.usb.config mass_storage
+    start qcom-post-boot
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
