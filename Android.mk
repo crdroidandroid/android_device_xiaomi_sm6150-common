@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter davinci phoenix sweet toco tucana,$(TARGET_DEVICE)),)
+ifneq ($(filter courbet davinci mojito phoenix sweet surya toco tucana,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
