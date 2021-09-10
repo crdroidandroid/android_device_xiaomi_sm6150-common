@@ -24,6 +24,7 @@ allow mi_thermald {
   sysfs_devices_system_cpu
   sysfs_kgsl
   sysfs_thermal
+  vendor_sysfs_graphics
 }:{
   file
   lnk_file
