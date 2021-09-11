@@ -19,10 +19,11 @@ r_dir_file(mi_thermald, sysfs_thermal)
 
 # Allow mi_thermald to read and write to sysfs_*
 allow mi_thermald {
-  sysfs_battery_supply 
+  sysfs_battery_supply
   sysfs_devices_system_cpu
   vendor_sysfs_kgsl
   sysfs_thermal
+  vendor_sysfs_graphics
 }:{
   file
   lnk_file
