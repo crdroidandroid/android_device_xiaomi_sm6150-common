@@ -427,7 +427,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.touchfeature</name>
         <version>1.0</version>
         <interface>
