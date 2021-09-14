@@ -20,12 +20,18 @@ on init && property:vendor.skip.init=0
     write /sys/kernel/debug/clk/debug_suspend 1
 
 on property:vendor.setup.power=1
-    # Enable EAS
-    write /proc/sys/kernel/sched_downmigrate_boosted 25
-    write /proc/sys/kernel/sched_upmigrate_boosted 25
-    write /proc/sys/kernel/sched_upmigrate 95
-    write /proc/sys/kernel/sched_downmigrate 85
-    write /proc/sys/kernel/sched_energy_aware 1
+    # Setting b.L scheduler parameters
+    # default sched up and down migrate values are 71 and 65
+    write /proc/sys/kernel/sched_downmigrate 65
+    write /proc/sys/kernel/sched_upmigrate 71
+
+    # default sched up and down migrate values are 100 and 95
+    write /proc/sys/kernel/sched_group_downmigrate 85
+    write /proc/sys/kernel/sched_group_upmigrate 100
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
+
+    #colocation v3 settings
+    write /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz 740000
 
     # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/governor bw_hwmon

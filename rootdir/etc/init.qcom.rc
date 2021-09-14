@@ -30,9 +30,6 @@ import /vendor/etc/init/hw/init.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 
 on early-init
-    # Disable EAS
-    write /proc/sys/kernel/sched_energy_aware 0
-
     # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
     chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
@@ -86,15 +83,37 @@ on init && property:vendor.skip.init=0
     write /sys/devices/system/cpu/cpu6/online 1
     write /sys/devices/system/cpu/cpu7/online 1
 
+    # Core control parameters on silver
+    write /sys/devices/system/cpu/cpu0/core_ctl/not_preferred "0 0 0 0 1 1"
+    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 4
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 60
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 40
+    write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 100
+    write /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster 0
+    write /sys/devices/system/cpu/cpu0/core_ctl/task_thres 8
+    write /sys/devices/system/cpu/cpu6/core_ctl/enable 0
+
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1248000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 576000
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq 1324600
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq 652800
+
+    # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
+    write /sys/devices/system/cpu/cpu6/sched_load_boost -6
+    write /sys/devices/system/cpu/cpu7/sched_load_boost -6
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load 85
+
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1248000"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
 
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
