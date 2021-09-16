@@ -28,6 +28,9 @@
 import /vendor/etc/init/hw/init.nfc.rc
 import /vendor/etc/init/hw/init.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
+import /vendor/etc/init/init.batterysecret.rc
+import /vendor/etc/init/init.batteryd.rc
+import /vendor/etc/init/init.mi_thermald.rc
 
 on early-init
     # Change ownership of hw_recovery related nodes
