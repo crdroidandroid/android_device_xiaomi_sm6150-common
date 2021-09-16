@@ -5,6 +5,7 @@
 /vendor/bin/remosaic_daemon     u:object_r:remosaic_daemon_exec:s0
 
 # Charger
+/vendor/bin/batteryd            u:object_r:batteryd_exec:s0
 /vendor/bin/batterysecret       u:object_r:batterysecret_exec:s0
 
 # Data files
