@@ -34,31 +34,38 @@
 typedef struct {
     const char *product_device;
     const char *product_region;
+    const char *product_sku;
     const char *product_model;
 } device_t;
 
 static const device_t devices[] = {
-    {"davinci", "CN", "Xiaomi Redmi K20"},
-    {"davinci", "GLOBAL", "Xiaomi Mi 9T"},
-    {"davinciin", "INDIA", "Xiaomi Redmi K20"},
-    {"phoenix", "ALL", "Redmi K30"},
-    {"phoenixin", "INDIA", "POCO X2"},
-    {"violet", "ALL", "Xiaomi Redmi Note 7 Pro"},
+    {"davinci", "CN", "ALL", "Xiaomi Redmi K20"},
+    {"davinci", "GLOBAL", "ALL", "Xiaomi Mi 9T"},
+    {"davinciin", "INDIA", "ALL", "Xiaomi Redmi K20"},
+    {"phoenix", "ALL", "ALL", "Redmi K30"},
+    {"phoenixin", "INDIA", "ALL", "POCO X2"},
+    {"sweet", "ALL", "ALL", "Redmi Note 10 Pro"},
+    {"sweetin", "INDIA", "std", "Redmi Note 10 Pro"},
+    {"sweetin", "INDIA", "pro", "Redmi Note 10 Pro Max"},
 };
 
 static inline const char *BtmGetDefaultName()
 {
     char product_device[PROPERTY_VALUE_MAX];
     char product_region[PROPERTY_VALUE_MAX];
+    char product_sku[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", product_device, "");
     property_get("ro.boot.hwc", product_region, "");
+    property_get("ro.boot.product.hardware.sku", product_sku, "");
 
     for (unsigned int i = 0; i < ARRAY_SIZE(devices); i++) {
         device_t device = devices[i];
 
         if (strcmp(device.product_device, product_device) == 0 &&
                (strcmp(device.product_region, product_region) == 0 ||
-               strcmp(device.product_region, "ALL") == 0)) {
+               strcmp(device.product_region, "ALL") == 0) &&
+               (strcmp(device.product_sku, product_sku) == 0 ||
+               strcmp(device.product_sku, "ALL") == 0)) {
            return device.product_model;
        }
     }
