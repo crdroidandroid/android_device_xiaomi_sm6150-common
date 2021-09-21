@@ -443,6 +443,7 @@ vendor/lib/libOmxVideoDSMode.so|be98151cc1b1b48cbd34a360cc5becc78c21cf7e
 vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
 vendor/lib/libmm-color-convertor.so|eaaa57735036791d53706187ebfd3902d6f85ae8
 vendor/lib/libmmosal.so|37febc914b2c706a5df0009cc134e9d80690aec0
+vendor/lib/libswvdec.so
 vendor/lib/libvppclient.so|cb2038656aadc542198b0932f13ebdb9c37e35a5
 vendor/lib/libvpphvx.so|e5b3bfc86080fb20efd5ad3b47417566eab8319d
 vendor/lib/libvppimmotion.so|0735d0dfb704f36463445521fe2c3d93c2cc225d
