@@ -23,6 +23,9 @@ mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Display
+sys.displayfeature_hidl=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
 
