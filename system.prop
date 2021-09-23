@@ -1,30 +1,8 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
-# Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
-
 # Charger
 ro.charger.enable_suspend=true
-
-# CNE
-persist.vendor.cne.feature=1
-
-# Media
-media.aac_51_output_enabled=true
-media.stagefright.enable-aac=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-http=true
-media.stagefright.enable-player=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
-mmp.enable.3g2=true
-persist.mm.enable.prefetch=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-
-# Display
-sys.displayfeature_hidl=true
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1

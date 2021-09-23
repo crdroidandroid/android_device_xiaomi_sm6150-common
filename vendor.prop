@@ -96,6 +96,10 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# CNE
+persist.vendor.cne.feature=1
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -164,6 +168,19 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Media
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+media.aac_51_output_enabled=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-http=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-player=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
+# Media Codec2
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 debug.performance.tuning=1
