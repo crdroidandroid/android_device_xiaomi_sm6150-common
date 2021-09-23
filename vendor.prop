@@ -167,13 +167,9 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Media
-media.stagefright.thumbnail.prefer_hw_codecs=true
-
-# Media Codec2
-debug.stagefright.ccodec=1
-debug.stagefright.omx_default_rank=0
-debug.performance.tuning=1
-vendor.media.target.version=2
+debug.media.codec2=2
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=512
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
