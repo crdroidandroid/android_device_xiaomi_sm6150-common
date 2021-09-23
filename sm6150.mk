@@ -377,7 +377,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_ENABLE_MULTI_SENSOR),true)
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal
+    android.hardware.sensors@2.1-service.multihal
 else
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
