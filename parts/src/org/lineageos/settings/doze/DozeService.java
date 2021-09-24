@@ -30,7 +30,6 @@ public class DozeService extends Service {
     private static final boolean DEBUG = false;
 
     private AodSensor mAodSensor;
-    private ProximitySensor mProximitySensor;
     private PickupSensor mPickupSensor;
 
     @Override
@@ -38,7 +37,6 @@ public class DozeService extends Service {
         if (DEBUG)
             Log.d(TAG, "Creating service");
         mAodSensor = new AodSensor(this);
-        mProximitySensor = new ProximitySensor(this);
         mPickupSensor = new PickupSensor(this);
 
         IntentFilter screenStateFilter = new IntentFilter();
@@ -60,7 +58,6 @@ public class DozeService extends Service {
             Log.d(TAG, "Destroying service");
         super.onDestroy();
         this.unregisterReceiver(mScreenStateReceiver);
-        mProximitySensor.disable();
         mPickupSensor.disable();
     }
 
@@ -78,9 +75,6 @@ public class DozeService extends Service {
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.disable();
         }
-        if (DozeUtils.isHandwaveGestureEnabled(this) || DozeUtils.isPocketGestureEnabled(this)) {
-            mProximitySensor.disable();
-        }
         if (DozeUtils.isDozeAutoBrightnessEnabled(this)) {
             mAodSensor.disable();
         }
@@ -94,9 +88,6 @@ public class DozeService extends Service {
         }
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.enable();
-        }
-        if (DozeUtils.isHandwaveGestureEnabled(this) || DozeUtils.isPocketGestureEnabled(this)) {
-            mProximitySensor.enable();
         }
         if (DozeUtils.isDozeAutoBrightnessEnabled(this)) {
             mAodSensor.enable();
