@@ -249,11 +249,13 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
 		android.hardware.media.omx@1.0-service \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
-    libarbitrarybytes \
-    libc2dcolorconvert \
-    libplatformconfig \
+		libavservices_minijail \
+		libavservices_minijail.vendor \
+		libavservices_minijail_vendor \
+		libhwbinder.vendor \
+		libminijail \
+		libc2dcolorconvert \
+		libplatformconfig \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -272,6 +274,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
+
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -292,6 +299,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/seccomp_policy/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
+		$(LOCAL_PATH)/media/seccomp_policy/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor-seccomp.policy \
     hardware/qcom-caf/sm8150/media/conf_files/sm6150/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
 
 # Network
