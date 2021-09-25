@@ -97,6 +97,8 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
+    chmod 644 /mnt/vendor/persist/audio/us_manual_cal
+    chmod 644 /persist/audio/us_manual_cal
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
