@@ -46,7 +46,7 @@ odm                                                                 /odm        
 /dev/block/bootdevice/by-name/persist                               /mnt/vendor/persist       ext4    noatime,nosuid,nodev,barrier=1                       wait,check
 /dev/block/bootdevice/by-name/boot                                  /boot                     emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/misc                                  /misc                     emmc    defaults                                             defaults
-/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*   /storage/usbotg           vfat    nosuid,nodev                                         wait,voldmanaged=usbotg:auto
+/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*   auto                      auto    defaults                                             voldmanaged=usbotg:auto
 /devices/platform/soc/8804000.sdhci/mmc_host*                       /storage/sdcard1          vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
 /devices/platform/soc/1da4000.ufshc_card/host*                      /storage/sdcard1          vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
 /dev/block/bootdevice/by-name/modem                                 /vendor/firmware_mnt      vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337, wait
