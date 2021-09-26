@@ -173,15 +173,6 @@
       "Type": "Property"
     },
     {
-      "Name": "PowerHALAudioState",
-      "Path": "vendor.powerhal.audio",
-      "Values": [
-        "AUDIO_STREAMING_LOW_LATENCY",
-        ""
-      ],
-      "Type": "Property"
-    },
-    {
       "Name": "PowerHALRenderingState",
       "Path": "vendor.powerhal.rendering",
       "Values": [
@@ -275,12 +266,6 @@
       "Node": "L3BigClusterMinFreq",
       "Duration": 2000,
       "Value": "1459200000"
-    },
-    {
-      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
-      "Node": "PowerHALAudioState",
-      "Duration": 0,
-      "Value": "AUDIO_STREAMING_LOW_LATENCY"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
