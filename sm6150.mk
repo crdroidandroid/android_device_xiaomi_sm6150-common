@@ -363,7 +363,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.zram \
     init.insmod.sh \
-    init.mi.usb.sh \
     init.nfc.rc \
     init.power.rc \
     init.qcom.rc \
