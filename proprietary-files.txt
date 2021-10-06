@@ -196,29 +196,37 @@ vendor/lib64/libdpmqmihal.so
 
 # DRM from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
+vendor/etc/gpfspath_oem_config.xml
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libminkdescriptor.so
-vendor/lib64/libminksocket.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
-vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
-vendor/lib64/libtrustedapploader.so
+vendor/lib64/libtzdrmgenprov.so
 
-# DRM widevine
+# Widevine DRM from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib64/libwvhidl.so
+vendor/lib/libcppf.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libbase64.so
+vendor/lib64/libmt@1.2.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/librmp.so
+vendor/lib64/libtrustedapploader.so
+vendor/lib64/libwvhidl.so
+vendor/lib64/libwvkeybox.so
 
 # DSP from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/dspservice

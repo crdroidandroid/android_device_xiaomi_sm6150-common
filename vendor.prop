@@ -114,6 +114,9 @@ persist.vendor.dpm.feature=1
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
+# DRM
+drm.service.enabled=true
+
 # Display
 debug.egl.hw=0
 debug.mdpcomp.logs=0
