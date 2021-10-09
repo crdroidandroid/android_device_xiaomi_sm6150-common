@@ -406,6 +406,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/qcom-caf/wlan \
     hardware/xiaomi
 
 # Dependencies 
@@ -482,6 +483,10 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
+
+# Wlan
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/sm6150-common/sm6150-common-vendor.mk)
