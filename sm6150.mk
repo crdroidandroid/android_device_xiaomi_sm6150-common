@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@3.5.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    Camera2
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
