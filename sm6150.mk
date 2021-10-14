@@ -89,6 +89,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+		android.hardware.bluetooth@1.0.vendor \
+		android.hardware.bluetooth@1.1.vendor \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
 		android.hardware.bluetooth@1.0.vendor \
@@ -134,6 +136,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
@@ -168,7 +177,9 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey
+		android.hardware.drm@1.3 \
+		android.hardware.drm@1.3.vendor \
+		android.hardware.drm@1.4-service.clearkey
 
 # fastbootd
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
@@ -191,6 +202,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
+
+#GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1 \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.1 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0 \
+    android.hardware.gnss.visibility_control@1.0.vendor
 
 # GPS Permissions
 PRODUCT_COPY_FILES += \
@@ -304,6 +324,17 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
 
+# Netd
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+		android.hardware.neuralnetworks@1.3 \
+		android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -318,6 +349,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+		android.hardware.power@1.2 \
+		android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr \
 		android.hardware.power.stats@1.0-service.mock
 
@@ -361,6 +394,15 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl
 
+# Radio
+PRODUCT_PACKAGES += \
+		android.hardware.radio.deprecated@1.0 \
+		android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge
@@ -388,6 +430,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+
+
+#Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor
 
 # Telephony
 PRODUCT_PACKAGES += \
