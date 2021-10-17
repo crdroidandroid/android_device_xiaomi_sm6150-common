@@ -16,11 +16,27 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Температурный режим (профиль)</string>
+    <string name="thermal_summary">Выбрать Температурный профиль приложения для оптимизации работы</string>
+    <string name="thermal_default">Стандартный</string>
+    <string name="thermal_benchmark">Бенчмарк</string>
+    <string name="thermal_browser">Браузер</string>
+    <string name="thermal_camera">Камера</string>
+    <string name="thermal_dialer">Приложение для звонков</string>
+    <string name="thermal_gaming">Игра</string>
+    <string name="thermal_streaming">Стриминговый сервис</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Улучшение звука Mi</string>
     <string name="dirac_summary">Улучшить качество звука</string>
+
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Уменьшает шум и искажения. Улучшает качество звука</string>
+
     <string name="dirac_headset_title">Тип наушников</string>
     <string name="dirac_preset_title">Выберите настройку</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">По умолчанию</string>
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
