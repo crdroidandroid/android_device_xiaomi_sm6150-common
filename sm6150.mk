@@ -266,6 +266,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxSwVencHevc \
     libOmxVenc \
+		libgui \
+		libgui.vendor \
     libstagefrighthw \
 		libstagefright_omx.vendor
 
