@@ -1,0 +1,2 @@
+allow kernel mnt_vendor_file:dir { search };
+allow kernel system_data_file:file { read };

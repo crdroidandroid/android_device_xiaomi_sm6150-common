@@ -1,5 +1,6 @@
 allow system_app vendor_sysfs_battery_supply:dir { search };
 allow system_app vendor_sysfs_battery_supply:file { read };
+allow system_app unlabeled:file { read };
 allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 allow system_app sysfs_zram:dir search;
