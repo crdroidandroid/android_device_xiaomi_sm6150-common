@@ -372,6 +372,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
 
+# UClamp
+PRODUCT_PACKAGES += \
+    init.uclamp.rc
+
 # Uevent
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
