@@ -28,7 +28,7 @@
 #define PARAM_NIT_NONE 0
 
 #define FOD_STATUS_ON 1
-#define FOD_STATUS_OFF -1
+#define FOD_STATUS_OFF 0
 
 #define TOUCH_DEV_PATH "/dev/xiaomi-touch"
 #define Touch_Fod_Enable 10
