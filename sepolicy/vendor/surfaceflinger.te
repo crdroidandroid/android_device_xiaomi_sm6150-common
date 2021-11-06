@@ -1,6 +1,9 @@
 # /vendor/firmware
 allow surfaceflinger vendor_firmware_file:dir r_dir_perms;
 
+# graphics composer
+allow surfaceflinger hal_graphics_composer_default:file { read write getattr };
+
 ### NEVERALLOW
 # /vendor/firmware
 dontaudit surfaceflinger vendor_firmware_file:file r_file_perms;
