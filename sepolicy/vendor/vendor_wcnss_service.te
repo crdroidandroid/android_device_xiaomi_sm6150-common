@@ -1,1 +1,2 @@
+allow vendor_wcnss_service vfat:file { read open getattr };
 get_prop(vendor_wcnss_service, vendor_bluetooth_prop)
