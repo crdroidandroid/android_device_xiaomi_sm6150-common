@@ -1,1 +1,2 @@
 allow vendor_rfs_access vfat:file { getattr  open  read };
+allow vendor_rfs_access vfat:dir { search };

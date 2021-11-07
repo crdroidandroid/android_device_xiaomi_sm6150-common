@@ -1,2 +1,4 @@
 allow rild default_prop:file { read open getattr map };
+allow rild default_prop:file { read };
+
 set_prop(rild, deviceid_prop)

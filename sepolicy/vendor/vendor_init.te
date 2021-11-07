@@ -11,7 +11,10 @@ allow vendor_init {
 allow vendor_init block_device:lnk_file setattr;
 allow vendor_init vendor_camera_prop:property_service set;
 allow vendor_init fingerprint_data_file:dir { setattr getattr };
-
+allow vendor_init file_contexts_file:file { map };
 allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };
+allow vendor_init cache_file:lnk_file { read };
+allow vendor_init fingerprint_data_file:dir { create };
+allow vendor_init proc_net:file { open };
 
 set_prop(vendor_init, init_service_status_prop)
