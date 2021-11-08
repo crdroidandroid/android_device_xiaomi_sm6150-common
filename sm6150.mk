@@ -440,6 +440,10 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
