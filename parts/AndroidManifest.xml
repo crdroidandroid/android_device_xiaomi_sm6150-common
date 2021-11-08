@@ -42,6 +42,18 @@
         </receiver>
 
         <activity
+            android:name=".speaker.ClearSpeakerActivity" 
+            android:label="@string/clear_speaker_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.sound" />
+        </activity>
+
+        <activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.Main">
