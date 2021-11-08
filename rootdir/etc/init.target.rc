@@ -105,6 +105,15 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all --late /vendor/etc/fstab.qcom
 
+
+on late-init
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 service mi_thermald /system/vendor/bin/mi_thermald
     class core
     user root
