@@ -390,7 +390,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     fstab.zram \
     fstab.qcom \
-		init.temp.rc \
     init.nfc.rc \
     init.qcom.power.rc \
     init.qcom.rc \
