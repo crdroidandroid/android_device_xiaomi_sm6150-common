@@ -548,4 +548,12 @@
             <instance>clearkey</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+    <name>android.hardware.media.c2</name>
+    <version>1.2</version>
+    <interface>
+        <name>IComponentStore</name>
+        <instance>software</instance>
+    </interface>
+    </hal>
 </compatibility-matrix>
