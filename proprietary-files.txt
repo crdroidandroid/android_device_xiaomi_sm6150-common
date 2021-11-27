@@ -72,11 +72,6 @@ vendor/lib/btaudio_offload_if.so
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
-# Camera
-system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
-system_ext/lib/vendor.qti.hardware.camera.device@2.0.so
-system_ext/lib/vendor.qti.hardware.camera.device@3.5.so
-
 # CDSP - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
