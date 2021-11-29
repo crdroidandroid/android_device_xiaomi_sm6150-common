@@ -211,15 +211,19 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 
-# Widevine DRM from LA.UM.9.1.r1-10900-SMxxx0.0
+# DRM Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/libcppf.so
+vendor/lib/libminkdescriptor.so
+vendor/lib/libminksocket.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libbase64.so
 vendor/lib64/libmt@1.2.so
 vendor/lib64/liboemcrypto.so
+vendor/lib64/libminkdescriptor.so
+vendor/lib64/libminksocket.so
 vendor/lib64/librmp.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
