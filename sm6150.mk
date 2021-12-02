@@ -115,6 +115,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libdng_sdk.vendor \
     libcamera2ndk_vendor \
+		libxml2 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
@@ -274,6 +275,7 @@ PRODUCT_PACKAGES += \
     libOmxSwVencMpeg4 \
     libOmxVdec \
     libOmxSwVencHevc \
+		libmedia_codeclist \
     libOmxVenc \
 		libgui \
 		libgui.vendor \
