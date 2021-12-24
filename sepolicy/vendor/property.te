@@ -1,6 +1,9 @@
 # Fingerprint
 vendor_internal_prop(vendor_fp_prop)
 
+# IMEI
+vendor_internal_prop(deviceid_prop);
+
 # Init
 vendor_internal_prop(vendor_device_prop)
 
