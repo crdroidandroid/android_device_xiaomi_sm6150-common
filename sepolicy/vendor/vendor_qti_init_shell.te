@@ -8,6 +8,5 @@ allow vendor_qti_init_shell vfat:dir { read open search };
 allow vendor_qti_init_shell configfs:lnk_file { create };
 allow vendor_qti_init_shell sysfs:file { write };
 
-set_prop(vendor_qti_init_shell, power_prop)
-
+set_prop(vendor_qti_init_shell, vendor_power_prop)
 get_prop(vendor_qti_init_shell, radio_control_prop)

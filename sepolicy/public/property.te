@@ -1,0 +1,5 @@
+# IMEI
+vendor_public_prop(deviceid_prop);
+
+# Ultrasound
+vendor_public_prop(elliptic_ultrasound_prop)
