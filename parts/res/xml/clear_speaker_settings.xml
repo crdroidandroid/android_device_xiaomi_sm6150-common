@@ -6,7 +6,8 @@
     <SwitchPreference
         android:key="clear_speaker_pref"
         android:title="@string/clear_speaker_title"
-        android:summary="@string/clear_speaker_summary"/>
+        android:summary="@string/clear_speaker_summary"
+        android:icon="@drawable/ic_speaker_cleaner_icon" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="footer_preference"
