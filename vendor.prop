@@ -14,7 +14,6 @@ persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.spv3.enable=true
 ro.af.client_heap_size_kbyte=7168
-ro.config.vc_call_vol_steps=10
 ro.vendor.audio.soundfx.usb=true
 vendor.audio.adm.buffering.ms=6
 vendor.voice.path.for.pcm.voip=false
@@ -198,6 +197,10 @@ ro.soc.model=SM6150
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
+
+# Volume steps
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=10
 
 # WiFi
 wifi.aware.interface=wifi-aware0
