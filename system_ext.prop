@@ -1,2 +1,10 @@
 # DPM
 persist.vendor.dpm.feature=11
+
+# GPS
+persist.sys.gps.fence=true
+persist.sys.gps.polaris=true
+
+# Telephony
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
