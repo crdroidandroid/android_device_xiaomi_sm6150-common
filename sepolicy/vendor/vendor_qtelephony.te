@@ -1,1 +1,2 @@
 allow vendor_qtelephony unlabeled:file { read };
+allow vendor_qtelephony default_android_service:service_manager { find };

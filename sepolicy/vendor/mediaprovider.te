@@ -1,0 +1,1 @@
+allow mediaprovider radio_service:service_manager { find } ;
