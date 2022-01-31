@@ -35,10 +35,6 @@
 
 #include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
 
-#ifdef USES_FOD_EXTENSION
-#include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
-#endif
-
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -56,16 +52,8 @@ using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint
 using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback;
 using ::android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 
-#ifdef USES_FOD_EXTENSION
-using ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint;
-#endif
-
-#ifdef USES_FOD_EXTENSION
-struct BiometricsFingerprint : public IBiometricsFingerprint, public IXiaomiFingerprint {
-#else
 struct BiometricsFingerprint : public IBiometricsFingerprint {
   public:
-#endif
     BiometricsFingerprint();
     ~BiometricsFingerprint();
 
@@ -88,10 +76,6 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
     Return<RequestStatus> remove(uint32_t gid, uint32_t fid) override;
     Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
-
-#ifdef USES_FOD_EXTENSION
-    Return<int32_t> extCmd(int32_t cmd, int32_t param) override;
-#endif
 
     static fingerprint_device_t* openHal();
     static void notify(
