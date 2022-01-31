@@ -18,13 +18,14 @@ allow batteryd {
 }:dir rw_dir_perms;
 
 allow batteryd {
-  persist_subsys_file
   sysfs
   vendor_sysfs_battery_supply
   sysfs_usb
   vendor_sysfs_usb_supply
   vendor_sysfs_usbpd_device
 }:file rw_file_perms;
+
+allow batteryd persist_subsys_file:file create_file_perms;
 
 allow batteryd kmsg_device:chr_file rw_file_perms;
 
