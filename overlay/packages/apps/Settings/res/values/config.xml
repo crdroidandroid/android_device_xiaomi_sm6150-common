@@ -36,4 +36,7 @@
 
     <!-- Custom pickup sensor for doze customization -->
     <string name="pickup_sensor" translatable="false">xiaomi.sensor.pickup</string>
+
+    <!-- Whether to show the Preference for Adaptive connectivity -->
+    <bool name="config_show_adaptive_connectivity">false</bool>
 </resources>
