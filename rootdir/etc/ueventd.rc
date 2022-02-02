@@ -101,7 +101,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/avtimer              0660   system     audio
 
 # NFC permissions
+/dev/nfc-nci              0660    nfc         nfc
 /dev/nq-nci               0660    nfc         nfc
+/dev/assd                 0660    nfc         nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
