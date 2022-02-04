@@ -101,6 +101,10 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.telephony.iwlan_operation_mode=legacy
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Dolby
 persist.vendor.audio_fx.current=dolby
 ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
