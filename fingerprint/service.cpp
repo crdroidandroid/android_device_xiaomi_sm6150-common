@@ -22,7 +22,7 @@ using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
 // Generated HIDL files
-using android::hardware::biometrics::fingerprint::V2_1::implementation::BiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
 
 using android::status_t;
 

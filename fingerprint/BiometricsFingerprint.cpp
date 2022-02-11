@@ -21,7 +21,7 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_3 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -378,8 +378,21 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
     }
 }
 
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t /* sensorId */) {
+    return false;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t /* x */, uint32_t /* y */,
+                                                float /* minor */, float /* major */) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
+}
+
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware

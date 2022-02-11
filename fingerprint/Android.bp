@@ -14,11 +14,11 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150",
+    name: "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
-    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150.xml"],
     srcs: [
         "service.cpp",
         "BiometricsFingerprint.cpp",
@@ -31,6 +31,8 @@ cc_binary {
         "libutils",
         "libcutils",
         "android.hardware.biometrics.fingerprint@2.1",
+        "android.hardware.biometrics.fingerprint@2.2",
+        "android.hardware.biometrics.fingerprint@2.3",
     ],
     proprietary: true,
 }
