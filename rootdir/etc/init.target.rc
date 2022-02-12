@@ -36,6 +36,7 @@ on init
 on init
     # Setup permission for Power HAL
     chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /dev/cpu_dma_latency
     chown system system /dev/stune/top-app/schedtune.prefer_high_cap
     chown system system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
     chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
@@ -52,6 +53,7 @@ on init
 
     chmod 0664 /dev/stune/top-app/schedtune.boost
     chmod 0664 /dev/stune/top-app/schedtune.prefer_high_cap
+    chmod 0664 /dev/cpu_dma_latency
     chmod 0664 /sys/class/kgsl/kgsl-3d0/max_pwrlevel
     chmod 0664 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
     chmod 0664 /sys/class/kgsl/kgsl-3d0/force_clk_on
