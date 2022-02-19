@@ -10,6 +10,12 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
+# IORap
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
