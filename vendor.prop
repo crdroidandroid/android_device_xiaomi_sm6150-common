@@ -165,6 +165,7 @@ vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
+vendor.display.enable_force_split=1
 
 # Display - Set color mode to Adaptive by default
 persist.sys.sf.color_saturation=1.0
