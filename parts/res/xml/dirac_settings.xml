@@ -23,6 +23,16 @@
         android:key="dirac_enable"
         android:title="@string/dirac_enable" />
 
+    <Preference
+        android:key="audio_dolby_atmos"
+        android:icon="@drawable/ic_dolby"
+        android:title="@string/dolby_title"
+        android:summary="@string/dolby_summary">
+        <intent
+             android:targetPackage="com.dolby.daxappui"
+             android:targetClass="com.dolby.daxappui.MainActivity" />
+    </Preference>
+
     <ListPreference
         android:key="dirac_headset_pref"
         android:entries="@array/dirac_headset_pref_entries"
