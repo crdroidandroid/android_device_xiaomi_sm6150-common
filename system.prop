@@ -21,6 +21,7 @@ media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
+ro.media.recorder-max-base-layer-fps=60
 
 # RCS
 persist.rcs.supported=1
