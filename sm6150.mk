@@ -393,8 +393,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # ZRAM writeback
 PRODUCT_PROPERTY_OVERRIDES += \
