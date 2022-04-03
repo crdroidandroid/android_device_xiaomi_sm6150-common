@@ -42,6 +42,8 @@ vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
+vendor/lib/rfsa/adsp/misound_res_headphone.bin
+vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
