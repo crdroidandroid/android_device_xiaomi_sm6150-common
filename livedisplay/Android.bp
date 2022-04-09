@@ -20,7 +20,6 @@ cc_binary {
     init_rc: ["vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150.rc"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
         "AntiFlicker.cpp",
         "SunlightEnhancement.cpp",

@@ -19,12 +19,15 @@
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
 #include <hidl/HidlTransportSupport.h>
-#include <livedisplay/sdm/PictureAdjustment.h>
 
 #include "AntiFlicker.h"
 #include "SunlightEnhancement.h"
+#include "livedisplay/sdm/SDMController.h"
 
-using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;
+using android::OK;
+using android::sp;
+using android::status_t;
+
 using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
 using ::vendor::lineage::livedisplay::V2_1::IAntiFlicker;
 using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
@@ -32,24 +35,25 @@ using ::vendor::lineage::livedisplay::V2_1::implementation::AntiFlicker;
 using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
 
 int main() {
-    android::sp<IAntiFlicker> antiFlicker = new AntiFlicker();
-    android::sp<ISunlightEnhancement> sunlightEnhancement = new SunlightEnhancement();
-
+    status_t status = OK;
     std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
-    android::sp<PictureAdjustment> pictureAdjustment = new PictureAdjustment(controller);
-
+    sp<AntiFlicker> af = new AntiFlicker();
+    sp<SunlightEnhancement> se = new SunlightEnhancement();
     android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    if (antiFlicker->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register anti flicker HAL service.";
+    // AntiFlicker service
+    status = af->registerAsService();
+    if (status != OK) {
+        LOG(ERROR) << "Could not register service for LiveDisplay HAL AntiFlicker Iface ("
+                   << status << ")";
         return 1;
     }
-    if (pictureAdjustment->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register picture adjustment HAL service.";
-        return 1;
-    }
-    if (sunlightEnhancement->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register sunlight enhancement HAL service.";
+
+    // SunlightEnhancement service
+    status = se->registerAsService();
+    if (status != OK) {
+        LOG(ERROR) << "Could not register service for LiveDisplay HAL SunlightEnhancement Iface ("
+                   << status << ")";
         return 1;
     }
 
