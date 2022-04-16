@@ -4,6 +4,9 @@ vendor.bluetooth.soc=cherokee
 # Charger
 ro.charger.enable_suspend=true
 
+# Display
+debug.force_no_blanking=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
 
