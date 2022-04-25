@@ -1,3 +1,6 @@
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+
 # DPM
 persist.vendor.dpm.feature=11
 
