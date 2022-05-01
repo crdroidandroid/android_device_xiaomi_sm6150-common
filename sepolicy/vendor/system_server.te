@@ -1,0 +1,3 @@
+allow system_server crash_dump:process getpgid;
+
+allow system_server app_zygote:process getpgid;
