@@ -1,0 +1,2 @@
+allow cameraserver property_socket:sock_file { write };
+allow cameraserver default_android_hwservice:hwservice_manager { find };
