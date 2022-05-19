@@ -11,8 +11,8 @@
 #include <libinit_utils.h>
 
 constexpr const char *RO_PROP_SOURCES[] = {
-    nullptr,   "product.", "product_services.", "odm.",
-    "vendor.", "system.", "system_ext.", "bootimage.",
+    nullptr,   "product.", "product_services.", "odm.", "odm_dlkm.",
+    "vendor.", "vendor_dlkm.", "system.", "system_ext.", "bootimage.",
 };
 
 void property_override(std::string prop, std::string value, bool add) {
