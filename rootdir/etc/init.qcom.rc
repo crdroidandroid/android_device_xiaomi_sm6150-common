@@ -554,14 +554,8 @@ on property:sys.boot_completed=1
     # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
-
-    # Set LMK series
-    write /sys/module/lowmemorykiller/parameters/enable_lmk 1
-    write /sys/module/lowmemorykiller/parameters/adj_max_shift 606
-    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 105984
-    write /sys/module/lowmemorykiller/parameters/minfree "18432,23040,27648,64512,165888,225792"
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-    write /sys/module/lowmemorykiller/parameters/oom_reaper 1
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
 
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
