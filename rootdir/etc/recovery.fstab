@@ -30,9 +30,13 @@
 #device         mount point      fstype        [device2] [length=]
 
 system                                     /system         ext4    ro,barrier=1,discard                                            wait,avb=vbmeta_system,logical,first_stage_mount
+system                                     /system         erofs   ro                                                              wait,avb=vbmeta_system,logical,first_stage_mount
 system_ext                                 /system_ext     ext4    ro,barrier=1,discard                                            wait,avb=vbmeta_system,logical,first_stage_mount
+system_ext                                 /system_ext     erofs   ro                                                              wait,avb=vbmeta_system,logical,first_stage_mount
 vendor                                     /vendor         ext4    ro,barrier=1,discard                                            wait,avb,logical,first_stage_mount
+vendor                                     /vendor         erofs   ro                                                              wait,avb,logical,first_stage_mount
 product                                    /product        ext4    ro,barrier=1,discard                                            wait,avb=vbmeta_system,logical,first_stage_mount
+product                                    /product        erofs   ro                                                              wait,avb=vbmeta_system,logical,first_stage_mount
 /dev/block/bootdevice/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                     wait,check
 /dev/block/bootdevice/by-name/metadata     /metadata       ext4    noatime,nosuid,nodev,discard                                    wait,check,formattable,first_stage_mount
 /dev/block/bootdevice/by-name/userdata     /data           f2fs    noatime,nosuid,nodev,discard                                    wait,check,encryptable=footer
