@@ -28,10 +28,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
-
 # Do not skip init trigger by default
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     vendor.skip.init=0
