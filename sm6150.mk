@@ -236,6 +236,11 @@ PRODUCT_PACKAGES += \
     android.hidl.memory@1.0.vendor \
     android.hidl.memory.block@1.0.vendor
 
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
+
 # IFAA manager
 PRODUCT_PACKAGES += \
     IFAAService \
