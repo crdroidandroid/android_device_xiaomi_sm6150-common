@@ -253,7 +253,4 @@
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
     </integer-array>
-
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
 </resources>
