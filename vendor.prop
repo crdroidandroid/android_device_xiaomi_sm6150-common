@@ -130,6 +130,7 @@ debug.sdm.support_writeback=0
 debug.sf.enable_hwc_vds=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
