@@ -85,4 +85,8 @@
 
     <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
     <bool name="config_wifiSupportChannelOnDataPath" translatable="false">true</bool>
+
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool translatable="false" name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
 </resources>
