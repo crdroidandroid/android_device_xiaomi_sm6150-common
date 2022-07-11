@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+
 BOARD_VENDOR := xiaomi
 
 COMMON_PATH := device/xiaomi/sm6150-common
