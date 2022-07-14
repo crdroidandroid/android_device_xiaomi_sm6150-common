@@ -1,0 +1,5 @@
+allow platform_app cgroup:file r_file_perms;
+
+get_prop(platform_app, vendor_fp_prop)
+get_prop(platform_app, vendor_display_prop)
+get_prop(platform_app, vendor_audio_prop)
