@@ -152,6 +152,9 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
+#FOD
+TARGET_HAS_UDFPS := true
+
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
