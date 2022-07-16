@@ -42,14 +42,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.soundtrigger@2.2-impl
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.usb.default \
     audio.r_submix.default \
-    sound_trigger.primary.sm6150
 
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
@@ -65,9 +63,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_tuning_mixer_tavil.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tavil.txt
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
