@@ -272,7 +272,7 @@
     <bool name="config_pinnerCameraApp">false</bool>
 
     <!-- Should the pinner service pin the Home application? -->
-    <bool name="config_pinnerHomeApp">false</bool>
+    <bool name="config_pinnerHomeApp">true</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
