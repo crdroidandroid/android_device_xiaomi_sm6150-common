@@ -38,7 +38,7 @@
       "Values": [
         "9999999",
         "1324800",
-        "652800"
+        "300000"
       ],
       "DefaultIndex": 2,
       "ResetOnInit": true
@@ -269,6 +269,12 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
+      "Duration": 5000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPULittleClusterMaxFreq",
       "Duration": 5000,
       "Value": "9999999"
     },
