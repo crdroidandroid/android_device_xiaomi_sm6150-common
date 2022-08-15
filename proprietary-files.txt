@@ -164,6 +164,10 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libsdedrm.so
 
+# Display (Dpps)
+vendor/lib/libdpps.so
+vendor/lib64/libdpps.so
+
 # Display postprocessing from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
