@@ -1,3 +1,1 @@
-allow kernel mnt_vendor_file:dir { search };
-allow kernel system_data_file:file { read };
 allow kernel per_boot_file:file r_file_perms;

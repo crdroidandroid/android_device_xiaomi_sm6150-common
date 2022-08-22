@@ -1,2 +1,0 @@
-allow netd proc_net:dir { read };
-allow netd proc_net:file { getattr  open };

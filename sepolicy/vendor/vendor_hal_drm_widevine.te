@@ -1,3 +1,0 @@
-# Allow the widwevine to read the drm firmware
-allow vendor_hal_drm_widevine vfat:dir r_dir_perms;
-allow vendor_hal_drm_widevine vfat:file r_file_perms;

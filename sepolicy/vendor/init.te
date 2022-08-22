@@ -1,10 +1,4 @@
 allow init same_process_hal_file:file execute;
-allow init proc_net:file { open };
-allow init sysfs:file { setattr };
-allow init sysfs_dm:file { setattr };
-allow init vendor_file:file { execute };
-allow init vfat:dir { search };
-allow init vendor_file:file { execute };
 
 allow init proc_last_kmsg:file {
   r_file_perms
@@ -12,6 +6,6 @@ allow init proc_last_kmsg:file {
 };
 
 allow init adsprpcd_file:file mounton;
-allow init system_file:file { execute_no_trans };
+
 allow init per_boot_file:file ioctl;
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };

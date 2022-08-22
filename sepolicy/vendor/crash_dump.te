@@ -1,1 +1,0 @@
-allow crash_dump init:process { ptrace };

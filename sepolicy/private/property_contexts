@@ -25,8 +25,11 @@ ro.ril.oem.imei                       u:object_r:deviceid_prop:s0
 ro.ril.oem.meid                       u:object_r:deviceid_prop:s0
 
 # MIUI
-ro.cust.test            u:object_r:exported_system_prop:s0
-ro.miui.                u:object_r:exported_system_prop:s0
+ro.cust.test                          u:object_r:exported_system_prop:s0
+ro.miui.                              u:object_r:exported_system_prop:s0
 
 # Ultrasound
 elliptic.ultrasound.multiple_mics.    u:object_r:elliptic_ultrasound_prop:s0
+
+# WiFi Display
+persist.vendor.setWFDInfo.            u:object_r:vendor_wfd_sys_debug_prop:s0

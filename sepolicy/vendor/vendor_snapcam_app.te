@@ -1,3 +1,0 @@
-allow vendor_snapcam_app shell_data_file:dir search;
-allow vendor_snapcam_app vendor_xdsp_device:chr_file r_file_perms;
-allow vendor_snapcam_app zygote:unix_stream_socket getopt;
