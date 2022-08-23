@@ -10,6 +10,9 @@ persist.vendor.cne.feature=1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# IncrementalFS
+ro.incremental.enable=yes
+
 # LMK
 ro.lmk.filecache_min_kb=153600
 ro.lmk.stall_limit_critical=40
