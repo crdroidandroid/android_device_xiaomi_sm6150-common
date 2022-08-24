@@ -6,7 +6,7 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/vendor_boot_[ab]          u:object_r:boot_block_device:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?                                        u:object_r:camera_persist_file:s0
+/mnt/vendor/persist/camera(/.*)?                                        u:object_r:vendor_persist_camera_file:s0
 /vendor/bin/remosaic_daemon                                             u:object_r:remosaic_daemon_exec:s0
 
 # Camera motor
@@ -41,16 +41,16 @@
 /avb(/.*)?                                 u:object_r:avb_file:s0
 
 # Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.3-service\.xiaomi_sm6150                      u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi_sm6150-udfps               u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.xiaomi_sm6150                      u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6150-ext                 u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint - devices
 /dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
 
 # Fingerprint - data
-/data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
-/data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
+/data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_data_file:s0
 
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
@@ -109,6 +109,22 @@
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_sm6150    u:object_r:hal_vibrator_default_exec:s0
 
+# Widevine
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.4-service.clearkey                                     u:object_r:vendor_hal_drm_widevine_exec:s0
+
 # WiFi
 /vendor/bin/nv_mac                                                      u:object_r:vendor_wcnss_service_exec:s0
 /data/vendor/mac_addr(/.*)?                                             u:object_r:vendor_wifi_vendor_data_file:s0
+
+# Wakeups
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/pc_port/wakeup34+(/.*)?           u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,pm6150_rtc/rtc/rtc0/wakeup9+(/.*)?                       u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,usb-pdphy@1700/usbpd/usbpd0/otg_default/wakeup38+(/.*)?  u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qpnp,qg/power_supply/bms/wakeup28+(/.*)?                      u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/usb/wakeup32+(/.*)?               u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/soc:fpc1020/wakeup/wakeup5+(/.*)?                                                                                               u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/battery/wakeup35+(/.*)?           u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/main/wakeup33+(/.*)?              u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup13+(/.*)?                                                                      u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/dc/wakeup31+(/.*)?                u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/88c000.i2c/i2c-2/2-0065/power_supply/bq2597x-standalone/wakeup11+(/.*)?                                                         u:object_r:sysfs_wakeup:s0
