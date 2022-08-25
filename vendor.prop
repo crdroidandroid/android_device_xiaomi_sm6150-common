@@ -18,6 +18,7 @@ ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.afe.record=true
 vendor.audio.adm.buffering.ms=6
 vendor.voice.path.for.pcm.voip=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
