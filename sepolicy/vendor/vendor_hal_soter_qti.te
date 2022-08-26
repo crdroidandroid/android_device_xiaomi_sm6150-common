@@ -1,0 +1,2 @@
+allow vendor_hal_soter_qti vfat:file { getattr  open  read };
+allow vendor_hal_soter_qti vfat:dir { search };

@@ -1,1 +1,7 @@
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:dir { add_name  write search};
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:dir create_dir_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:sock_file create_file_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:sock_file { create };
+allow vendor_wcnss_service vfat:file { getattr  open  read };
+allow vendor_wcnss_service vfat:dir { search };
 get_prop(vendor_wcnss_service, vendor_bluetooth_prop)

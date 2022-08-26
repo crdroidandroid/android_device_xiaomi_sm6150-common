@@ -11,6 +11,7 @@ allow hal_mlipay_default {
 }:chr_file rw_file_perms;
 
 r_dir_file(hal_mlipay_default, firmware_file)
-
+allow hal_mlipay_default vfat:file { getattr  open  read };
+allow hal_mlipay_default vfat:dir { search };
 get_prop(hal_mlipay_default, vendor_fp_prop)
 set_prop(hal_mlipay_default, vendor_tee_listener_prop)
