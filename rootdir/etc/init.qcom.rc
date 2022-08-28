@@ -51,9 +51,6 @@ on early-init && property:ro.boot.mode=charger
     setprop vendor.skip.init 1
 
 on init && property:vendor.skip.init=0
-    # Loading kernel modules in background
-    start insmod_sh
-
     # Disable powersaving
     write /sys/module/lpm_levels/parameters/sleep_disabled 1
 
@@ -223,13 +220,6 @@ on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
 on late-fs
-    # Start services for bootanim
-    start surfaceflinger
-    start bootanim
-    start vendor.hwcomposer-2-4
-    start vendor.configstore-hal
-    start vendor.qti.hardware.display.allocator
-
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
     mount_all --late /vendor/etc/fstab.qcom
@@ -241,8 +231,11 @@ on late-fs
     write /sys/module/kdebuginfo/parameters/build_info "${ro.product.name}-${ro.build.type} ${ro.build.version.incremental}"
 
 on early-boot
-    # Wait for devices
-    wait_for_prop vendor.all.devices.ready 1
+    # Allow subsystem (modem etc) debugging
+    write /sys/kernel/boot_adsp/boot 1
+    write /sys/kernel/boot_cdsp/boot 1
+    write /sys/devices/virtual/npu/msm_npu/boot 1
+    write /sys/devices/virtual/cvp/cvp/boot 1
 
     setprop ro.vendor.alarm_boot false
 
@@ -687,13 +680,6 @@ service vendor.charger /system/bin/chargeonlymode
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
-
-service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.cfg
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
 
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}

@@ -18,7 +18,6 @@
 /data/per_boot(/.*)?            u:object_r:per_boot_file:s0
 
 # Executable
-/vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/init\.mi\.usb\.sh   u:object_r:vendor_qti_init_shell_exec:s0
 
 # Elliptic

@@ -254,10 +254,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
-# Insmod files
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -371,7 +367,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.zram \
-    init.insmod.sh \
     init.nfc.rc \
     init.power.rc \
     init.qcom.rc \
