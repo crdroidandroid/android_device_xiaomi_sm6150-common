@@ -236,22 +236,6 @@ VENDOR_SECURITY_PATCH := 2022-08-01
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_SEPOLICY_M4DEFS += \
-    latency_device=vendor_latency_device \
-    nfc_vendor_data_file=vendor_nfc_vendor_data_file \
-    persist_audio_file=vendor_persist_audio_file \
-    persist_sensors_file=vendor_persist_sensors_file \
-    public_vendor_default_prop=vendor_public_vendor_default_prop \
-    sensors_prop=vendor_sensors_prop \
-    sysfs_boot_adsp=vendor_sysfs_boot_adsp \
-    sysfs_devfreq=vendor_sysfs_devfreq \
-    sysfs_fingerprint=vendor_sysfs_fingerprint \
-    sysfs_graphics=vendor_sysfs_graphics \
-    sysfs_kgsl=vendor_sysfs_kgsl \
-    sysfs_scsi_host=vendor_sysfs_scsi_host \
-    sysfs_ssr=vendor_sysfs_ssr \
-    wcnss_service_exec=vendor_wcnss_service_exec \
-    wifi_vendor_data_file=vendor_wifi_vendor_data_file
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 

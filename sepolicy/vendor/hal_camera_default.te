@@ -3,13 +3,13 @@ hal_client_domain(hal_camera_default, hal_power)
 
 hal_client_domain(hal_camera_default, hal_configstore)
 
-# Allow hal_camera_default to read to sysfs_kgsl
-r_dir_file(hal_camera_default, sysfs_kgsl)
+# Allow hal_camera_default to read to vendor_sysfs_kgsl
+r_dir_file(hal_camera_default, vendor_sysfs_kgsl)
 
 # Allow hal_camera_default to read to mnt/vendor/persist/camera
 r_dir_file(hal_camera_default, vendor_persist_camera_file)
 r_dir_file(hal_camera_default, mnt_vendor_file)
-r_dir_file(hal_camera_default, persist_sensors_file)
+r_dir_file(hal_camera_default, vendor_persist_sensors_file)
 
 allow hal_camera_default remosaic_daemon_service:service_manager find;
 
