@@ -267,22 +267,23 @@ PRODUCT_PACKAGES += \
 		libminijail \
 		libc2dcolorconvert \
 		libplatformconfig \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
-    libOmxVdec \
-    libOmxSwVencHevc \
+        libmm-omxcore \
+        libOmxAacEnc \
+        libOmxAmrEnc \
+        libOmxCore \
+        libOmxEvrcEnc \
+        libOmxG711Enc \
+        libOmxQcelp13Enc \
+        libOmxSwVdec \
+        libOmxSwVencMpeg4 \
+        libOmxVdec \
+        libOmxSwVencHevc \
 		libmedia_codeclist \
-    libOmxVenc \
+        libOmxVenc \
+        libOmxVidcCommon \
 		libgui \
 		libgui.vendor \
-    libstagefrighthw \
+        libstagefrighthw \
 		libstagefright_omx.vendor
 
 PRODUCT_PACKAGES += \
