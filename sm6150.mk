@@ -329,10 +329,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # NFC
+ifneq ($(TARGET_DEVICE),mojito)
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.gsma.services.nfc \
     libchrome.vendor \
+    init.nfc.rc \
     NfcNci \
     Tag
 
@@ -347,6 +349,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
+
+endif
 
 # Netd
 PRODUCT_PACKAGES += \
@@ -399,7 +403,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     fstab.zram \
     fstab.qcom \
-    init.nfc.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
