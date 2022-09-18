@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from mojito qssi-user 12 SKQ1.210908.001 V13.0.9.0.SKGMIXM release-keys
+# All unpinned blobs below are extracted from mojito qssi-user 12 SKQ1.210908.001 V13.0.10.0.SKGMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
@@ -657,6 +657,16 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/12_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/14_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/15_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/16_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/17_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/18_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/19_version_update_ecc_table.sql
 
 # Soter
 -vendor/app/SoterService/SoterService.apk
