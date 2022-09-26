@@ -53,6 +53,7 @@ def OTA_InstallEnd(info):
   return
 
 def AddBasebandAssertion(info, input_zip):
+  return
   android_info = input_zip.open("OTA/android-info.txt")
   for line in android_info.readlines():
     m = re.search(r'require\s+version-baseband\s*-\s*(.+)', line.decode('utf-8'))

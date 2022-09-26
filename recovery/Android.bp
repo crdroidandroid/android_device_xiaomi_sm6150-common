@@ -5,5 +5,9 @@ cc_library_static {
         "libedify",
         "libotautil",
     ],
+
+    lto: {
+        never: true,
+    },
 }
 
