@@ -1,1 +1,1 @@
-allow network_stack proc_net:file{ getattr  read };
+allow network_stack proc_net:file r_file_perms;

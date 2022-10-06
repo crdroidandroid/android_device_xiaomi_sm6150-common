@@ -1,1 +1,3 @@
 get_prop(untrusted_app, vendor_persist_camera_prop)
+allow untrusted_app proc_asound:dir { search };
+allow untrusted_app proc_pid_max:file { read };
