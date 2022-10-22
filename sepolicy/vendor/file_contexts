@@ -8,6 +8,12 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                        u:object_r:vendor_persist_camera_file:s0
 /vendor/bin/remosaic_daemon                                             u:object_r:remosaic_daemon_exec:s0
+/vendor/lib(64)?/libal(CFR|hLDC)\.so                                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_.*\.so                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmialgoengine\.so                                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmibokeh_712\.so                                     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmpbase\.so                                          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libVD.*\.so                                            u:object_r:same_process_hal_file:s0
 
 # Camera motor
 /dev/drv8846_dev                                                        u:object_r:motor_device:s0

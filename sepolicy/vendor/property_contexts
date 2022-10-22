@@ -1,8 +1,22 @@
 # Camera
-persist.camera.                            u:object_r:vendor_camera_prop:s0
-persist.vendor.camera                      u:object_r:vendor_camera_prop:s0
-vendor.camera.                             u:object_r:vendor_camera_prop:s0
-ro.vendor.camera.                          u:object_r:vendor_camera_prop:s0
+camera.*                              u:object_r:vendor_camera_prop:s0
+persist.vendor.camera                 u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.arcsoftlog      u:object_r:vendor_camera_prop:s0
+persist.vednor.camera.arcsoftlog      u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.module.      u:object_r:vendor_camera_prop:s0
+persist.camera.visidonsr.debuglevel   u:object_r:vendor_camera_prop:s0
+persist.camera.sr.debuglevel          u:object_r:vendor_camera_prop:s0
+vendor.camera.*                       u:object_r:vendor_camera_prop:s0
+vendor.camera.aux.packageblacklist    u:object_r:vendor_camera_prop:s0
+vendor.camera.boot_complete           u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.*                u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.rearMain.fuseID  u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.frontAux.fuseID  u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.frontMain.fuseID u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.rearUltra.fuseID u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.rearTele.fuseID  u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.rearDepth.fuseID u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.rearMacro.fuseID u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 persist.vendor.fpc.                        u:object_r:vendor_fp_prop:s0
