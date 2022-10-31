@@ -30,6 +30,3 @@ ro.miui.                              u:object_r:exported_system_prop:s0
 
 # Ultrasound
 elliptic.ultrasound.multiple_mics.    u:object_r:elliptic_ultrasound_prop:s0
-
-# WiFi Display
-persist.vendor.setWFDInfo.            u:object_r:vendor_wfd_sys_debug_prop:s0
