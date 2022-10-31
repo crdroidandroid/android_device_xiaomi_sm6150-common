@@ -47,8 +47,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libaudio-resampler \
     libvolumelistener \
-    libtinycompress \
-    libtinycompress.vendor
+    libtinycompress
 
 # Audio XML
 ifeq ($(TARGET_ENABLE_AUDIO_ULL),true)
@@ -91,8 +90,7 @@ PRODUCT_PACKAGES += \
     bt_stack.conf \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libldacBT_bco
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -106,15 +104,13 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libdng_sdk.vendor \
     libcamera2ndk_vendor \
-		libxml2 \
+    libxml2 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.device@2.0.vendor \
-    vendor.qti.hardware.camera.device@3.5.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
     Aperture
@@ -154,18 +150,17 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-		libvulkan \
-		libsdmcore \
-		libsdmutils \
-		libstagefright_enc_common \
-		libtinyxml \
+    libvulkan \
+    libsdmcore \
+    libsdmutils \
+    libstagefright_enc_common \
+    libtinyxml \
     vendor.qti.hardware.display.allocator-service
 
 PRODUCT_PACKAGES += \
@@ -274,10 +269,7 @@ PRODUCT_PACKAGES += \
         libOmxEvrcEnc \
         libOmxG711Enc \
         libOmxQcelp13Enc \
-        libOmxSwVdec \
-        libOmxSwVencMpeg4 \
         libOmxVdec \
-        libOmxSwVencHevc \
 		libmedia_codeclist \
         libOmxVenc \
         libOmxVidcCommon \
@@ -297,7 +289,6 @@ PRODUCT_PACKAGES += \
 
 # Media Extensions
 PRODUCT_PACKAGES += \
-    libavmediaserviceextensions \
     libmediametrics \
     libregistermsext \
     mediametrics
@@ -332,7 +323,6 @@ PRODUCT_COPY_FILES += \
 ifneq ($(TARGET_DEVICE),mojito)
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
     libchrome.vendor \
     init.nfc.rc \
     NfcNci \
@@ -358,8 +348,8 @@ PRODUCT_PACKAGES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-		android.hardware.neuralnetworks@1.3 \
-		android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.neuralnetworks@1.3 \
+    android.hardware.neuralnetworks@1.3.vendor \
     android.hardware.neuralnetworks@1.2 \
     android.hardware.neuralnetworks@1.2.vendor
 
@@ -377,10 +367,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-		android.hardware.power@1.2 \
-		android.hardware.power@1.2.vendor \
+    android.hardware.power@1.2 \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr \
-		android.hardware.power.stats@1.0-service.mock
+    android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -418,8 +408,8 @@ PRODUCT_PACKAGES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-		android.hardware.radio.deprecated@1.0 \
-		android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio@1.5 \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2 \
@@ -474,8 +464,8 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
-		qti-telephony-hidl-wrapper-prd \
-		qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     telephony-ext
@@ -569,12 +559,9 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
-		libdisplayconfig \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libnl \
     libqdMetaData \
-		libqdMetaData.vendor \
     libwfdaac_vendor
 
 # Device-specific settings
