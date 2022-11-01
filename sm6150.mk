@@ -85,32 +85,23 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.sm6150 \
     audio.r_submix.default \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
     libaudio-resampler \
     libaudiopreprocessing \
-    libbatterylistener \
     libbundlewrapper \
-    libcomprcapture \
     libdownmix \
     libdynproc \
     libeffectproxy \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
     libldnhncr \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libreverbwrapper \
-    libsndmonitor \
-    libspkrprot \
     libvisualizer \
     libvolumelistener
 
@@ -133,7 +124,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     audio.bluetooth.default \
-    libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
@@ -152,12 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-# CNE
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
 # Config Store
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -175,9 +159,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.sm6150 \
     hwcomposer.sm6150 \
-    libdisplayconfig \
     libtinyxml \
-    libtinyxml.vendor \
     libvulkan \
     memtrack.sm6150 \
     vendor.qti.hardware.display.allocator-service
@@ -484,12 +466,10 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig.vendor \
     libdisplayconfig.qti \
     libnl \
     libqdMetaData \
     libqdMetaData.system \
-    libqdMetaData.vendor \
     libwfdaac_vendor \
     vendor.display.config@2.0
 
