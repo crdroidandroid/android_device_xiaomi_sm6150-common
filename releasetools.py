@@ -17,14 +17,6 @@
 import common
 import re
 
-def FullOTA_Assertions(info):
-  AddBasebandAssertion(info, info.input_zip)
-  return
-
-def IncrementalOTA_Assertions(info):
-  AddBasebandAssertion(info, info.target_zip)
-  return
-
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
@@ -33,30 +25,18 @@ def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
-def AddBasebandAssertion(info, input_zip):
-  android_info = input_zip.read("OTA/android-info.txt")
-  variants = []
-  for variant in ('in', 'cn', 'eea'):
-    result = re.search(r'require\s+version-{}\s*=\s*(\S+)'.format(variant), android_info)
-    if result is not None:
-      variants.append(result.group(1).split(','))
-  cmd = 'assert(getprop("ro.boot.hwc") == "{0}" && (xiaomi.verify_baseband("{2}", "{1}") == "1" || abort("ERROR: This package requires baseband from atleast {2}. Please upgrade firmware and retry!");) || true);'
-  for variant in variants:
-    info.script.AppendExtra(cmd.format(*variant))
-
 def AddImage(info, basename, dest):
-  name = basename
-  path = "IMAGES/" + name
+  path = "IMAGES/" + basename
   if path not in info.input_zip.namelist():
     return
 
   data = info.input_zip.read(path)
-  common.ZipWriteStr(info.output_zip, name, data)
-  info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
-  info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
+  common.ZipWriteStr(info.output_zip, basename, data)
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def OTA_InstallEnd(info):
-  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
-  AddImage(info, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
+  info.script.Print("Patching dtbo and vbmeta images...")
   AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
+  AddImage(info, "vbmeta_system.img", "/dev/block/bootdevice/by-name/vbmeta_system")
   return
