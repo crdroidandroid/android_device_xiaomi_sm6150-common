@@ -20,7 +20,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 TARGET_ENABLE_BLUR := true
 
 # Camera
-$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
+#$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
