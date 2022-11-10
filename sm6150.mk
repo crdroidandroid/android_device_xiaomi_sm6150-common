@@ -390,8 +390,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/qcom-caf/wlan \
-    hardware/xiaomi \
-    vendor/qcom/opensource/usb/etc
+    hardware/xiaomi
 
 # Dependencies 
 PRODUCT_PACKAGES += \
