@@ -224,6 +224,10 @@ on post-fs-data
     # Allow system to adjust haptic level directly
     chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel
     chmod 0664 /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel
+	
+	# Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
 
 on property:sys.boot_completed=1
     # Enable UFS clock scaling back
