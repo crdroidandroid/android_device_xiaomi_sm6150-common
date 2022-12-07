@@ -16,6 +16,9 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms      
 # ds28e16 battery verify
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify u:object_r:vendor_sysfs_battery_supply:s0
 
+# Extcon
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon                    u:object_r:sysfs_extcon:s0
+
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/compatible_all         u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare         u:object_r:vendor_sysfs_fingerprint:s0
