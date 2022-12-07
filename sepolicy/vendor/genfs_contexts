@@ -3,6 +3,9 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask    
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms           u:object_r:vendor_sysfs_graphics:s0
 
+# Extcon
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon                    u:object_r:sysfs_extcon:s0
+
 # Haptic
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel                  u:object_r:sysfs_vibrator:s0
 
