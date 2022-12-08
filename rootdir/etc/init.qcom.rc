@@ -615,6 +615,12 @@ on property:sys.boot_completed=1
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
 
+    # IRQ Tuning
+    # IRQ 124: msm_drm
+    # IRQ 379: kgsl-3d0
+    write /proc/irq/124/smp_affinity_list 2
+    write /proc/irq/379/smp_affinity_list 1
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
