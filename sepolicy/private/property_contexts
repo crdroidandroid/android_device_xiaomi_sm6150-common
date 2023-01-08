@@ -32,6 +32,9 @@ vendor.sys.camerainfo                           u:object_r:exported_system_prop:
 # Recovery
 ro.build.expect.                                 u:object_r:exported_default_prop:s0
 
+# Sensors
+persist.sensor.sardisable                       u:object_r:vendor_sensors_prop:s0
+
 # Settings
 settingsdebug.instant.packages                  u:object_r:exported_system_prop:s0
 persist.input.velocitytracker.                  u:object_r:exported_system_prop:s0
