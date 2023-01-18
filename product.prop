@@ -2,6 +2,9 @@
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 
+# App
+ro.launcher.blur.appLaunch=0
+
 # Set the Bluetooth Class of Device
 # Service Field: 0x5A -> 90
 #    Bit 17: Networking
