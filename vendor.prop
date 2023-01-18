@@ -127,7 +127,6 @@ persist.vendor.dpmhalservice.enable=1
 drm.service.enabled=true
 
 # Display
-debug.sdm.support_writeback=0
 debug.sf.enable_hwc_vds=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
