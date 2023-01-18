@@ -8,6 +8,9 @@ ro.launcher.blur.appLaunch=0
 #Graphics
 debug.hwui.renderer=skiagl
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # System Server
 arm64.memtag.process.system_server=off
 
