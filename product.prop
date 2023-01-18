@@ -5,6 +5,9 @@ audio.sys.offload.pstimeout.secs=3
 # App
 ro.launcher.blur.appLaunch=0
 
+# System Server
+arm64.memtag.process.system_server=off
+
 # Set the Bluetooth Class of Device
 # Service Field: 0x5A -> 90
 #    Bit 17: Networking
