@@ -1,0 +1,2 @@
+# Allow vendor_hal_gnss_qti to read, open, map and get attributs in vendor_pd_locater_dbg_prop 
+allow vendor_hal_gnss_qti vendor_pd_locater_dbg_prop:file { getattr map open read };
