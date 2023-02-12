@@ -1,0 +1,1 @@
+get_prop(hal_wifi_default, persist_vendor_debug_wifi_prop)
