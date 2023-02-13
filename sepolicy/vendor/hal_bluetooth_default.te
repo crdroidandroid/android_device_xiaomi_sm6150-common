@@ -3,3 +3,8 @@ r_dir_file(hal_bluetooth_default, vendor_wifi_vendor_data_file)
 
 allow hal_bluetooth_default vfat:file { getattr  open  read };
 allow hal_bluetooth_default vfat:dir { search };
+
+# Allow hal_bluetooth_default to read, write, open, get attributes, and control IO in vendor_diag_device
+allow hal_bluetooth_default vendor_diag_device:chr_file { ioctl getattr open read write };
+allow hal_bluetooth_default vendor_ramdump_vendor_data_file:dir rw_dir_perms;
+allow hal_bluetooth_default vendor_ramdump_vendor_data_file:file { create w_file_perms };

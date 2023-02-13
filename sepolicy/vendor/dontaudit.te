@@ -9,6 +9,9 @@ dontaudit { gmscore_app hal_camera_default } property_type:file r_file_perms;
 dontaudit {
   vendor_hal_neuralnetworks_default
   vendor_qti_init_shell
+  devicesettings_app
+  hal_camera_default
+  rild
 } default_prop:file r_file_perms;
 
 # why would a script want to access rootfs?
