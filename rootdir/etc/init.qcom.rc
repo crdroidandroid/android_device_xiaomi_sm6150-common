@@ -344,6 +344,10 @@ on boot
     chown system system /sys/class/sensors/apds9930-proximity/enable
     chown system system /sys/class/sensors/apds9930-proximity/poll_delay
 
+    # Power supply
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+
     # Enable qcrild and data services on boot so process starts in main
     start vendor.qcrild
     start vendor.qcrild2
