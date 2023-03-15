@@ -5,3 +5,7 @@ vendor.xiaomi.hardware.motor::IMotor u:object_r:hal_motor_hwservice_xiaomi:s0
 
 # Dolby
 vendor.dolby.hardware.dms::IDms                                                                     u:object_r:hal_dms_hwservice:s0
+
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                  u:object_r:hal_nxpnfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse                  u:object_r:hal_nxpese_hwservice:s0
