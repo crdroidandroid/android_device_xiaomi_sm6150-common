@@ -493,6 +493,8 @@ on post-fs-data
     mkdir /data/vendor/multimedia 0775 system system
 
 on charger
+    start qcom-post-boot
+
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     setprop vendor.usb.controller a600000.dwc3
@@ -540,6 +542,14 @@ on property:persist.vendor.ssr.enable_ramdumps=0
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
 
 on property:sys.boot_completed=1
+    # Let kernel know our image version/variant/crm_version
+    write /sys/devices/soc0/select_image 10
+    write /sys/devices/soc0/image_version "10:${ro.build.id}:${ro.build.version.incremental}"
+    write /sys/devices/soc0/image_variant "${ro.product.name}-${ro.build.type}"
+    write /sys/devices/soc0/image_crm_version "REL"
+
+    start qcom-post-boot
+
     setprop vendor.setup.power 1
 
     write /dev/kmsg "Boot completed "
@@ -547,6 +557,7 @@ on property:sys.boot_completed=1
     # WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
+
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
 
@@ -566,7 +577,7 @@ on property:sys.boot_completed=1
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
-    write /proc/sys/vm/watermark_scale_factor 1
+    write /proc/sys/vm/watermark_scale_factor 10
 
     # Set allocstall_threshold to 0 for all targets.
     write /sys/module/vmpressure/parameters/allocstall_threshold 0
@@ -670,12 +681,12 @@ service loc_launcher /vendor/bin/loc_launcher
     user gps
     group gps
 
-on property:sys.boot_completed=1
-    # Let kernel know our image version/variant/crm_version
-    write /sys/devices/soc0/select_image 10
-    write /sys/devices/soc0/image_version "10:${ro.build.id}:${ro.build.version.incremental}"
-    write /sys/devices/soc0/image_variant "${ro.product.name}-${ro.build.type}"
-    write /sys/devices/soc0/image_crm_version "REL"
+service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
