@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.15.0.SKFEUXM, unless pinned
+# These proprietary files are extracted from Mi 11 Lite 4G (codenamed `courbet`) MIUI V14.0.2.0.TKQMIXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -333,7 +333,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be4
 -system_ext/lib64/libimsmedia_jni.so
 -system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
-system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk|711e542958c1d05d18ec84984c495a3d607ec9bb
 -vendor/bin/ims_rtp_daemon
 -vendor/bin/imsdatadaemon
 -vendor/bin/imsqmidaemon
@@ -495,12 +495,15 @@ system_ext/etc/permissions/qti_permissions.xml
 -vendor/lib64/libril-qc-hal-qmi.so
 -vendor/lib64/libqdp.so
 
+# Radio (system) - from LA.QSSI.13.0.r1-09200-qssi.0
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|f401dbb160887a0cea1aed560b9ff9b1d804098d
+system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
+-system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
+-system_ext/framework/qti-telephony-common.jar|57b5cb0b7b504d459ff31918cfaf9f05f1e9fe25
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d52f9c2ea671c02b659df116668cd07095509dd2
+
 # RIL
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
-system_ext/etc/permissions/qcrilhook.xml
-system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/bin/hw/qcrild
 -vendor/bin/adpl
 -vendor/bin/netmgrd
