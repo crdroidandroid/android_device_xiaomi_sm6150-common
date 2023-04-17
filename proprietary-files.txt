@@ -85,6 +85,7 @@ vendor/app/IWlanService/IWlanService.apk
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
 vendor/etc/init/cnd.rc
+vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 -vendor/lib64/libcne.so
 -vendor/lib64/libcneapiclient.so
 -vendor/lib64/libcneoplookup.so
@@ -380,6 +381,8 @@ vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
+-vendor/lib/libAlacSwDec.so
+-vendor/lib/libApeSwDec.so
 -vendor/lib/libMpeg4SwEncoder.so
 -vendor/lib/libOmxAacDec.so
 -vendor/lib/libOmxAlacDec.so
@@ -390,9 +393,11 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libOmxApeDecSw.so
 -vendor/lib/libOmxDsdDec.so
 -vendor/lib/libOmxEvrcDec.so
+-vendor/lib/libOmxG711Dec.so
 -vendor/lib/libOmxQcelp13Dec.so
 -vendor/lib/libOmxSwVdec.so
 -vendor/lib/libOmxSwVencMpeg4.so
+-vendor/lib/libOmxVideoDSMode.so
 -vendor/lib/libOmxVpp.so
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
