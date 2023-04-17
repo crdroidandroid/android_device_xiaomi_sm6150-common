@@ -90,6 +90,7 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += swiotlb=1
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
 KERNEL_LD := LD=ld.lld
+TARGET_KERNEL_CLANG_VERSION := latest
 
 # TARGET_KERNEL_APPEND_DTB handling
 ifeq ($(strip $(PRODUCT_USE_DYNAMIC_PARTITIONS)),true)
