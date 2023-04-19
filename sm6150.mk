@@ -47,8 +47,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libaudio-resampler \
     libvolumelistener \
-    libtinycompress \
-    libtinycompress.vendor
+    libtinycompress
 
 # Audio XML
 ifeq ($(TARGET_ENABLE_AUDIO_ULL),true)
@@ -91,8 +90,7 @@ PRODUCT_PACKAGES += \
     bt_stack.conf \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
-    libldacBT_bco
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -112,9 +110,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.device@2.0.vendor \
-    vendor.qti.hardware.camera.device@3.5.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
     Aperture
@@ -154,7 +150,6 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -265,7 +260,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
 		libavservices_minijail \
 		libavservices_minijail.vendor \
-		libavservices_minijail_vendor \
 		libhwbinder.vendor \
 		libminijail \
 		libc2dcolorconvert \
@@ -277,10 +271,6 @@ PRODUCT_PACKAGES += \
         libOmxEvrcEnc \
         libOmxG711Enc \
         libOmxQcelp13Enc \
-        libOmxSwVdec \
-        libOmxSwVencMpeg4 \
-        libOmxVdec \
-        libOmxSwVencHevc \
 		libmedia_codeclist \
         libOmxVenc \
         libOmxVidcCommon \
@@ -300,7 +290,6 @@ PRODUCT_PACKAGES += \
 
 # Media Extensions
 PRODUCT_PACKAGES += \
-    libavmediaserviceextensions \
     libmediametrics \
     libregistermsext \
     mediametrics
@@ -335,7 +324,6 @@ PRODUCT_COPY_FILES += \
 ifneq ($(TARGET_DEVICE),mojito)
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
     libchrome.vendor \
     init.nfc.rc \
     NfcNci \
@@ -572,12 +560,9 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
-		libdisplayconfig \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libnl \
     libqdMetaData \
-		libqdMetaData.vendor \
     libwfdaac_vendor
 
 # Device-specific settings
