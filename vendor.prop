@@ -77,6 +77,7 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+ro.config.media_vol_steps=25
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
