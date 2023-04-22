@@ -344,6 +344,7 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # GNSS configs from  LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/etc/apdr.conf
@@ -473,6 +474,7 @@ vendor/lib/libOmxEvrcDec.so|ad5886dfe926939436176fc536f3063a02030f38
 vendor/lib/libOmxQcelp13Dec.so|fd941876c153a669eb41395b869de57001a431d8
 vendor/lib/libOmxVpp.so|e4728f604f69a9fc4c07d12cf666839c77ec6555
 vendor/lib/libqcodec2.so|
+vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxWmaDec.so|9e30df0b706ef4420b0ac6052f98bec8e41ea412
 vendor/lib/libOmxVideoDSMode.so|be98151cc1b1b48cbd34a360cc5becc78c21cf7e
 vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
@@ -510,6 +512,7 @@ vendor/lib64/libOmxWmaDec.so|87eb288166853304ab252991c3f9c56ff558f863
 vendor/lib64/libmm-color-convertor.so|aa6e7e6b3dd182c191086e07c0ad9fb477cf4f20
 vendor/lib64/libmmosal.so|dc6b82fa8d1bd1e7ee0c9dba2ec45b6b032efff0
 vendor/lib64/libswvdec.so
+vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libvppclient.so|901213457c854a48714a98d3c76adab9760a03e6
 vendor/lib64/libvpphvx.so|d92a352a9990c77b5724784e8c827637b850d53e
 vendor/lib64/libvppimmotion.so|bcc574b7e87a372436a667f333e42e884c944483
@@ -715,6 +718,7 @@ system_ext/etc/wfdconfigsink.xml|eeaf6d97db961a2af25614390bf7c183b736e9db
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|6045f4768039130d171f1ceb3892fa0d26ca54c4
 system_ext/lib/libmiracastsystem.so|9c8882078c656e055af94d5e817ac5051d4497b1
 system_ext/lib/libmmosal.so|e29bdf82903e2293dc3ee74a2b9d69a7f1df25dc
+system_ext/lib64/libdisplayconfig.system.qti.so
 system_ext/lib/libmmparser_lite.so|3db1025b8eed0b326110ba69b0fca5d8739e70f3
 system_ext/lib/libmmrtpdecoder.so|0b41da1c84e4a5abc01b4dba18a121f73ad0c409
 system_ext/lib/libmmrtpencoder.so|a14a07eefd96889a7287640341d9fff0a7a4bb11
