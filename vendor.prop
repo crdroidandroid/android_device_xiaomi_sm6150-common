@@ -132,6 +132,7 @@ debug.sf.enable_hwc_vds=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
+debug.sf.predict_hwc_composition_strategy=0
 ro.hardware.egl=adreno
 persist.vendor.qti.telephony.vt_cam_interface=2
 ro.hardware.vulkan=adreno
