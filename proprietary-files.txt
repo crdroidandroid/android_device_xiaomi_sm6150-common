@@ -444,9 +444,6 @@ vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/bin/pm-service
 -vendor/lib64/libperipheral_client.so
 
-# Power-off charging daemon
--bin/charger:bin/chargeonlymode
-
 # QMI
 system_ext/etc/permissions/qti_permissions.xml
 -vendor/bin/irsc_util
