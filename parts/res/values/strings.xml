@@ -103,4 +103,12 @@
     <string name="haptic_level_title">Level</string>
     <string name="haptic_level_summary">Amount of vibration intensity</string>
     <string name="haptic_level_summary_incompatible">Feature not supported</string>
+
+    <!-- Dolby Atmos -->
+    <string name="dolby_title">Dolby Atmos</string>
+    <string name="dolby_enable">Enable</string>
+    <string name="dolby_summary">Surround sound</string>
+    <string name="dolby_profile_title">Choose a profile</string>
+    <string name="dolby_profile_dynamic">Dynamic</string>
+
 </resources>
