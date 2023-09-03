@@ -2,15 +2,15 @@
   {
     "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "lineage-19.1"
+    "branch": "lineage-20"
   },
   {
     "repository": "crdroidandroid/android_kernel_xiaomi_sm6150",
     "target_path": "kernel/xiaomi/sm6150"
   },
   {
-    "repository": "crdroidandroid/android_vendor_miuicamera",
-    "target_path": "vendor/miuicamera",
+    "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r498229b",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r498229b",
     "remote": "crdroid-gitlab"
   },
   {
