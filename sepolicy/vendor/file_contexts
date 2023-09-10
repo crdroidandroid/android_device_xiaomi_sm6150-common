@@ -18,6 +18,7 @@
 
 # Data files
 /data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0
+/data/vendor/dolby(/.*)?                                             u:object_r:vendor_data_file:s0
 
 # Display
 /dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
@@ -38,6 +39,7 @@
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service   u:object_r:hal_dms_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                    u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service                u:object_r:hal_motor_default_exec:s0
