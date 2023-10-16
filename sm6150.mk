@@ -136,7 +136,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libpiex_shim \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libxml2 \
     vendor.qti.hardware.camera.device@1.0.vendor
 
