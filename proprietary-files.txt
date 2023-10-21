@@ -1,3 +1,5 @@
+# Unpinned blobs from vayu_global-user 12 RKQ1.200826.002 V13.0.5.0.SJUMIXM release-keys
+
 # ACDB loader
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
