@@ -189,6 +189,7 @@ vendor.media.target.version=2
 # Netmgr
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
+ro.telephony.iwlan_operation_mode=default
 ro.vendor.use_data_netmgrd=true
 
 # Perf
