@@ -107,7 +107,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Data modules
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
-ro.telephony.iwlan_operation_mode=legacy
 
 # Dex2oat
 pm.dexopt.boot=verify
