@@ -563,8 +563,8 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor
 
 # Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+# PRODUCT_PACKAGES += \
+#     XiaomiParts
 
 # PRODUCT_BOOT_JARS += \
 #     WfdCommon
