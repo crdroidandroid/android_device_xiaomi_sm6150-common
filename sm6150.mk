@@ -85,7 +85,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.sm6150 \
     audio.r_submix.default \
     audio.usb.default
 
@@ -101,6 +100,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libreverbwrapper \
+    libtinycompress \
     libvisualizer \
     libvolumelistener
 
