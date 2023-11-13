@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
     libpiex_shim \
     libstdc++_vendor \
     libxml2 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
