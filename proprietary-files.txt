@@ -554,6 +554,10 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
+# Libprotobuf - from redfin - TQ3A.230901.001/10750268
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|4f4ad5b013daabbbfbf7be7419fb60c28a59c36c
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so|4f4ad5b013daabbbfbf7be7419fb60c28a59c36c
+
 # QMI
 system_ext/etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
