@@ -1,1 +1,2 @@
 allow mediacodec hal_dms_hwservice:hwservice_manager find;
+allow mediacodec vendor_audio_prop:file { read open getattr map };
