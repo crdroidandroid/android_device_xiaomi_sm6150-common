@@ -316,6 +316,15 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
+    override
+    class main
+    user system
+    group system wakelock
+    capabilities BLOCK_SUSPEND WAKE_ALARM
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
