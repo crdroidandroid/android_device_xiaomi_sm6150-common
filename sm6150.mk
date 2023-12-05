@@ -255,7 +255,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    libstagefright_foundation-v33 \
     libavservices_minijail_vendor \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor
