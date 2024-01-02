@@ -15,9 +15,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Xiaomi Parts -->
-    <string name="app_name">Xiaomi Parts</string>
-
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
 
@@ -75,7 +72,7 @@
     <string name="music_headset_scenario_select">Choose scene</string>
     <string name="music_headset_scenario_intelligent">Smart</string>
     <string name="music_headset_scenario_music">Music</string>
-    <string name="music_headset_scenario_video">Movie / Video</string>
+    <string name="music_headset_scenario_video">Video</string>
     <string name="music_headset_scenario_vocal">Voice</string>
 
     <!-- QS tile title -->
@@ -106,28 +103,4 @@
     <string name="haptic_level_title">Level</string>
     <string name="haptic_level_summary">Amount of vibration intensity</string>
     <string name="haptic_level_summary_incompatible">Feature not supported</string>
-
-    <!-- Dolby Atmos -->
-    <string name="dolby_title">Dolby Atmos</string>
-    <string name="dolby_enable">Use Dolby Atmos</string>
-    <string name="dolby_profile_title">Choose a profile</string>
-    <string name="dolby_preset">Equalizer preset</string>
-    <string name="dolby_profile_dynamic">Dynamic</string>
-    <string name="dolby_off">Off</string>
-    <string name="dolby_on">On</string>
-    <string name="dolby_low">Low</string>
-    <string name="dolby_medium">Medium</string>
-    <string name="dolby_high">High</string>
-    <string name="dolby_max">Max</string>
-    <string name="dolby_unknown">Unknown</string>
-    <string name="dolby_on_with_profile">On (%1$s)</string>
-    <string name="dolby_category_settings">Settings</string>
-    <string name="dolby_bass_enhancer">Bass enhancer</string>
-    <string name="dolby_dialogue_enhancer">Dialogue enhancer</string>
-    <string name="dolby_virtualizer">Surround virtualizer</string>
-    <string name="dolby_volume_leveler">Volume leveler</string>
-    <string name="dolby_connect_headphones">Connect headphones</string>
-    <string name="dolby_reset_profile">Reset to defaults</string>
-    <string name="dolby_reset_profile_toast">Succesfully reset settings for %1$s profile</string>
-
 </resources>
