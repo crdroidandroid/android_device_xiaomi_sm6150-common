@@ -53,6 +53,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
+TARGET_KERNEL_CONFIG := vendor/sdmsteppe-perf_defconfig vendor/debugfs.config
 TARGET_KERNEL_CLANG_VERSION := r498229b
 
 # Platform
