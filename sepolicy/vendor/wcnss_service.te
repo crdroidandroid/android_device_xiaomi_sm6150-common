@@ -1,2 +1,4 @@
 allow vendor_wcnss_service vendor_data_file:dir create_dir_perms;
 allow vendor_wcnss_service vendor_data_file:file create_file_perms;
+
+set_prop(vendor_wcnss_service, vendor_radio_prop)
