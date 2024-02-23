@@ -11,6 +11,9 @@ ro.boot.fpsensor                   u:object_r:vendor_fp_prop:s0
 ro.hardware.fp                     u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 
+# RIL
+ro.vendor.ril.oem.wifimac          u:object_r:vendor_radio_prop:s0
+
 # Telephony
 ro.vendor.oem.imei                 u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.meid                 u:object_r:vendor_deviceid_prop:s0
