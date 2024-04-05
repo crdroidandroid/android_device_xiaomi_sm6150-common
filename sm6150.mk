@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
+$(call soong_config_set,camera,package_name,com.xiaomi.sessionparams.clientName)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
