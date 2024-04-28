@@ -416,7 +416,6 @@ PRODUCT_PACKAGES += \
     fstab.zram \
     init.nfc.rc \
     init.power.rc \
-    init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
