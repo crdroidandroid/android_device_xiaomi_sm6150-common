@@ -20,3 +20,5 @@ ro.build.flavor                    u:object_r:exported_default_prop:s0
 ro.cust.test                       u:object_r:exported_system_prop:s0
 ro.miui.                           u:object_r:exported_system_prop:s0
 ro.product.mod_device              u:object_r:exported_default_prop:s0
+vendor.panel.display               u:object_r:exported_system_prop:s0
+vendor.sys.camerainfo              u:object_r:exported_system_prop:s0
