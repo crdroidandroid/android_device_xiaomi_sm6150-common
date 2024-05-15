@@ -222,6 +222,9 @@ on property:sys.boot_completed=1
 
     start vendor.qcom-post-boot
 
+    # Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
+
 on property:vendor.netflix.bsp_rev=*
     setprop ro.netflix.bsp_rev ${vendor.netflix.bsp_rev}
 
