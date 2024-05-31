@@ -42,6 +42,9 @@
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service                u:object_r:hal_motor_default_exec:s0
 
+# Haptic
+/sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel             u:object_r:sysfs_vibrator:s0
+
 # IR
 /dev/lirc[0-9]+                                                      u:object_r:lirc_device:s0
 /dev/spidev[0-9]\.1                                                  u:object_r:lirc_device:s0
