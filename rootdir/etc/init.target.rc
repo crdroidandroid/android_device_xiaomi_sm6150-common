@@ -118,6 +118,8 @@ on boot
     mkdir /mnt/vendor/persist/goodix 0770 system system
     mkdir /mnt/vendor/persist/fpc 0770 system system
 
+    write /sys/block/sda/queue/wbt_lat_usec 75000
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100
