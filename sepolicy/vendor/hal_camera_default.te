@@ -10,3 +10,5 @@ r_dir_file(hal_camera_default, mnt_vendor_file)
 
 allow hal_camera_default remosaic_daemon_service:service_manager find;
 binder_call(hal_camera_default, remosaic_daemon)
+
+binder_call(hal_camera_default, system_server)
