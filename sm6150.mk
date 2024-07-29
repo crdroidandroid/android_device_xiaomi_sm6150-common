@@ -221,6 +221,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh \
     $(LOCAL_PATH)/rootdir/bin/init.qti.early_init.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.early_init.sh
 
+# Input
+PRODUCT_PACKAGES += \
+    uinput-fortsense.kl \
+    uinput-fpc.kl \
+    uinput-goodix.kl
+
+PRODUCT_PACKAGES += \
+    uinput-fortsense.idc \
+    uinput-fpc.idc \
+    uinput-goodix.idc
+
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/security/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
