@@ -1,1 +1,5 @@
 allow hal_bluetooth_default vendor_data_file:file r_file_perms;
+
+# Allow hal_bluetooth_default to r/w files in vendor_bt_data_file
+allow hal_bluetooth_default vendor_bt_data_file:dir create_dir_perms;
+allow hal_bluetooth_default vendor_bt_data_file:file create_file_perms;
