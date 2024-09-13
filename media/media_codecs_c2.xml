@@ -92,7 +92,7 @@
             <Limit name="frame-rate" range="1-240" />
             <Feature name="adaptive-playback" />
             <Feature name="secure-playback" required="true" />
-            <Limit name="concurrent-instances" max="3" />
+            <Limit name="concurrent-instances" max="4" />
             <Limit name="performance-point-4096x2304" value="30" />
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
@@ -119,7 +119,7 @@
             <Limit name="frame-rate" range="1-480" />
             <Feature name="adaptive-playback" />
             <Feature name="secure-playback" required="true" />
-            <Limit name="concurrent-instances" max="6" />
+            <Limit name="concurrent-instances" max="4" />
             <Limit name="performance-point-4096x2304" value="30" />
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
@@ -160,7 +160,7 @@
             <Limit name="frame-rate" range="1-480" />
             <Feature name="adaptive-playback" />
             <Feature name="secure-playback" required="true" />
-            <Limit name="concurrent-instances" max="3" />
+            <Limit name="concurrent-instances" max="4" />
             <Limit name="performance-point-4096x2304" value="30" />
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
@@ -368,7 +368,7 @@
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="frame-rate" range="1-20" />
-            <Limit name="concurrent-instances" max="6" />
+            <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
             <Feature name="bitrate-modes" value="CQ" />
             <Limit name="performance-point-512x512" value="3825" />
