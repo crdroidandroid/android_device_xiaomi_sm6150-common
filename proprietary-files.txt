@@ -135,6 +135,8 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Display
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplaydebug.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdpps.so
 vendor/lib64/libhdr_tm.so
@@ -179,6 +181,7 @@ vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
+vendor/lib64/libdrmutils.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
