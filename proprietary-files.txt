@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a`) OS1.0.6.0.THGMIXM, unless pinned
+# These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a_eea_global`) V816.0.4.0.THGEUXM, unless pinned
 
 # Current blobs with ELF checks disabled:
 # imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
