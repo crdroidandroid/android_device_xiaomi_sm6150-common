@@ -258,7 +258,7 @@ function configure_zram_parameters() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
 
-    let RamSizeGB="( $MemTotal / 1048576 ) + 1"
+    let RamSizeGB="$MemTotal / 1048576"
     let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
     diskSizeUnit=M
 
@@ -296,11 +296,53 @@ function configure_zram_parameters() {
     fi
 }
 
-# Enable ZRAM
-configure_zram_parameters
-echo 0 > /proc/sys/vm/page-cluster
-echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
-echo 100 > /proc/sys/vm/swappiness
+function configure_read_ahead_kb_values() {
+    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+    MemTotal=${MemTotalStr:16:8}
+
+    dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc)
+
+    # Set 128 for <= 3GB &
+    # set 512 for >= 4GB targets.
+    if [ $MemTotal -le 3145728 ]; then
+        echo 128 > /sys/block/mmcblk0/bdi/read_ahead_kb
+        echo 128 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
+        for dm in $dmpts; do
+            echo 128 > $dm
+        done
+    else
+        echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
+        echo 512 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
+        for dm in $dmpts; do
+            echo 512 > $dm
+        done
+    fi
+}
+
+function configure_memory_parameters() {
+    # Set allocstall_threshold to 0 for all targets.
+    # Set swappiness to 60 for all targets
+    echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
+    echo 60 > /proc/sys/vm/swappiness
+
+    # Disable wsf for all targets beacause we are using efk.
+    # wsf Range : 1..1000 So set to bare minimum value 1.
+    echo 1 > /proc/sys/vm/watermark_scale_factor
+
+    # Disable the feature of watermark boost for 8G and below device
+    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+    MemTotal=${MemTotalStr:16:8}
+
+    if [ $MemTotal -le 8388608 ]; then
+        echo 0 > /proc/sys/vm/watermark_boost_factor
+    fi
+
+    # Enable ZRAM
+    configure_zram_parameters
+    configure_read_ahead_kb_values
+}
+
+configure_memory_parameters
 
 # Enable PowerHAL hint processing
 setprop vendor.powerhal.init 1
