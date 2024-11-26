@@ -155,8 +155,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     libion \
     libion.vendor \
     libvulkan \
@@ -164,11 +162,11 @@ PRODUCT_PACKAGES += \
     libsdmutils \
     libstagefright_enc_common \
     libtinyxml \
+    vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.display.allocator-service
 
 PRODUCT_PACKAGES += \
     gralloc.qcom \
-		memtrack.sm6150 \
     hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
