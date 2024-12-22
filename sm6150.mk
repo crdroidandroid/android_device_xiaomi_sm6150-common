@@ -195,6 +195,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3 \
     android.hardware.drm@1.3.vendor \
+		libcrypto_shim.vendor \
     android.hardware.drm-service.clearkey
 
 # fastbootd
