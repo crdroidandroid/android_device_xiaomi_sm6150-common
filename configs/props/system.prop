@@ -6,6 +6,7 @@ ro.surface_flinger.supports_background_blur=0
 
 # Camera
 log.tag.CHIUSECASE=ERROR
+persist.sys.cam.skip_detach_image=true
 
 # Display
 debug.sf.enable_hwc_vds=0
