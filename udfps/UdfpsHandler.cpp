@@ -8,6 +8,7 @@
 
 #include "UdfpsHandler.h"
 
+#include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
 #include <android-base/unique_fd.h>
 #include <fcntl.h>
@@ -29,6 +30,8 @@
 #define UDFPS_STATUS_OFF -1
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui"
+
+using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 static bool readBool(int fd) {
     char c;
@@ -90,7 +93,7 @@ class XiaomiUdfpsHandler : public UdfpsHandler {
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
-        if (result == FINGERPRINT_ACQUIRED_GOOD) {
+        if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
             int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
             ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
         } else if (vendorCode == 21 || vendorCode == 23) {
