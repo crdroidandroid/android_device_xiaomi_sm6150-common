@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2024 The LineageOS Project
+# Copyright (C) 2020-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -50,12 +50,6 @@ TARGET_NO_BOOTLOADER := true
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 MALLOC_SVELTE_FOR_LIBC64 := true
-
-# Display
-TARGET_USES_COLOR_METADATA := true
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_DRM_PP := true
-TARGET_USES_HWC2 := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
