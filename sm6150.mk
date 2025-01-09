@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
+    gralloc.qcom \
     hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
