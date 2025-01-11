@@ -54,11 +54,12 @@ vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# Camera
-lib64/libcamera_algoup_jni.xiaomi.so
-lib64/libcamera_mianode_jni.xiaomi.so
-lib64/libmicampostproc_client.so
-lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+# Camera - from cupid
+system/lib64/libcamera_algoup_jni.xiaomi.so|21d014dc95e003d74b372598d796dfffbb19ad73
+system/lib64/libcamera_mianode_jni.xiaomi.so|01dcd20a2aadf345d678dce2daa1361c74decbe3
+system/lib64/libgui_shim_miuicamera.so|d50adb96cfad1ad3016cb603b89700056a8f0ea3
+system/lib64/libmicampostproc_client.so|f96b35d37b34ef61492f4f0fb876283c6b0f3e4f
+system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so|d8eee9206a975e25ef04cc2c9109e6f67a724cbb
 
 # Charger
 vendor/bin/hvdcp_opti
