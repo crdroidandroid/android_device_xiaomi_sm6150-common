@@ -21,14 +21,17 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
+    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
     <application
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/device_settings_app_name"
-        android:persistent="true">
+        android:persistent="true"
+        android:theme="@style/Theme.SubSettingsBase">
 
         <receiver android:name=".BootCompletedReceiver"
                   android:exported="false">
@@ -53,6 +56,29 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".thermal.ThermalActivity"
+            android:exported="false"
+            android:label="@string/thermal_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/thermal_summary" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+        </activity>
+        <service
+            android:name=".thermal.ThermalService"
+            android:exported="true"
+            android:permission="ThermalService">
+        </service>
 
     </application>
 </manifest>

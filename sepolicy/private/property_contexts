@@ -13,6 +13,9 @@ persist.sensor.                    u:object_r:persist_sensors_prop:s0
 # Fingerprint
 gf.debug.                          u:object_r:exported_default_prop:s0
 
+# SettingsLib
+settingsdebug.instant.packages u:object_r:settingslib_prop:s0
+
 # Xiaomi specific build properties
 ro.boot.hwc                        u:object_r:exported_default_prop:s0
 ro.boot.hwversion                  u:object_r:exported_default_prop:s0
