@@ -18,7 +18,6 @@ ro.audio.monitorRotation=true
 ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.afe.record=true
 vendor.audio.adm.buffering.ms=6
-vendor.voice.path.for.pcm.voip=true
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -27,7 +26,6 @@ vendor.audio.feature.battery_listener.enable=false
 vendor.audio.feature.compr_cap.enable=false
 vendor.audio.feature.compress_in.enable=false
 vendor.audio.feature.compress_meta_data.enable=true
-vendor.audio.feature.compr_voip.enable=false
 vendor.audio.feature.concurrent_capture.enable=false
 vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.deepbuffer_as_primary.enable=false
@@ -81,6 +79,7 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+use.voice.path.for.pcm.voip=true
 
 # Bluetooth
 bluetooth.hardware.power.operating_voltage_mv=3300
