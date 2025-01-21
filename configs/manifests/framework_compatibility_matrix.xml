@@ -591,4 +591,20 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+    	<name>android.hardware.sensors</name>
+    	<version>2</version>
+    	<interface>
+            <name>ISensors</name>
+            <instance>default</instance>
+    	</interface>
+    </hal>
+    <hal format="aidl" optional="true">
+    	<name>android.hardware.memtrack</name>
+    	<version>1</version>
+    	<interface>
+            <name>IMemtrack</name>
+            <instance>default</instance>
+    	</interface>
+    </hal>
 </compatibility-matrix>
