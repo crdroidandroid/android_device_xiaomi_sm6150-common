@@ -30,4 +30,7 @@
 
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
+    <!-- Show 5G toggle in internet dialog when available -->
+    <bool name="config_supportsVONR">false</bool>
 </resources>
