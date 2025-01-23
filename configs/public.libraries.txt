@@ -4,6 +4,7 @@ libsdsprpc.so
 libfastcvopt.so
 liblistensoundmodel2.so
 libOpenCL.so
+libHalSuperSensorServer.so
 libhta_hexagon_runtime.so
 unnhal-acc-hta.so
 libmpbase.so 64
@@ -18,7 +19,9 @@ libarcsoft_portrait_lighting_c.so 64
 librelight_only.so 64
 libmibokeh_712.so 64
 libarcsoft_distortion_correction.so 64
+libalAILDC.so
 libalCFR.so
+libalhLDC.so
 libcvp.so
 libcvp_stub.so
 libcvp_common.so
@@ -35,3 +38,5 @@ libmiai_portraitsupernight.so 64
 libSNPE.so 64
 libsymphony-cpu.so 64
 libsnpe_dsp_domains_v2.so 64
+libVDClearShot.so
+libVDSuperPhotoAPI.so
