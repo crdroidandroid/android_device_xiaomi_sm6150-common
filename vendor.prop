@@ -182,9 +182,6 @@ persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
