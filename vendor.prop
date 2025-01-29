@@ -128,6 +128,15 @@ dalvik.vm.systemuicompilerfilter=speed
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 
+# Dolby Atmos
+ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+ro.vendor.dolby.model=PAFM00
+ro.vendor.dolby.device=OP46C3
+ro.vendor.dolby.manufacturer=OPLUS
+ro.vendor.dolby.brand=OPLUS
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.nsrm.bkg.evt=3955
