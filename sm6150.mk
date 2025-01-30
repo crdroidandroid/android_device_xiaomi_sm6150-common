@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libstagefright_softomx_plugin.vendor \
     libvolumelistener \
     libtinycompress
 
@@ -265,22 +264,13 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libhwbinder.vendor \
     libminijail \
-    libc2dcolorconvert \
-    libplatformconfig \
-    libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libmedia_codeclist \
-    libOmxVenc \
-    libOmxVidcCommon \
-    libgui \
-    libgui.vendor \
-    libstagefrighthw \
-    libstagefright_omx.vendor
+    libstagefright_omx.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
@@ -298,15 +288,9 @@ PRODUCT_PACKAGES += \
     mediametrics
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    $(LOCAL_PATH)/media/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
-    hardware/qcom-caf/sm8150/media/conf_files/sm6150/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
+    $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    $(LOCAL_PATH)/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # Network
 PRODUCT_COPY_FILES += \

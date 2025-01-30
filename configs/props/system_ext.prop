@@ -21,4 +21,3 @@ media.stagefright.enable-scan=true
 media.stagefright.enable-player=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
