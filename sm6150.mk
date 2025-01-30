@@ -145,8 +145,7 @@ PRODUCT_COPY_FILES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    qcom.fmradio
+    FM2
 
 # GPS
 PRODUCT_PACKAGES += \
