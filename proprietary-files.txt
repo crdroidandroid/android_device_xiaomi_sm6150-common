@@ -467,20 +467,7 @@ vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
 vendor/lib/libFlacSwDec.so|01c7a51d93c2fe447e23c1210832b39b171393e3
 vendor/lib/libI420colorconvert.so|5c466dbb5fe334445bde46d15563ecba2e439581
-vendor/lib/libOmxAacDec.so|252aef7117fd026653b8a26d95ee41437fb64e3c
-vendor/lib/libOmxAlacDec.so|c61bfc85d12207c4cc88a676a608cf8aa93e4b01
-vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
-vendor/lib/libOmxAmrDec.so|7ad34510fd7cc5d0ccd3021072d328ea95ed6005
-vendor/lib/libOmxAmrwbplusDec.so|5c8c6ed35524c6ba2decfb845172dd48bf77f9e7
-vendor/lib/libOmxApeDec.so|3d63a08310457b3d06388ffb3339df5d8c43bbc3
-vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
-vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
-vendor/lib/libOmxEvrcDec.so|ad5886dfe926939436176fc536f3063a02030f38
-vendor/lib/libOmxQcelp13Dec.so|fd941876c153a669eb41395b869de57001a431d8
-vendor/lib/libOmxVpp.so|e4728f604f69a9fc4c07d12cf666839c77ec6555
 vendor/lib/libqcodec2.so|
-vendor/lib/libOmxWmaDec.so|9e30df0b706ef4420b0ac6052f98bec8e41ea412
-vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
 vendor/lib/libmm-color-convertor.so|eaaa57735036791d53706187ebfd3902d6f85ae8
 vendor/lib/libmmosal.so|37febc914b2c706a5df0009cc134e9d80690aec0
 vendor/lib/libmmrtpdecoder_proprietary.so
@@ -497,18 +484,6 @@ vendor/lib64/libqcodec2.so|
 vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
 vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
 vendor/lib64/libI420colorconvert.so|829dacf78c4bf6700986d2d5d2013d055b342177
-vendor/lib64/libOmxAacDec.so|4cfa0cf21fc4194a5b95afb5a3bdb9745ff89311
-vendor/lib64/libOmxAlacDec.so|4310006162363b8c253818c1dbcd4426621abae7
-vendor/lib64/libOmxAlacDecSw.so|3ecf891368d0ad84903b792303ef841dc24f91c1
-vendor/lib64/libOmxAmrDec.so|4959734291a47da6c9d3c7b868057383593a86d6
-vendor/lib64/libOmxAmrwbplusDec.so|014d1a57a3a7c100f4fd6be825a38c5216d871a5
-vendor/lib64/libOmxApeDec.so|e7e3cad7cedac07687a9c5c00b807bf8c19ee701
-vendor/lib64/libOmxApeDecSw.so|6ec15cb9a251a35e7f7d427dcf0b0e945825518f
-vendor/lib64/libOmxEvrcDec.so|d4703cef37161fbf85cc9f9911cc0c22472c5268
-vendor/lib64/libOmxG711Dec.so|9fee00467b989819d39a78dc9b714709eedd11bd
-vendor/lib64/libOmxQcelp13Dec.so|4d00801312df3bd81aee020f8e91ca15d3ff5d38
-vendor/lib64/libOmxVpp.so|37bacdd66a5f3edfe9885c747b5ba7eae8141acc
-vendor/lib64/libOmxWmaDec.so|87eb288166853304ab252991c3f9c56ff558f863
 vendor/lib64/libmm-color-convertor.so|aa6e7e6b3dd182c191086e07c0ad9fb477cf4f20
 vendor/lib64/libmmosal.so|dc6b82fa8d1bd1e7ee0c9dba2ec45b6b032efff0
 vendor/lib64/libvppclient.so|901213457c854a48714a98d3c76adab9760a03e6
@@ -520,9 +495,6 @@ vendor/lib64/libwa_refocus.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so|d47fd7845c02aec702ab96569b90eb6bff2cee5c
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|13714cdc3a7a5aaa67e641034cb92e9fced28960
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|aea8a28f53263b5001df295d0a6eab0e8405693b
-
-# Media configs
-vendor/etc/system_properties.xml
 
 # Native libraries permissions
 vendor/etc/public.libraries.txt

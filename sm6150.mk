@@ -263,14 +263,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libhwbinder.vendor \
-    libminijail \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libstagefright_omx.vendor \
-    libstagefright_softomx_plugin.vendor
+    libminijail
 
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
