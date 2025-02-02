@@ -1,3 +1,6 @@
+# Audio
+use.voice.path.for.pcm.voip=true
+
 # CNE
 persist.vendor.cne.feature=1
 
@@ -21,3 +24,6 @@ media.stagefright.enable-scan=true
 media.stagefright.enable-player=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+
+#Graphics
+ro.config.avoid_gfx_accel=true
