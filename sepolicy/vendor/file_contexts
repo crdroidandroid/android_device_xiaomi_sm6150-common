@@ -22,9 +22,7 @@
 # Display
 /dev/xiaomi-touch                                                    u:object_r:touchfeature_device:s0
 /sys/devices/platform/soc/[a-f0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display/anti_flicker          u:object_r:sysfs_anti_flicker:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui                u:object_r:vendor_sysfs_fod:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 
 # Dolby Fix script
@@ -41,7 +39,6 @@
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.livedisplay-service\.xiaomi_sm6150         u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service                u:object_r:hal_motor_default_exec:s0
 
 # IR
