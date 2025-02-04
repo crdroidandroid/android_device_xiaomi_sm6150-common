@@ -1,0 +1,6 @@
+type vendor_init-dolby-sh, domain;
+type vendor_init-dolby-sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_init-dolby-sh)
+
+allow vendor_init-dolby-sh vendor_data_file:dir rw_dir_perms;
