@@ -33,6 +33,9 @@
 /(odm|vendor/odm)/bin/hw/vendor\.dolby_sp\.hardware\.dmssp@2\.0-service                             u:object_r:hal_dms_default_exec:s0
 /(vendor|odm)/bin/hw/vendor\.dolby_sp\.media\.c2@1\.0-service                                       u:object_r:mediacodec_exec:s0
 
+# Dolby Fix script
+/vendor/bin/init\.dolby_fix\.sh                                      u:object_r:vendor_init-dolby-sh_exec:s0
+
 # Fingerprint
 /dev/fortsense_fp                                                    u:object_r:fingerprint_device:s0
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
