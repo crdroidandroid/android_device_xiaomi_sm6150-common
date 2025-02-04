@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     XiaomiDolby
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.dolby_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.dolby_fix.sh \
     $(LOCAL_PATH)/configs/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml
 
 # DRM
