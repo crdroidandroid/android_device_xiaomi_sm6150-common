@@ -1,4 +1,11 @@
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon u:object_r:hal_fingerprint_hwservice_xiaomi:s0
-vendor.sw.swfingerprint::ISwfingerprint u:object_r:hal_swfingerprint_hwservice:s0
-vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint u:object_r:hal_fingerprint_hwservice_xiaomi:s0
-vendor.xiaomi.hardware.motor::IMotor u:object_r:hal_motor_hwservice_xiaomi:s0
+# Dolby
+vendor.dolby_v3_6.hardware.dms360::IDms                                                             u:object_r:hal_dms_hwservice:s0
+vendor.dolby_sp.hardware.dmssp::IDms                                                                u:object_r:hal_dms_hwservice:s0
+
+# Fingerprint
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon                             u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+vendor.sw.swfingerprint::ISwfingerprint                                                             u:object_r:hal_swfingerprint_hwservice:s0
+vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint                                     u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+
+# Motor
+vendor.xiaomi.hardware.motor::IMotor                                                                u:object_r:hal_motor_hwservice_xiaomi:s0
