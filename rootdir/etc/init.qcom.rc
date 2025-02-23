@@ -132,11 +132,10 @@ on boot
     enable vendor.dataqti
     enable vendor.dataadpl
 
-on post-fs
-    # Apply dolby fix
-    start init-dolby_fix-sh
-
 on post-fs-data
+    # Dolby
+    start vendor.init-dolby_fix-sh
+
     # Create directory used by display clients
     mkdir /data/vendor/display 0770 system graphics
 
@@ -309,8 +308,9 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
 
-service init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
+service vendor.init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
     class main
-    user system
-    group system
+    user media
+    group media
+    disabled
     oneshot

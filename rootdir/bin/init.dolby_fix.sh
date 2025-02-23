@@ -10,6 +10,6 @@ fix_applied=$(getprop persist.vendor.audio.dolby_fix_applied)
 
 if [ "$fix_applied" != "true" ]; then
     # Remove /data/vendor/dolby
-    rm -rf /data/vendor/dolby
+    rm -rf /data/vendor/dolby/*
     setprop persist.vendor.audio.dolby_fix_applied true
 fi
