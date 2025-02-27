@@ -191,6 +191,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Kernel
+PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Lineage Health
@@ -327,9 +328,6 @@ PRODUCT_PACKAGES += \
 # Touchscreen
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
-# UFFD GC
-OVERRIDE_ENABLE_UFFD_GC := false
 
 # USB
 PRODUCT_PACKAGES += \
