@@ -1,0 +1,81 @@
+//
+// Copyright (C) 2025 crDroid Android Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "bin/init.qcom.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "bin/init.qcom.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.early_init.sh",
+    src: "bin/init.qti.early_init.sh",
+    vendor: true,
+}
+
+// fstab
+soong_config_module_type {
+    name: "xiaomi_msmnile_rootdir_prebuilt_etc",
+    module_type: "prebuilt_etc",
+    config_namespace: "XIAOMI_MSMNILE",
+    variables: ["PARTITION_SCHEME"],
+    properties: ["src"],
+}
+
+soong_config_string_variable {
+    name: "PARTITION_SCHEME",
+    values: ["dynamic", "legacy", "vab"],
+}
+
+prebuilt_etc {
+    name: "fstab.default",
+    src: "etc/fstab.default",
+    vendor: true,
+    ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "fstab.emmc",
+    src: "etc/fstab.emmc",
+    vendor: true,
+    ramdisk_available: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "etc/init.qcom.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.recovery.rc",
+    src: "etc/init.qcom.recovery.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.qcom.rc",
+    vendor: true,
+}
