@@ -93,6 +93,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
 # Camera
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
