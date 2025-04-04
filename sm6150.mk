@@ -94,6 +94,8 @@ PRODUCT_COPY_FILES += \
 TARGET_ENABLE_BLUR := true
 
 # Camera
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 $(call soong_config_set,camera,override_format_from_reserved,true)
