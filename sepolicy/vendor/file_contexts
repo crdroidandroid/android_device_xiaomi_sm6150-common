@@ -48,9 +48,7 @@
 /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel             u:object_r:sysfs_vibrator:s0
 
 # IR
-/dev/lirc[0-9]+                                                      u:object_r:lirc_device:s0
 /dev/spidev[0-9]\.1                                                  u:object_r:lirc_device:s0
-/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi                 u:object_r:hal_ir_default_exec:s0
 
 # Motor
 /dev/akm09970                                                        u:object_r:hall_device:s0
