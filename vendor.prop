@@ -175,6 +175,8 @@ vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
 debug.sf.disable_client_composition_cache=0
+debug.sf.enable_adpf_cpu_hint=true
+
 
 # Display - Set color mode to Natural by default
 debug.sf.disable_client_composition_cache=0
