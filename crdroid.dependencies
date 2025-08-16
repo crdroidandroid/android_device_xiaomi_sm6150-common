@@ -16,10 +16,5 @@
     "repository": "crdroidandroid/proprietary_vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
     "remote": "crdroid-gitlab"
-  },
-  {
-    "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r547379",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-r547379",
-    "remote": "crdroid-gitlab"
   }
 ]
