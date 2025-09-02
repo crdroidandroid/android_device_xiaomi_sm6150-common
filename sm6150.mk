@@ -361,9 +361,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml
 
 # WiFi
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom/wlan
-
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
