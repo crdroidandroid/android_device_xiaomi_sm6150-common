@@ -332,8 +332,8 @@ function configure_memory_parameters() {
     # Set allocstall_threshold to 0 for all targets.
     echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
 
-    # Set swappiness to 60 for all targets
-    echo 60 > /proc/sys/vm/swappiness
+    # Set swappiness to 100 for all targets
+    echo 100 > /proc/sys/vm/swappiness
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
