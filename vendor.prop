@@ -237,6 +237,10 @@ telephony.lteOnCdmaDevice=1
 # RCS
 persist.rcs.supported=1
 
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
 # USB
 ro.usb.uvc.disable_video_encode_flag=true
 ro.usb.uvc.enabled=true
