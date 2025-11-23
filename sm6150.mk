@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -189,7 +189,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
