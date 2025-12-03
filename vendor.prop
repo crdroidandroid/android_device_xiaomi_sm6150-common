@@ -176,6 +176,13 @@ vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
 
 # Display - Set color mode to Natural by default
+debug.sf.disable_client_composition_cache=0
+debug.sf.enable_adpf_cpu_hint=true
+ro.config.avoid_gfx_accel=true
+debug.sdm.support_writeback=0
+ro.surface_flinger.game_default_frame_rate_override=120
+vendor.display.use_smooth_motion=1
+debug.sf.enable_egl_image_tracker=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=0
 persist.sys.sf.color_mode=0
