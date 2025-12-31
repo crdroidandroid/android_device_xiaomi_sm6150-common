@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.lineageos.settings.thermal;
 
 import android.annotation.Nullable;
@@ -24,36 +23,29 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.SectionIndexer;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
+import androidx.recyclerview.widget.RecyclerView;
 import com.android.settingslib.applications.ApplicationsState;
 import com.android.settingslib.widget.SettingsBasePreferenceFragment;
-
-import org.lineageos.settings.R;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.lineageos.settings.R;
 
-public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
-        implements ApplicationsState.Callbacks {
-
+public class ThermalSettingsFragment
+        extends SettingsBasePreferenceFragment implements ApplicationsState.Callbacks {
     private AllPackagesAdapter mAllPackagesAdapter;
     private ApplicationsState mApplicationsState;
     private ApplicationsState.Session mSession;
@@ -65,8 +57,7 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
     private RecyclerView mAppsRecyclerView;
 
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-    }
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,8 +74,8 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+    public View onCreateView(
+            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.thermal_layout, container, false);
     }
 
@@ -96,7 +87,6 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
         mAppsRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mAppsRecyclerView.setAdapter(mAllPackagesAdapter);
     }
-
 
     @Override
     public void onResume() {
@@ -133,24 +123,19 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
     }
 
     @Override
-    public void onAllSizesComputed() {
-    }
+    public void onAllSizesComputed() {}
 
     @Override
-    public void onLauncherInfoChanged() {
-    }
+    public void onLauncherInfoChanged() {}
 
     @Override
-    public void onPackageIconChanged() {
-    }
+    public void onPackageIconChanged() {}
 
     @Override
-    public void onPackageSizeChanged(String packageName) {
-    }
+    public void onPackageSizeChanged(String packageName) {}
 
     @Override
-    public void onRunningStateChanged(boolean running) {
-    }
+    public void onRunningStateChanged(boolean running) {}
 
     private void handleAppEntries(List<ApplicationsState.AppEntry> entries) {
         final ArrayList<String> sections = new ArrayList<String>();
@@ -172,8 +157,7 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
                 sectionIndex = label.substring(0, 1).toUpperCase();
             }
 
-            if (lastSectionIndex == null ||
-                    !TextUtils.equals(sectionIndex, lastSectionIndex)) {
+            if (lastSectionIndex == null || !TextUtils.equals(sectionIndex, lastSectionIndex)) {
                 sections.add(sectionIndex);
                 positions.add(offset);
                 lastSectionIndex = sectionIndex;
@@ -237,23 +221,13 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
     }
 
     private class ModeAdapter extends BaseAdapter {
-
         private final LayoutInflater inflater;
-        private final int[] items = {
-                R.string.thermal_default,
-                R.string.thermal_benchmark,
-                R.string.thermal_browser,
-                R.string.thermal_camera,
-                R.string.thermal_dialer,
-                R.string.thermal_gaming,
-                R.string.thermal_navigation,
-                R.string.thermal_streaming,
-                R.string.thermal_video
-        };
+        private final int[] items = {R.string.thermal_default, R.string.thermal_benchmark,
+                R.string.thermal_browser, R.string.thermal_camera, R.string.thermal_dialer,
+                R.string.thermal_gaming, R.string.thermal_navigation, R.string.thermal_streaming,
+                R.string.thermal_video};
 
-        private ModeAdapter(Context context) {
-            inflater = LayoutInflater.from(context);
-        }
+        private ModeAdapter(Context context) { inflater = LayoutInflater.from(context); }
 
         @Override
         public int getCount() {
@@ -276,8 +250,8 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
             if (convertView != null) {
                 view = (TextView) convertView;
             } else {
-                view = (TextView) inflater.inflate(android.R.layout.simple_spinner_dropdown_item,
-                        parent, false);
+                view = (TextView) inflater.inflate(
+                        android.R.layout.simple_spinner_dropdown_item, parent, false);
             }
 
             view.setText(items[position]);
@@ -288,7 +262,6 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
 
     private class AllPackagesAdapter extends RecyclerView.Adapter<ViewHolder>
             implements AdapterView.OnItemSelectedListener, SectionIndexer {
-
         private List<ApplicationsState.AppEntry> mEntries = new ArrayList<>();
         private String[] mSections;
         private int[] mPositions;
@@ -311,7 +284,7 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
         @Override
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             return new ViewHolder(LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.thermal_list_item, parent, false));
+                                          .inflate(R.layout.thermal_list_item, parent, false));
         }
 
         @Override
@@ -337,8 +310,8 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
             holder.stateIcon.setImageResource(getStateDrawable(packageState));
         }
 
-        private void setEntries(List<ApplicationsState.AppEntry> entries,
-                List<String> sections, List<Integer> positions) {
+        private void setEntries(List<ApplicationsState.AppEntry> entries, List<String> sections,
+                List<Integer> positions) {
             mEntries = entries;
             mSections = sections.toArray(new String[sections.size()]);
             mPositions = new int[positions.size()];
@@ -347,7 +320,6 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
             }
             notifyDataSetChanged();
         }
-
 
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -360,8 +332,7 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
         }
 
         @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-        }
+        public void onNothingSelected(AdapterView<?> parent) {}
 
         @Override
         public int getPositionForSection(int section) {
@@ -398,7 +369,6 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
     }
 
     private class ActivityFilter implements ApplicationsState.AppFilter {
-
         private final PackageManager mPackageManager;
         private final List<String> mLauncherResolveInfoList = new ArrayList<String>();
 
@@ -422,8 +392,7 @@ public class ThermalSettingsFragment extends SettingsBasePreferenceFragment
         }
 
         @Override
-        public void init() {
-        }
+        public void init() {}
 
         @Override
         public boolean filterApp(ApplicationsState.AppEntry entry) {

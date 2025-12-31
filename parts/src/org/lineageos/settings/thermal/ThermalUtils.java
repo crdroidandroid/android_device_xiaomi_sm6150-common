@@ -19,19 +19,13 @@ package org.lineageos.settings.thermal;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.RemoteException;
-import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.view.Display;
-import android.view.Surface;
 import android.view.WindowManager;
-
 import androidx.preference.PreferenceManager;
-
 import org.lineageos.settings.utils.FileUtils;
 
 public final class ThermalUtils {
-
     private static final String THERMAL_CONTROL = "thermal_control";
 
     protected static final int STATE_DEFAULT = 0;
@@ -76,8 +70,7 @@ public final class ThermalUtils {
     }
 
     public static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, ThermalService.class),
-                UserHandle.CURRENT);
+        context.startServiceAsUser(new Intent(context, ThermalService.class), UserHandle.CURRENT);
     }
 
     private void writeValue(String profiles) {
@@ -88,8 +81,9 @@ public final class ThermalUtils {
         String value = mSharedPrefs.getString(THERMAL_CONTROL, null);
 
         if (value == null || value.isEmpty()) {
-            value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" + THERMAL_DIALER + ":" +
-                    THERMAL_GAMING + ":" + THERMAL_NAVIGATION + ":" + THERMAL_STREAMING + ":" + THERMAL_VIDEO;
+            value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":"
+                    + THERMAL_DIALER + ":" + THERMAL_GAMING + ":" + THERMAL_NAVIGATION + ":"
+                    + THERMAL_STREAMING + ":" + THERMAL_VIDEO;
             writeValue(value);
         }
         return value;
@@ -128,8 +122,8 @@ public final class ThermalUtils {
                 break;
         }
 
-        finalString = modes[0] + ":" + modes[1] + ":" + modes[2] + ":" + modes[3] + ":" +
-                modes[4] + ":" + modes[5] + ":" + modes[6] + ":" + modes[7];
+        finalString = modes[0] + ":" + modes[1] + ":" + modes[2] + ":" + modes[3] + ":" + modes[4]
+                + ":" + modes[5] + ":" + modes[6] + ":" + modes[7];
 
         writeValue(finalString);
     }

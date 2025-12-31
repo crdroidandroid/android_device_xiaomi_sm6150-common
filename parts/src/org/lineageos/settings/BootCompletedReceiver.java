@@ -20,9 +20,7 @@ package org.lineageos.settings;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.util.Log;
-
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
@@ -38,7 +36,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
 
         Log.i(TAG, "Boot completed, starting services");
-	DozeUtils.onBootCompleted(context);
+        DozeUtils.onBootCompleted(context);
         ThermalUtils.startService(context);
     }
 }
