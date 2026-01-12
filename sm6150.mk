@@ -59,6 +59,8 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 ifeq ($(TARGET_USES_DOLBY),true)
+TARGET_USES_CUSTOM_DOLBY_XML := true
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects_dolby.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml
