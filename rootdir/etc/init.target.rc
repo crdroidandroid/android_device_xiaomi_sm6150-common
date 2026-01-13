@@ -37,6 +37,9 @@ on init
     # CPU Boost
     write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
 
+    # CPUSets
+    write /dev/cpuset/background/cpus 0-1
+
     # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
