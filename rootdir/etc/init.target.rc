@@ -33,7 +33,10 @@ on early-init
     setprop ro.soc.model ${ro.vendor.qti.soc_model}
     setprop vendor.usb.product_string ${ro.product.vendor.model}
 
-on init
+on init  
+    # CPU Boost
+    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
+
     # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
