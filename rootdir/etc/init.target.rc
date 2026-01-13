@@ -40,6 +40,9 @@ on init
     # CPUSets
     write /dev/cpuset/background/cpus 0-1
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+     
     # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
