@@ -5,7 +5,8 @@ iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # eBPF
-ro.bpf.kver_override=5.4.299
+<<<<<<< HEAD
+ro.bpf.kver_override=5.10.239
 
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
