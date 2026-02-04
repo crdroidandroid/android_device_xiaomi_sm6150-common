@@ -33,4 +33,7 @@
 
     <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
     <integer name="config_showUsbPortAlarm">1</integer>
+
+    <!-- Config Supports VONR -->
+    <bool name="config_supportsVONR">false</bool>
 </resources>
