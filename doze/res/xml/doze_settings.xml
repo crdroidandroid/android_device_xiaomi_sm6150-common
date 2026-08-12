@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/doze_brightness_title">
+
+        <Preference
+            android:key="doze_brightness_info"
+            android:selectable="false"
+            android:summary="@string/doze_brightness_info" />
+
+        <CheckBoxPreference
+            android:key="doze_brightness_low"
+            android:title="@string/doze_brightness_low"
+            android:summary="@string/doze_brightness_low_summary" />
+
+        <CheckBoxPreference
+            android:key="doze_brightness_high"
+            android:title="@string/doze_brightness_high"
+            android:summary="@string/doze_brightness_high_summary" />
+
+        <CheckBoxPreference
+            android:key="doze_brightness_adaptive"
+            android:title="@string/doze_brightness_adaptive"
+            android:summary="@string/doze_brightness_adaptive_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

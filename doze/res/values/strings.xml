@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Xiaomi Doze</string>
+
+    <string name="doze_brightness_title">AOD brightness</string>
+
+    <string name="doze_brightness_info">
+        Select the brightness used for Always-on Display. Adaptive automatically switches between low and high brightness based on ambient light.
+    </string>
+
+    <string name="doze_brightness_low">Low</string>
+    <string name="doze_brightness_low_summary">
+        Lower brightness with reduced power consumption.
+    </string>
+
+    <string name="doze_brightness_high">High</string>
+    <string name="doze_brightness_high_summary">
+        Higher brightness for improved visibility.
+    </string>
+
+    <string name="doze_brightness_adaptive">Adaptive</string>
+    <string name="doze_brightness_adaptive_summary">
+        Automatically switch between low and high brightness based on ambient light.
+    </string>
+</resources>
