@@ -5,16 +5,12 @@
   },
   {
     "repository": "crdroidandroid/android_kernel_xiaomi_sm6150",
-    "target_path": "kernel/xiaomi/sm6150"
+    "target_path": "kernel/xiaomi/sm6150",
+    "branch": "16.0-davinci"
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_xiaomi_sm6150-common",
     "target_path": "vendor/xiaomi/sm6150-common",
-    "remote": "crdroid-gitlab"
-  },
-  {
-    "repository": "crdroidandroid/proprietary_vendor_xiaomi_miuicamera",
-    "target_path": "vendor/xiaomi/miuicamera",
     "remote": "crdroid-gitlab"
   }
 ]
