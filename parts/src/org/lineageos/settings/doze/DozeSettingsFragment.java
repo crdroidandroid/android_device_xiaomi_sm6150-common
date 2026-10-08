@@ -167,8 +167,8 @@ public class DozeSettingsFragment
 
     private void showHelp() {
         AlertDialog helpDialog = new AlertDialog.Builder(getActivity())
-                                         .setTitle(R.string.doze_settings_help_title)
-                                         .setMessage(R.string.doze_settings_help_text)
+                                       //  .setTitle(R.string.doze_settings_help_title)
+                                       //  .setMessage(R.string.doze_settings_help_text)
                                          .setPositiveButton(R.string.dialog_ok,
                                                  (dialog, which) -> {
                                                      getActivity()
