@@ -204,6 +204,15 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
 
+# Task profiles
+# Override only CompactFull: compactAllSystem() applies it to every process,
+# including the ones without a per-pid cgroup, where reading memory.current
+# can only fail. This kernel (4.14) has neither memory.reclaim (5.19+) nor
+# process_madvise(2) (5.10+), so the profile has nothing to do anyway.
+# CompactAnon/CompactFile are left untouched.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/security/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
